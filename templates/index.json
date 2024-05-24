@@ -1,14 +1,14 @@
 {
   "sections": {
     "featured_collection": {
-      "type": "featured-collection",
+      "type": "section-featured-collection",
       "settings": {
         "featured_collection": "featured-collection"
       }
     },
-    "hero-slider": {
+    "hero_slider": {
       "type": "section-hero-slider"
     }
   },
-  "order": ["hero-slider", "featured_collection"]
+  "order": ["hero_slider", "featured_collection"]
 }

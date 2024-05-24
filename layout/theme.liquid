@@ -18,9 +18,11 @@
     {{ 'bundle.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
-    {% section 'header' %}
+    {% section 'section-header' %}
 
-    {{ content_for_layout }}
+    <main>
+      {{ content_for_layout }}
+    </main>
 
     {% section 'section-footer' %}
 

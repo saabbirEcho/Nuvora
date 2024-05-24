@@ -12,6 +12,17 @@
   flex-wrap: wrap;
 }
 
+.u-fd-column {
+  flex-direction: column;
+}
+
+.u-flex-center {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .u-ai-center {
   align-items: center;
 }

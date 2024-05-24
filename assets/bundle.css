@@ -23,11 +23,16 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font: normal 400 16px/1.5 var(--base-font);
   margin: 0;
   min-height: 100vh;
+}
+body > main {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 p {
@@ -45,35 +50,35 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 hr {
-  margin: 0;
-  padding: 0;
   border: 0;
   border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
 ol {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 input,
 select,
 textarea {
-  display: block;
-  width: 100%;
-  border: 1px solid #000;
-  padding: 6px 12px;
-  min-height: 44px;
-  border-radius: 0;
   background-color: #fff;
-  font: normal 400 18px/1.5 var(--base-font);
+  border: 1px solid #000;
+  border-radius: 0;
+  display: block;
+  font: normal 400 16px/1.5 var(--base-font);
+  min-height: 44px;
+  padding: 6px 12px;
+  width: 100%;
 }
 input:focus,
 select:focus,
@@ -85,33 +90,33 @@ select::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #707070;
-  font: normal 400 18px/1.5 var(--base-font);
+  font: normal 400 16px/1.5 var(--base-font);
 }
 input::-moz-placeholder,
 select::-moz-placeholder,
 textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: #707070;
-  font: normal 400 18px/1.5 var(--base-font);
+  font: normal 400 16px/1.5 var(--base-font);
 }
 input::-ms-input-placeholder,
 select::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   /* IE 10+ */
   color: #707070;
-  font: normal 400 18px/1.5 var(--base-font);
+  font: normal 400 16px/1.5 var(--base-font);
 }
 input:-moz-placeholder,
 select:-moz-placeholder,
 textarea:-moz-placeholder {
   /* Firefox 18- */
   color: #707070;
-  font: normal 400 18px/1.5 var(--base-font);
+  font: normal 400 16px/1.5 var(--base-font);
 }
 
 textarea {
-  resize: vertical;
   min-height: 150px;
+  resize: vertical;
 }
 
 table {
@@ -121,8 +126,8 @@ table {
 
 td,
 th {
-  padding: 8px 16px;
   border: 1px solid #dedede;
+  padding: 8px 16px;
   text-align: left;
 }
 
@@ -149,14 +154,14 @@ p {
 }
 
 label {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   color: #707070;
   display: flex;
+  font-size: 12px;
+  letter-spacing: 1px;
   line-height: 1;
-  white-space: nowrap;
   margin: 0 0 6px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 [x-cloak] {
@@ -252,33 +257,30 @@ label {
   gap: 16px;
 }
 
-.c-header-section {
+.c-header {
+  align-items: center;
+  background: #f9f9f9;
+  display: flex;
+  min-height: var(--header-min-height, 60px);
+  padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 9;
 }
-
-.c-header {
-  background: #f9f9f9;
-  padding: 15px 0;
-  min-height: var(--header-min-height, 60px);
-  display: flex;
-  align-items: center;
-}
 .c-header__content {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 16px;
   align-items: center;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 .c-header__brand {
-  text-transform: uppercase;
-  text-decoration: none;
   color: #000;
-  font-weight: bold;
-  letter-spacing: 2px;
   font-family: monospace;
   font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 @media (max-width: 767px) {
@@ -287,9 +289,9 @@ label {
   }
 }
 .c-header__hamburger {
-  width: 30px;
-  height: 30px;
   display: grid;
+  height: 30px;
+  width: 30px;
 }
 .c-header__hamburger > svg {
   width: 100%;
@@ -309,19 +311,19 @@ label {
   display: none;
 }
 .c-header__nav {
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
   justify-content: space-between;
 }
 .c-header__nav > ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 @media (min-width: 768px) {
   .c-header__nav > ul {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -330,16 +332,16 @@ label {
 }
 @media (max-width: 767px) {
   .c-header__nav-main {
-    display: block;
-    position: fixed;
-    width: 90vw;
     background: #fff;
+    display: block;
     height: calc(100vh - var(--header-min-height));
     left: 0;
-    top: var(--header-min-height);
     padding: 32px 16px;
+    position: fixed;
+    top: var(--header-min-height);
     transform: translateX(-100%);
     transition: transform 0.15s;
+    width: 90vw;
   }
   .c-header__nav-main.is-visible {
     transform: translateX(0);
@@ -351,15 +353,15 @@ label {
   }
 }
 .c-header__nav-link, .c-header__nav-dropdown-link {
-  text-decoration: none;
+  align-items: center;
+  color: #707070;
+  display: inline-flex;
   font-size: 13px;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #707070;
   padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
   transition: 0.15s;
-  display: inline-flex;
-  align-items: center;
   white-space: nowrap;
 }
 .c-header__nav-link:hover, .c-header__nav-link:focus, .c-header__nav-dropdown-link:hover, .c-header__nav-dropdown-link:focus {
@@ -380,34 +382,34 @@ label {
   }
 }
 .c-header__nav-cart-link {
-  position: relative;
   padding-right: 0 !important;
+  position: relative;
 }
 .c-header__nav-cart-link sup {
-  display: inline-flex;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: red;
-  padding: 4px;
-  color: #fff;
   align-items: center;
-  justify-content: center;
+  background: red;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
   font-size: 10px;
+  height: 16px;
+  justify-content: center;
+  padding: 4px;
   position: absolute;
-  top: 0;
   right: -8px;
+  top: 0;
+  width: 16px;
 }
 .c-header a[data-customer-name] {
   position: relative;
 }
 .c-header a[data-customer-name]::after {
+  bottom: 0;
   content: "as " attr(data-customer-name);
   display: block;
-  position: absolute;
-  bottom: 0;
-  transform: translateY(7px);
   font-size: 0.8em;
+  position: absolute;
+  transform: translateY(7px);
 }
 
 .c-dropdown-menu-wrapper {
@@ -1184,6 +1186,7 @@ label {
 
 .c-footer {
   border-top: 1px solid #dedede;
+  margin-top: auto;
 }
 
 .c-object-type {
@@ -1604,6 +1607,17 @@ label {
 
 .u-flex-wrap {
   flex-wrap: wrap;
+}
+
+.u-fd-column {
+  flex-direction: column;
+}
+
+.u-flex-center {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .u-ai-center {

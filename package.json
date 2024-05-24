@@ -1,5 +1,5 @@
 {
-  "name": "ninetypercent-dot-com-clone",
+  "name": "ninetypercent-clone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,7 @@
     "dev": "shopify theme dev",
     "sass": "sass ./src/scss/index.scss:./assets/bundle.css --watch"
   },
-  "keywords": [
-
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {

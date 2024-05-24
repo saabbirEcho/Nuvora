@@ -3,12 +3,9 @@
     "template": {
       "type": "template-page"
     },
-    "contact-form": {
-      "type": "contact-form"
+    "contact_form": {
+      "type": "section-contact-form"
     }
   },
-  "order": [
-    "template",
-    "contact-form"
-  ]
+  "order": ["template", "contact_form"]
 }

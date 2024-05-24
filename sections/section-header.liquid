@@ -1,0 +1,133 @@
+{% liquid
+  if section.settings.brand_name.size > 0
+    assign brand_name = section.settings.brand_name
+  else
+    assign brand_name = shop.name | remove: 'Clone'
+  endif
+%}
+
+<div class="c-header__content l-wrap">
+  <!-- Hamburger -->
+  <div class="c-header__hamburger">
+    {% render 'icon-bars' %}
+    {% render 'icon-x-mark' %}
+  </div>
+
+  <!-- Brand/Logo -->
+  <a href="{{ routes.root_url }}" class="c-header__brand">
+    {% if section.settings.brand_logo != blank %}
+      {{ section.settings.brand_logo | image_url: width: 36 | image_tag }}
+    {% else %}
+      <span class="c-header__brand-name">{{ brand_name }}</span>
+    {% endif %}
+  </a>
+
+  <!-- Nav Main -->
+  <ul class="c-header__nav c-header__nav-main">
+    {% for link in linklists[section.settings.menu].links %}
+      {% if link.links != blank %}
+        <li class="c-dropdown-menu-wrapper">
+          <a href="{{ link.url }}" class="c-header__nav-link">
+            <span>{{ link.title }}</span>
+            {% render 'icon-chevron-down' %}
+          </a>
+          <ul class="c-dropdown-menu">
+            {% for dropLink in link.links %}
+              <li>
+                <a href="{{ dropLink.url }}" class="c-header__nav-dropdown-link">{{ dropLink.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ link.url }}" class="c-header__nav-link">{{ link.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <!-- Nav Icons -->
+  <ul class="c-header__nav c-header__nav-icons">
+    <!-- Search -->
+    {% if request.page_type != 'search' %}
+      <li>
+        <a class="c-header__nav-link c-search-container">
+          {% render 'icon-search' %}
+          {% render 'icon-x-mark' %}
+
+          <form autocomplete="off" class="c-search-form" action="{{ routes.search_url }}" method="get">
+            <div class="c-search-form__group l-wrap">
+              <input type="search" name="q" placeholder="Search...">
+              <button type="submit">
+                {% render 'icon-search' %}
+              </button>
+            </div>
+          </form>
+        </a>
+      </li>
+    {% endif %}
+
+    <!-- Account stuffs -->
+    {% if shop.customer_accounts_enabled %}
+      {% if customer %}
+        <li class="c-header__nav-account-li c-dropdown-menu-wrapper">
+          <a href="#" class="c-header__nav-link">{% render 'icon-user' %}</a>
+          <ul class="c-dropdown-menu">
+            <li><a href="{{ routes.account_url }}" class="c-header__nav-dropdown-link">Account</a></li>
+            <li>
+              <a href="{{ routes.account_logout_url }}" class="c-header__nav-dropdown-link"
+                >Logout as {{ customer.first_name -}}
+              </a>
+            </li>
+          </ul>
+        </li>
+      {% else %}
+        <li class="c-header__nav-account-li c-dropdown-menu-wrapper">
+          <a href="#" class="c-header__nav-link">{% render 'icon-user' %}</a>
+          <ul class="c-dropdown-menu">
+            <li><a href="{{ routes.account_login_url }}" class="c-header__nav-dropdown-link">Login</a></li>
+            <li><a href="{{ routes.account_register_url }}" class="c-header__nav-dropdown-link">Sign Up</a></li>
+          </ul>
+        </li>
+      {% endif %}
+    {% endif %}
+
+    <!-- Cart -->
+    <li>
+      <a href="{{ routes.cart_url }}" class="c-header__nav-cart-link c-header__nav-link">
+        {%- render 'icon-cart' %}
+        {% if cart.item_count > 0 %}
+          <sup>{{ cart.item_count }}</sup>
+        {% endif %}
+      </a>
+    </li>
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Header (Navbar)",
+  "tag": "header",
+  "class": "c-header",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "What's your brand name?"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo",
+      "label": "Upload your brand logo"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Choose your primary menu",
+      "default": "main-menu"
+    }
+  ]
+}
+{% endschema %}
