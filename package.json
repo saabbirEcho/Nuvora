@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "shopify theme dev",
+    "start": "shopify theme dev",
     "sass": "sass ./src/scss/index.scss:./assets/bundle.css --watch"
   },
   "keywords": [],

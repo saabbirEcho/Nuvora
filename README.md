@@ -8,14 +8,14 @@ It contains all the necessary Shopify files and directories. It also supports Sa
 
 To compile SCSS into regular CSS, run `npm run sass` from the root directory.
 
-```
+```sh
 npm run sass
 ```
 
 Also, to start the local development, you can run `shopify theme dev` or `npm run dev` from the root directory.
 
-```
-npm run dev
+```sh
+npm start
 
 # or
 

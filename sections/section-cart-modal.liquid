@@ -1,0 +1,46 @@
+<div class="c-cart-modal-wrapper">
+  <div class="c-cart-modal">
+    <!-- Cart header -->
+    <div class="c-cart-modal__header">
+      <h3 class="c-cart-modal__header-title">Cart</h3>
+      <div class="c-cart-modal__header-right">
+        <div class="c-cart-modal__total-items">0 item</div>
+        <div class="c-cart-modal__close-icon">x</div>
+      </div>
+    </div>
+
+    <!-- Cart body -->
+    <div class="c-cart-modal__body">
+      {% if cart.empty? %}
+        <p>Your cart is empty!</p>
+      {% else %}
+        <ul class="c-cart-modal__line-items">
+          {% for item in cart.items %}
+            <li class="c-cart-modal__line-item" data-line-item-key="{{ item.key }}">
+              <a class="c-cart-modal__line-item-image-wrapper" href="{{ item.url }}">
+                {{ item.image | image_url: width: 100 | image_tag }}
+              </a>
+              <div class="c-cart-modal__line-item-copy">
+                <div class="c-cart-modal__line-item-title">{{ item.title }}</div>
+                <div class="c-cart-modal__line-item-variant-title">{{ item.variant.title }}</div>
+                <div class="c-cart-modal__line-item-qty">
+                  <button class="c-cart-modal__line-item-qty-plus">+</button>
+                  <input type="text" readonly value="{{ item.quantity }}">
+                  <button class="c-cart-modal__line-item-qty-minus">-</button>
+                </div>
+              </div>
+              <div class="c-cart-modal__line-item-final-price">{{ item.final_line_price | money }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Cart Modal",
+  "settings": []
+}
+{% endschema %}

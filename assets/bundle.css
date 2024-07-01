@@ -1189,25 +1189,121 @@ label {
   margin-top: auto;
 }
 
-.c-object-type {
-  position: absolute;
+.c-cart-modal-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.c-cart-modal {
+  background: #eee;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  max-width: 320px;
+  position: fixed;
+  right: 16px;
+  top: 5vh;
+  width: 90vw;
+}
+@media (min-width: 768px) {
+  .c-cart-modal {
+    max-width: 440px;
+  }
+}
+.c-cart-modal__header {
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.c-cart-modal__header-right {
+  display: flex;
+}
+.c-cart-modal__total-items {
+  margin-right: 16px;
+}
+.c-cart-modal__body {
+  flex-grow: 1;
+  padding: 16px;
+}
+.c-cart-modal__line-items {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+.c-cart-modal__line-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 100px 1fr 100px;
+}
+.c-cart-modal__line-item-qty {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
   text-align: center;
-  left: 8px;
-  top: 8px;
-  padding: 8px;
+}
+.c-cart-modal__line-item-qty > button,
+.c-cart-modal__line-item-qty > input {
+  background: #fff;
+  border: 1px solid #ddd;
+  height: 30px;
+  line-height: 1;
+  padding: 0 4px;
+  text-align: center;
+}
+.c-cart-modal__line-item-qty-plus {
+  border-radius: 4px 0 0 4px;
+}
+.c-cart-modal__line-item-qty-minus {
+  border-radius: 0 4px 4px 0;
+}
+.c-cart-modal .c-cart-modal__line-item-variant-title {
+  color: #888;
+  margin: 8px 0;
+}
+.c-cart-modal__line-item-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.c-cart-modal__line-item-copy {
+  overflow: hidden;
+  padding: 16px 0;
+}
+.c-cart-modal__line-item-final-price {
+  padding: 16px 0;
+}
+
+.c-object-type {
   background: red;
   color: #fff;
-  line-height: 1;
-  text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: 1px;
   font-weight: bold;
+  left: 8px;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 8px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 8px;
 }
 
 .c-hr {
-  width: 100%;
-  height: 1px;
   background-color: #dedede;
+  height: 1px;
+  width: 100%;
 }
 
 .swiper {
