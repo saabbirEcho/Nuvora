@@ -155,6 +155,10 @@
       right: -8px;
       top: 0;
       width: 16px;
+
+      &[data-is-cart-empty="yes"] {
+        display: none;
+      }
     }
   }
 

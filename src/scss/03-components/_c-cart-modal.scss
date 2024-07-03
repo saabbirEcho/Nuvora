@@ -2,10 +2,24 @@
   background: rgba(0, 0, 0, 0.5);
   bottom: 0;
   left: 0;
+  opacity: 0;
   position: fixed;
   right: 0;
   top: 0;
+  transition: 0.3s;
+  visibility: hidden;
   z-index: 9;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+
+    .c-cart-modal {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
 }
 
 .c-cart-modal {
@@ -13,11 +27,15 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: calc(100vh - 2rem);
   max-width: 320px;
+  opacity: 0;
   position: fixed;
   right: 16px;
-  top: 5vh;
+  top: 1rem;
+  transform: translateX(100%);
+  transition: 0.3s;
+  visibility: hidden;
   width: 90vw;
 
   @media (min-width: 768px) {
@@ -34,7 +52,7 @@
 
   &__header-right {
     align-items: center;
-    color: #888;
+    color: #707070;
     display: flex;
   }
 
@@ -51,7 +69,15 @@
     width: 32px;
 
     > svg {
-      stroke: #888;
+      fill: #707070;
+      stroke: #707070;
+      transition: 0.2s;
+
+      &:hover,
+      &:focus {
+        fill: #000;
+        stroke: #000;
+      }
     }
   }
 
@@ -91,7 +117,7 @@
 
   &__line-item-qty {
     display: grid;
-    grid-template-columns: repeat(3, 36px);
+    grid-template-columns: repeat(3, 40px);
     text-align: center;
 
     > button,
@@ -101,7 +127,7 @@
       border: 1px solid #ddd;
       display: flex;
       font-size: 16px;
-      height: 36px;
+      height: 30px;
       justify-content: center;
       line-height: 1;
       min-height: initial;
@@ -125,23 +151,24 @@
   }
 
   &__line-item-qty-plus {
-    border-radius: 4px 0 0 4px;
+    border-radius: 0 4px 4px 0;
   }
 
   &__line-item-qty-minus {
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px 0 0 4px;
   }
 
   &__line-item-title {
     @include singleLine;
     color: #000;
+    font-size: 15px;
     font-weight: bold;
     line-height: 1;
     text-transform: uppercase;
   }
 
   .c-cart-modal__line-item-variant-title {
-    color: #888;
+    color: #707070;
     font-size: 12px;
     line-height: 1;
     margin: 12px 0;
@@ -152,10 +179,65 @@
   &__line-item-copy {
     overflow: hidden;
     padding: 16px 0;
+
+    @media (min-width: 768px) {
+      padding: 24px 0;
+    }
   }
 
-  &__line-item-final-price {
+  &__line-item-right {
     padding: 16px 16px 16px 0;
     text-align: right;
+  }
+
+  &__line-item-remove {
+    align-items: center;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    gap: 6px;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 24px 0 0;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  &__empty-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__footer {
+    border-top: 1px solid #ddd;
+    padding: 24px 16px;
+  }
+
+  &__footer-buttons {
+    display: grid;
+    gap: 12px;
+  }
+
+  &__clear-cart {
+    margin: 0 0 32px;
+  }
+
+  &__subtotal {
+    margin: 0 0 16px;
+    text-align: right;
+
+    &-label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &-price {
+      font-size: 22px;
+      font-weight: 400;
+    }
   }
 }

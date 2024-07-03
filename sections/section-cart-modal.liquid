@@ -1,71 +1,110 @@
 {% liquid
   capture item_or_items
-    if cart.item_count == 0
-      echo 'item'
-    else
+    if cart.item_count > 1
       echo 'items'
+    else
+      echo 'item'
     endif
   endcapture
 %}
 
-<div class="c-cart-modal-wrapper">
-  <div class="c-cart-modal">
-    <!-- Cart header -->
-    <div class="c-cart-modal__header">
-      <h3 class="c-cart-modal__header-title">Your cart</h3>
-      <div class="c-cart-modal__header-right">
-        <div class="c-cart-modal__total-items">
-          {{ cart.item_count }}
-          {{ item_or_items }}
-        </div>
-        <div class="c-cart-modal__close-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 50 50">
-            <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
-          </svg>
+<cart-modal data-section-id="{{ section.id }}">
+  <div class="c-cart-modal-wrapper">
+    <div class="c-cart-modal">
+      <!-- Cart header -->
+      <div class="c-cart-modal__header">
+        <h3 class="c-cart-modal__header-title">Your cart</h3>
+        <div class="c-cart-modal__header-right">
+          <div class="c-cart-modal__total-items">
+            {{ cart.item_count }}
+            {{ item_or_items }}
+          </div>
+          <div class="c-cart-modal__close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 50 50">
+              <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Cart body -->
-    <div class="c-cart-modal__body">
-      {% if cart.empty? %}
-        <p>Your cart is empty!</p>
-      {% else %}
-        <ul class="c-cart-modal__line-items">
-          {% for item in cart.items %}
-            <li class="c-cart-modal__line-item" data-line-item-key="{{ item.key }}">
-              <a class="c-cart-modal__line-item-image-wrapper" href="{{ item.url }}">
-                {{ item.image | image_url: width: 100 | image_tag }}
-              </a>
-              <div class="c-cart-modal__line-item-copy">
-                <div class="c-cart-modal__line-item-title">{{ item.title }}</div>
-                <div class="c-cart-modal__line-item-variant-title">{{ item.variant.title }}</div>
-                <div class="c-cart-modal__line-item-qty">
-                  <button class="c-cart-modal__line-item-qty-plus">
-                    <img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAANklEQVR4nGNgGGngPxSPWoAT/B8NIkLg/8gOov9UxvS3YOjHATHg/6gFhMD/0SAa8CBiGHQAAOITS7WQXzPpAAAAAElFTkSuQmCC"
-                      width="16"
-                      height="16"
-                    >
-                  </button>
-                  <input type="text" readonly value="{{ item.quantity }}">
-                  <button class="c-cart-modal__line-item-qty-minus">
-                    <img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIUlEQVR4nGNgGAWjYBSMApLBfyrhgbNgFIyCUTAKGDABAOkcI91xODUvAAAAAElFTkSuQmCC"
-                      width="16"
-                      height="16"
-                    >
-                  </button>
+      <!-- Cart body -->
+      <div class="c-cart-modal__body">
+        {% if cart.empty? %}
+          <div class="c-cart-modal__empty-content">
+            <p>Your cart is empty!</p>
+          </div>
+        {% else %}
+          <ul class="c-cart-modal__line-items">
+            {% for item in cart.items %}
+              <li class="c-cart-modal__line-item" data-line-item-key="{{ item.key }}">
+                <a class="c-cart-modal__line-item-image-wrapper" href="{{ item.url }}">
+                  {{ item.image | image_url: width: 100 | image_tag }}
+                </a>
+                <div class="c-cart-modal__line-item-copy">
+                  <div class="c-cart-modal__line-item-title">{{ item.title }}</div>
+                  <div class="c-cart-modal__line-item-variant-title">{{ item.variant.title }}</div>
+                  <div class="c-cart-modal__line-item-qty">
+                    <button class="c-cart-modal__line-item-qty-minus">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIUlEQVR4nGNgGAWjYBSMApLBfyrhgbNgFIyCUTAKGDABAOkcI91xODUvAAAAAElFTkSuQmCC"
+                        width="16"
+                        height="16"
+                      >
+                    </button>
+                    <input type="text" readonly value="{{ item.quantity }}">
+                    <button class="c-cart-modal__line-item-qty-plus">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAANklEQVR4nGNgGGngPxSPWoAT/B8NIkLg/8gOov9UxvS3YOjHATHg/6gFhMD/0SAa8CBiGHQAAOITS7WQXzPpAAAAAElFTkSuQmCC"
+                        width="16"
+                        height="16"
+                      >
+                    </button>
+                  </div>
+                  <div class="c-cart-modal__line-item-remove u-d-none">Remove</div>
                 </div>
-              </div>
-              <div class="c-cart-modal__line-item-final-price">{{ item.final_line_price | money }}</div>
-            </li>
-          {% endfor %}
-        </ul>
+                <div class="c-cart-modal__line-item-right">
+                  <div class="c-cart-modal__line-item-final-price">{{ item.final_line_price | money }}</div>
+                  <div class="c-cart-modal__line-item-remove u-jc-end">
+                    <span class="u-d-none">Remove</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      width="16"
+                      class="c-icon-trash"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"></path>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <!-- Cart footer -->
+      {% if cart.item_count > 0 %}
+        <div class="c-cart-modal__footer">
+          <div class="c-cart-modal__clear-cart u-text-right">
+            <button id="clear-cart" class="c-btn-link">Clear Cart</button>
+          </div>
+          <div class="c-cart-modal__subtotal">
+            <span class="c-cart-modal__subtotal-label">Subtotal:</span>
+            <span class="c-cart-modal__subtotal-price">{{ cart.items_subtotal_price | money }}</span>
+          </div>
+          <div class="c-cart-modal__footer-buttons">
+            <form action="/cart" method="post" novalidate>
+              <button class="c-btn c-btn--black c-btn--full" type="submit" name="checkout">Checkout</button>
+            </form>
+          </div>
+        </div>
       {% endif %}
     </div>
   </div>
-</div>
+</cart-modal>
 
 {% schema %}
 {

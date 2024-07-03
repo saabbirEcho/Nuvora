@@ -145,3 +145,7 @@ label {
 [x-cloak] {
   display: none !important;
 }
+
+.sr-only {
+  @include sr-only;
+}

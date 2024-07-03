@@ -4,6 +4,12 @@
   else
     assign brand_name = shop.name | remove: 'Clone'
   endif
+
+  if cart.item_count > 0
+    assign is_cart_empty = 'no'
+  else
+    assign is_cart_empty = 'yes'
+  endif
 %}
 
 <div class="c-header__content l-wrap">
@@ -97,9 +103,7 @@
     <li>
       <a href="{{ routes.cart_url }}" class="c-header__nav-cart-link c-header__nav-link">
         {%- render 'icon-cart' %}
-        {% if cart.item_count > 0 %}
-          <sup>{{ cart.item_count }}</sup>
-        {% endif %}
+        <sup data-is-cart-empty="{{ is_cart_empty }}">{{ cart.item_count }}</sup>
       </a>
     </li>
   </ul>
