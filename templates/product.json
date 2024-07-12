@@ -67,7 +67,7 @@
           "type": "shopify:\/\/apps\/add-to-wishlist\/blocks\/add-to-wishlist\/3b77b344-a99a-4100-970f-53f59d6140dc",
           "settings": {
             "text": "Add to wishlist",
-            "fillColor": "#1C274C"
+            "fillColor": "#f34929"
           }
         }
       },
