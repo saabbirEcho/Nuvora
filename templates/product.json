@@ -1,28 +1,51 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "template": {
       "type": "template-product",
       "blocks": {
         "vendor": {
-          "type": "vendor"
+          "type": "vendor",
+          "settings": {
+          }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_selector": {
-          "type": "variant_selector"
+          "type": "variant_selector",
+          "settings": {
+          }
         },
         "quantity": {
-          "type": "quantity"
+          "type": "quantity",
+          "settings": {
+          }
         },
         "add_to_cart_button": {
-          "type": "add_to_cart_button"
+          "type": "add_to_cart_button",
+          "settings": {
+          }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -33,10 +56,30 @@
         "quantity",
         "add_to_cart_button",
         "description"
-      ]
+      ],
+      "settings": {
+      }
+    },
+    "17208019581018417a": {
+      "type": "apps",
+      "blocks": {
+        "add_to_wishlist_add_to_wishlist_iFKgcJ": {
+          "type": "shopify:\/\/apps\/add-to-wishlist\/blocks\/add-to-wishlist\/3b77b344-a99a-4100-970f-53f59d6140dc",
+          "settings": {
+            "text": "Add to wishlist",
+            "fillColor": "#1C274C"
+          }
+        }
+      },
+      "block_order": [
+        "add_to_wishlist_add_to_wishlist_iFKgcJ"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "template"
+    "template",
+    "17208019581018417a"
   ]
 }
