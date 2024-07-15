@@ -68,7 +68,7 @@
           "settings": {
             "text": "Add to wishlist",
             "text_after_wishlisted": "Added to wishlist",
-            "fillColor": "rgba(0,0,0,0)"
+            "fill_color": "rgba(0,0,0,0)"
           }
         }
       },
