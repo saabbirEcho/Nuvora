@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "template": {
@@ -14,38 +14,33 @@
       "blocks": {
         "vendor": {
           "type": "vendor",
-          "settings": {
-          }
+          "settings": {}
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_selector": {
           "type": "variant_selector",
           "settings": {
+            "dropdown_style": false
           }
         },
         "quantity": {
           "type": "quantity",
-          "settings": {
-          }
+          "settings": {}
         },
         "add_to_cart_button": {
           "type": "add_to_cart_button",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -57,26 +52,24 @@
         "add_to_cart_button",
         "description"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "1721045881f5baec2f": {
       "type": "apps",
       "blocks": {
         "add_to_wishlist_add_to_wishlist_g7ER6e": {
-          "type": "shopify:\/\/apps\/add-to-wishlist\/blocks\/add-to-wishlist\/3b77b344-a99a-4100-970f-53f59d6140dc",
+          "type": "shopify://apps/add-to-wishlist/blocks/add-to-wishlist/3b77b344-a99a-4100-970f-53f59d6140dc",
           "settings": {
             "text": "Add to wishlist",
             "text_after_wishlisted": "Added to wishlist",
-            "fill_color": "#1C274C"
+            "fill_color": "#1c274c"
           }
         }
       },
       "block_order": [
         "add_to_wishlist_add_to_wishlist_g7ER6e"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
