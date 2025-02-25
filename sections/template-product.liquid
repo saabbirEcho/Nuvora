@@ -86,7 +86,7 @@
                     {% endfor %}
                   {% else %}
                     {% for option in product.options_with_values %}
-                      <div class="u-my-32">
+                      <div class="c-option-group u-my-32">
                         <label for="{{ option.name }}-variant-radio">{{ option.name }}</label>
                         <ul class="c-product-variant-swatches">
                           {% for value in option.values %}
@@ -98,26 +98,18 @@
                               {% endif %}
                             {% endfor %}
                     
-                            <li class="c-product-variant-swatch">
+                            <li class="c-product-variant-swatch {% unless is_variant_available %}is-unavailable{% endunless %}">
                               <input
                                 type="radio"
                                 name="options[{{ option.name }}]"
                                 id="{{ option.name }}-variant-radio-{{ value }}"
                                 value="{{ value }}"
-                                {% if option.selected_value == value %}
-                                  checked="checked"
-                                {% endif %}
                                 {% unless is_variant_available %}
                                   disabled="disabled"
                                 {% endunless %}
                                 class="u-hidden"
                               >
-                              <label
-                                for="{{ option.name }}-variant-radio-{{ value }}"
-                                {% unless is_variant_available %}
-                                  style="text-decoration: line-through; opacity: 0.5;"
-                                {% endunless %}
-                              >
+                              <label for="{{ option.name }}-variant-radio-{{ value }}">
                                 {{ value }}
                               </label>
                             </li>

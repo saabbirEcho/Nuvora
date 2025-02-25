@@ -1,14 +1,14 @@
 class VariantSelector extends HTMLElement {
   constructor() {
     super();
+    this.productVariants = JSON.parse(
+      this.querySelector("#product_variants").textContent
+    );
     this.addEventListener("change", this.onVariantChange);
+    this.disableUnavailableOptions();
   }
 
   onVariantChange() {
-    const productVariants = JSON.parse(
-      this.querySelector("#product_variants").textContent
-    );
-
     // Get selected options from select elements
     let selectedOptions = Array.from(
       this.querySelectorAll("select"),
@@ -23,15 +23,12 @@ class VariantSelector extends HTMLElement {
       ).join(" / ");
     }
 
-    const variant = productVariants.find(
+    const variant = this.productVariants.find(
       (variant) => variant.title === selectedOptions
     );
 
-    console.log('Saabbir:', 'selectedOptions', selectedOptions);
-    console.log('Saabbir:', 'variant', variant);
-
     if (!variant) {
-      return console.error("Saabbir: Variant not found");
+      return console.warn("Saabbir: Variant not found");
     }
 
     // Set shopify product form variant id
@@ -41,6 +38,75 @@ class VariantSelector extends HTMLElement {
     window.history.replaceState({}, "", `?variant=${variant.id}`);
 
     this.updatePriceAndAvailability(variant);
+  }
+
+  disableUnavailableOptions() {
+    if (!document.querySelector('.c-option-group')) return;
+
+    const availableVariants = this.productVariants.filter(variant => variant.available);
+    const optionInputs = document.querySelectorAll('.c-option-group input');
+    const optionGroups = document.querySelectorAll('.c-option-group');
+    const sizeOptionInputs = optionGroups[0].querySelectorAll('input');
+    const colorOptionInputs = optionGroups[1].querySelectorAll('input');
+  
+    // Function to update options
+    function updateOptions() {
+      // Get selected values for size and leg length
+      const selectedSize = document.querySelector('input[name="options[Size]"]:checked')?.value;
+      const selectedColor = document.querySelector('input[name="options[Color]"]:checked')?.value;
+
+      if (selectedSize) {
+        // Loop through color options
+        colorOptionInputs.forEach(input => {
+          const colorValue = input.value;
+          let isOptionAvailable = false;
+    
+          // Check if this color is available for the selected size
+          for (const variant of availableVariants) {
+            if (
+              variant.options[0] === selectedSize &&
+              variant.options[1] === colorValue
+            ) {
+              isOptionAvailable = true;
+              break;
+            }
+          }
+    
+          // Enable/disable the color option
+          input.disabled = !isOptionAvailable;
+          input.parentElement.classList.toggle('is-unavailable', !isOptionAvailable);
+        });
+      }
+  
+      if (selectedColor) {
+        // Loop through size options
+        sizeOptionInputs.forEach(input => {
+          const sizeValue = input.value;
+          let isOptionAvailable = false;
+    
+          // Check if this size is available for the selected color
+          for (const variant of availableVariants) {
+            if (
+              variant.options[0] === sizeValue &&
+              variant.options[1] === selectedColor
+            ) {
+              isOptionAvailable = true;
+              break;
+            }
+          }
+    
+          // Enable/disable the size option
+          input.disabled = !isOptionAvailable;
+          input.parentElement.classList.toggle('is-unavailable', !isOptionAvailable);
+        });
+      }
+    }
+  
+    // Add event listeners to size and color options
+    optionInputs.forEach(input => input.addEventListener('change', updateOptions));
+  
+    // Initialize options on page load
+    updateOptions();
   }
 
   async updatePriceAndAvailability({ id, available }) {

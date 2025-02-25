@@ -35,3 +35,27 @@ void (function () {
     }
   }
 })();
+
+void (function() {
+  const pdpSubmitBtn = document.querySelector('button#submit_btn');
+  const optionGroups = document.querySelectorAll('.c-option-group');
+
+  if (!pdpSubmitBtn || optionGroups.length === 0) return;
+
+  pdpSubmitBtn.addEventListener('mouseenter', () => {
+    const selectedOptions = document.querySelectorAll('.c-option-group input[type="radio"]:checked');
+    
+    if (
+      optionGroups.length === 2 &&
+      selectedOptions.length !== 2
+    ) {
+      pdpSubmitBtn.textContent = 'Please select a size and color';
+      pdpSubmitBtn.disabled = true;
+    }
+  });
+
+  pdpSubmitBtn.addEventListener('mouseleave', () => {
+    pdpSubmitBtn.textContent = 'Add to cart';
+    pdpSubmitBtn.disabled = false;
+  });
+})();
