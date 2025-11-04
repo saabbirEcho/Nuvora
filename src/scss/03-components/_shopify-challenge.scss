@@ -1,3 +1,5 @@
+@use "../01-config/config" as *;
+
 .shopify-challenge {
   &__container {
     padding: 32px 16px;

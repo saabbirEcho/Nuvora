@@ -1,13 +1,15 @@
-@import "./margin";
-@import "./padding";
-@import "./flex";
-@import "./color";
-@import "./grid";
-@import "./show-hide";
-@import "./text";
-@import "./typography";
-@import "./width";
-@import "./height";
+@use "../01-config/config" as *;
+
+@use "./margin";
+@use "./padding";
+@use "./flex";
+@use "./color";
+@use "./grid";
+@use "./show-hide";
+@use "./text";
+@use "./typography";
+@use "./width";
+@use "./height";
 
 .u-object-cover {
   object-fit: cover;

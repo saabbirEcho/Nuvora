@@ -1,5 +1,7 @@
-@import "./margin-top";
-@import "./margin-bottom";
+@use "../01-config/config" as *;
+
+@use "./margin-top";
+@use "./margin-bottom";
 
 .u-m-auto {
   margin: auto;

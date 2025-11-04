@@ -1,10 +1,10 @@
 {
-  "name": "ninetypercent-clone",
+  "name": "custom-shopify-theme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "shopify theme dev",
+    "start": "shopify theme dev --store=thesaabbir.myshopify.com",
     "sass:dev": "sass --embed-source-map ./src/scss/index.scss:./assets/bundle.css --watch",
     "sass:prod": "sass ./src/scss/index.scss:./assets/bundle.css --watch"
   },

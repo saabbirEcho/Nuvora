@@ -1,3 +1,5 @@
+@use "../01-config/config" as *;
+
 .c-order-card {
   border: 1px solid $border-color;
   padding: 16px;

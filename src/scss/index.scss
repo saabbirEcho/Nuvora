@@ -1,5 +1,5 @@
-@import "./01-config/config.scss";
-@import "./02-base/base.scss";
-@import "./03-components/components.scss";
-@import "./04-plugins/plugins.scss";
-@import "./05-utils/utils.scss";
+@use "./01-config/config.scss";
+@use "./02-base/base.scss";
+@use "./03-components/components.scss";
+@use "./04-plugins/plugins.scss";
+@use "./05-utils/utils.scss";

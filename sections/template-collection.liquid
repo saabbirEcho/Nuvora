@@ -6,12 +6,25 @@
     </header>
 
     {% paginate collection.products by section.settings.products_per_page %}
-      <div class="c-product-cards">
-        {% for product in collection.products %}
-          {% render 'product-card', product: product %}
-        {% else %}
-          <p>No products available in this collection.</p>
-        {% endfor %}
+
+      <div class="c-products-with-filters">
+
+        <!-- Product Filters --->
+        <div class="c-collection-filters">
+          {% for filter in collection.filters %}
+            {{ filter.label }} <br>
+          {% endfor %}
+        </div>
+
+        <!-- Product Cards --->
+        <div class="c-product-cards">
+          {% for product in collection.products %}
+            {% render 'product-card', product: product %}
+          {% else %}
+            <p>No products available in this collection.</p>
+          {% endfor %}
+        </div>
+        
       </div>
 
       {% render 'pagination', paginate: paginate %}

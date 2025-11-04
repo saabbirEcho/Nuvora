@@ -1,5 +1,7 @@
-@import "./padding-top";
-@import "./padding-bottom";
+@use "../01-config/config" as *;
+
+@use "./padding-top";
+@use "./padding-bottom";
 
 .u-p-8 {
   padding: 8px;

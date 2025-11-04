@@ -1,3 +1,5 @@
+@use "../01-config/config" as *;
+
 ul.c-product-variant-swatches {
   display: flex;
   align-items: center;
