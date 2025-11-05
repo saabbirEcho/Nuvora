@@ -1,3 +1,4 @@
+@use "../01-config/config" as *;
 @use "./c-header";
 @use "./c-dropdown";
 @use "./c-btn";
@@ -21,7 +22,7 @@
 @use "./c-footer";
 @use "./c-cart-modal";
 @use "./c-product-variant-swatch";
-@use "../01-config/config" as *;
+@use "./c-collection-filters";
 
 .c-object-type {
   background: red;

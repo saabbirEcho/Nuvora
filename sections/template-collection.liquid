@@ -6,14 +6,29 @@
     </header>
 
     {% paginate collection.products by section.settings.products_per_page %}
-
-      <div class="c-products-with-filters">
-
+      <div class="c-collection-filters-and-products">
         <!-- Product Filters --->
         <div class="c-collection-filters">
-          {% for filter in collection.filters %}
-            {{ filter.label }} <br>
-          {% endfor %}
+          <div class="c-collection-filters__header">
+            <h3>Filters</h3>
+          </div>
+          <div class="c-collection-filters__body">
+            {% for filter in collection.filters %}
+              <div class="c-collection-filter">
+                <div class="c-collection-filter__label">{{ filter.label }}</div>
+                <div class="c-collection-filter__options">
+                  {% if filter.type == 'list' or filter.type == 'boolean' %}
+                    {% for filter_value in filter.values %}
+                      <div class="c-collection-filter__value">
+                        <input type="checkbox" id="{{ filter_value.value | handle }}" name="{{ filter.label | handle }}" value="{{ filter_value.value }}">
+                        <label for="{{ filter_value.value | handle }}">{{ filter_value.value }} ({{ filter_value.count }})</label>
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
         </div>
 
         <!-- Product Cards --->
