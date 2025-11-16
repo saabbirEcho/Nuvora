@@ -9,6 +9,11 @@
   },
   {
     "name": "Settings",
-    "settings": []
+    "settings": [
+      {
+        "type": "header",
+        "content": "Theme Settings"
+      }
+    ]
   }
 ]
