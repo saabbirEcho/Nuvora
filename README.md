@@ -1,4 +1,4 @@
-# thesaabbir.myshopify.com
+# Nuvora
 
 A custom Shopify theme built with Liquid, SCSS, and JavaScript.
 
@@ -27,7 +27,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd thesaabbir.myshopify.com
+   cd Nuvora
    ```
 
 2. Install dependencies:
@@ -58,7 +58,7 @@ npm start
 
 This will:
 - Start the Shopify theme dev server
-- Connect to `thesaabbir.myshopify.com`
+- Connect to `<store-handle>.myshopify.com`
 - Enable hot reloading for theme changes
 
 ### SCSS Compilation
@@ -94,7 +94,7 @@ For the best development experience, run both commands in separate terminals:
 ## Project Structure
 
 ```
-thesaabbir.myshopify.com/
+Nuvora/
 ├── assets/                  # Compiled CSS and JavaScript files
 ├── config/                  # Theme configuration files
 ├── layout/                  # Theme layout templates
