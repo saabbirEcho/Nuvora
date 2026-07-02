@@ -1,6 +1,505 @@
+{% doc %}
+  @prompt
+    Create a quantity bundle selector as a product block (not a section) for the product template. It should display pack size options as styled card buttons based on the product's existing variants (e.g., Singles, 3-Pack, 6-Pack). Each card shows the variant title and a configurable savings label (e.g., "Save £47") set via block settings. One card can be marked as "Best Deal" via a block setting which shows a badge. The selected card has a bold border. Clicking a card updates the selected variant and the add-to-cart button price. This must be a block file compatible with product.json so it appears under "Add block" inside the Product information section.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-bundle-selector-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    margin: {{ block.settings.margin_top }}px 0 {{ block.settings.margin_bottom }}px;
+  }
+
+  .ai-bundle-selector__heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-bundle-selector__grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .ai-bundle-selector__card-{{ ai_gen_id }} {
+    position: relative;
+    padding: 20px 16px;
+    border: 2px solid {{ block.settings.card_border_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    background-color: {{ block.settings.card_bg_color }};
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+  }
+
+  .ai-bundle-selector__card-{{ ai_gen_id }}:hover {
+    border-color: {{ block.settings.card_hover_border_color }};
+    background-color: {{ block.settings.card_hover_bg_color }};
+  }
+
+  .ai-bundle-selector__card-{{ ai_gen_id }}.selected {
+    border-color: {{ block.settings.selected_border_color }};
+    border-width: 3px;
+    background-color: {{ block.settings.selected_bg_color }};
+  }
+
+  .ai-bundle-selector__badge-{{ ai_gen_id }} {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: {{ block.settings.badge_bg_color }};
+    color: {{ block.settings.badge_text_color }};
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .ai-bundle-selector__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.card_title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.card_text_color }};
+    margin-bottom: 8px;
+  }
+
+  .ai-bundle-selector__card-{{ ai_gen_id }}.selected .ai-bundle-selector__title-{{ ai_gen_id }} {
+    color: {{ block.settings.selected_text_color }};
+  }
+
+  .ai-bundle-selector__savings-{{ ai_gen_id }} {
+    font-size: {{ block.settings.savings_text_size }}px;
+    color: {{ block.settings.savings_text_color }};
+    font-weight: 500;
+  }
+
+  .ai-bundle-selector__card-{{ ai_gen_id }}.selected .ai-bundle-selector__savings-{{ ai_gen_id }} {
+    color: {{ block.settings.selected_savings_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-bundle-selector__grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .ai-bundle-selector__card-{{ ai_gen_id }} {
+      padding: 16px 12px;
+    }
+  }
+{% endstyle %}
+
+<variant-bundle-selector-{{ ai_gen_id }}
+  class="ai-bundle-selector-{{ ai_gen_id }}"
+  data-product-id="{{ product.id }}"
+  data-section-id="{{ section.id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.heading != blank %}
+    <h3 class="ai-bundle-selector__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h3>
+  {% endif %}
+
+  <div class="ai-bundle-selector__grid-{{ ai_gen_id }}">
+    {% for variant in product.variants %}
+      {% assign variant_index = forloop.index %}
+      {% assign is_best_deal = false %}
+      {% assign savings_label = '' %}
+
+      {% if variant_index == 1 %}
+        {% if block.settings.variant_1_best_deal %}
+          {% assign is_best_deal = true %}
+        {% endif %}
+        {% assign savings_label = block.settings.variant_1_savings %}
+      {% elsif variant_index == 2 %}
+        {% if block.settings.variant_2_best_deal %}
+          {% assign is_best_deal = true %}
+        {% endif %}
+        {% assign savings_label = block.settings.variant_2_savings %}
+      {% elsif variant_index == 3 %}
+        {% if block.settings.variant_3_best_deal %}
+          {% assign is_best_deal = true %}
+        {% endif %}
+        {% assign savings_label = block.settings.variant_3_savings %}
+      {% elsif variant_index == 4 %}
+        {% if block.settings.variant_4_best_deal %}
+          {% assign is_best_deal = true %}
+        {% endif %}
+        {% assign savings_label = block.settings.variant_4_savings %}
+      {% elsif variant_index == 5 %}
+        {% if block.settings.variant_5_best_deal %}
+          {% assign is_best_deal = true %}
+        {% endif %}
+        {% assign savings_label = block.settings.variant_5_savings %}
+      {% endif %}
+
+      <div
+        class="ai-bundle-selector__card-{{ ai_gen_id }} {% if variant.id == product.selected_or_first_available_variant.id %}selected{% endif %}"
+        data-variant-id="{{ variant.id }}"
+        data-variant-price="{{ variant.price }}"
+        data-variant-available="{{ variant.available }}"
+        role="button"
+        tabindex="0"
+        aria-label="Select {{ variant.title }}"
+      >
+        {% if is_best_deal %}
+          <div class="ai-bundle-selector__badge-{{ ai_gen_id }}">{{ block.settings.best_deal_text }}</div>
+        {% endif %}
+
+        <div class="ai-bundle-selector__title-{{ ai_gen_id }}">{{ variant.title }}</div>
+
+        {% if savings_label != blank %}
+          <div class="ai-bundle-selector__savings-{{ ai_gen_id }}">{{ savings_label }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</variant-bundle-selector-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VariantBundleSelector{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.productId = this.dataset.productId;
+        this.sectionId = this.dataset.sectionId;
+      }
+
+      connectedCallback() {
+        this.cards = this.querySelectorAll('.ai-bundle-selector__card-{{ ai_gen_id }}');
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.cards.forEach((card) => {
+          card.addEventListener('click', () => this.handleCardClick(card));
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              this.handleCardClick(card);
+            }
+          });
+        });
+      }
+
+      handleCardClick(selectedCard) {
+        const variantId = selectedCard.dataset.variantId;
+        const isAvailable = selectedCard.dataset.variantAvailable === 'true';
+
+        if (!isAvailable) {
+          return;
+        }
+
+        this.cards.forEach((card) => card.classList.remove('selected'));
+        selectedCard.classList.add('selected');
+
+        this.updateProductVariant(variantId);
+      }
+
+      updateProductVariant(variantId) {
+        const variantInput = document.querySelector(`#product-form-${this.sectionId} input[name="id"]`);
+        if (variantInput) {
+          variantInput.value = variantId;
+          variantInput.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+
+        const productForm = document.querySelector(`#product-form-${this.sectionId}`);
+        if (productForm) {
+          const formData = new FormData(productForm);
+          const variantIdFromForm = formData.get('id');
+
+          fetch(`${window.Shopify.routes.root}products/${this.getProductHandle()}.js`)
+            .then((response) => response.json())
+            .then((product) => {
+              const variant = product.variants.find((v) => v.id == variantId);
+              if (variant) {
+                this.updatePrice(variant.price);
+                this.updateUrl(variant.id);
+              }
+            });
+        }
+      }
+
+      getProductHandle() {
+        const productUrl = window.location.pathname;
+        const parts = productUrl.split('/');
+        return parts[parts.indexOf('products') + 1];
+      }
+
+      updatePrice(price) {
+        const priceElements = document.querySelectorAll(`#product-form-${this.sectionId} .price-item--regular`);
+        priceElements.forEach((el) => {
+          const formattedPrice = this.formatMoney(price);
+          el.textContent = formattedPrice;
+        });
+      }
+
+      formatMoney(cents) {
+        const money = (cents / 100).toFixed(2);
+        return `{{ cart.currency.symbol }}${money}`;
+      }
+
+      updateUrl(variantId) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('variant', variantId);
+        window.history.replaceState({}, '', url);
+      }
+    }
+
+    customElements.define('variant-bundle-selector-{{ ai_gen_id }}', VariantBundleSelector{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Bundle selector",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Choose your pack size"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "best_deal_text",
+      "label": "Best deal badge text",
+      "default": "Best Deal"
+    },
+    {
+      "type": "header",
+      "content": "Variant 1"
+    },
+    {
+      "type": "text",
+      "id": "variant_1_savings",
+      "label": "Savings label"
+    },
+    {
+      "type": "checkbox",
+      "id": "variant_1_best_deal",
+      "label": "Show best deal badge",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Variant 2"
+    },
+    {
+      "type": "text",
+      "id": "variant_2_savings",
+      "label": "Savings label"
+    },
+    {
+      "type": "checkbox",
+      "id": "variant_2_best_deal",
+      "label": "Show best deal badge",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Variant 3"
+    },
+    {
+      "type": "text",
+      "id": "variant_3_savings",
+      "label": "Savings label"
+    },
+    {
+      "type": "checkbox",
+      "id": "variant_3_best_deal",
+      "label": "Show best deal badge",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Variant 4"
+    },
+    {
+      "type": "text",
+      "id": "variant_4_savings",
+      "label": "Savings label"
+    },
+    {
+      "type": "checkbox",
+      "id": "variant_4_best_deal",
+      "label": "Show best deal badge",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Variant 5"
+    },
+    {
+      "type": "text",
+      "id": "variant_5_savings",
+      "label": "Savings label"
+    },
+    {
+      "type": "checkbox",
+      "id": "variant_5_best_deal",
+      "label": "Show best deal badge",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "card_title_size",
+      "label": "Card title size",
+      "min": 12,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "savings_text_size",
+      "label": "Savings text size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Card text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "savings_text_color",
+      "label": "Savings text",
+      "default": "#008060"
+    },
+    {
+      "type": "color",
+      "id": "card_hover_bg_color",
+      "label": "Hover background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "card_hover_border_color",
+      "label": "Hover border",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "selected_bg_color",
+      "label": "Selected background",
+      "default": "#f0f8ff"
+    },
+    {
+      "type": "color",
+      "id": "selected_border_color",
+      "label": "Selected border",
+      "default": "#000f9f"
+    },
+    {
+      "type": "color",
+      "id": "selected_text_color",
+      "label": "Selected text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "selected_savings_color",
+      "label": "Selected savings text",
+      "default": "#008060"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge background",
+      "default": "#ff6b35"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Top margin",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Bottom margin",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle selector"
+    }
+  ]
+}
 {% endschema %}
