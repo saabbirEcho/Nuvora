@@ -1340,7 +1340,36 @@
       "manage": "পরিচালনা করুন",
       "manage_accessiblity_label": "অর্ডার পরিচালনা করুন {{orderId}}",
       "group_title_label": "এর অংশ: {{groupTitle}}",
-      "group_title_label_with_parent": "জন্য: {{groupTitle}}"
+      "group_title_label_with_parent": "জন্য: {{groupTitle}}",
+      "list_layout_accessibility_label": "বিন্যাস বিকল্পগুলি",
+      "list_title": "আদেশসমূহ",
+      "list_title_confirmed_orders_accessibility_label": "অর্ডার: নিশ্চিত",
+      "list_title_pending_orders_accessibility_label": "অর্ডার: অপেক্ষমাণ",
+      "switch_order_type_pending_orders_accessibility_label": "অর্ডার টাইপ পরিবর্তন করুন, বর্তমানে মুলতবি অর্ডারগুলো দেখা হচ্ছে",
+      "switch_order_type_confirmed_orders_accessibility_label": "অর্ডার টাইপ পরিবর্তন করুন, বর্তমানে নিশ্চিত অর্ডারগুলো দেখা হচ্ছে",
+      "order_list": {
+        "column_headers": {
+          "order": "আদেশ দিন",
+          "total": "মোট",
+          "actions_accessibility_label": "কার্যক্রম",
+          "products_accessibility_label": "পণ্যসমূহ"
+        },
+        "delivered": "ডেলিভার করা হয়েছে {{date}}",
+        "empty_state_order_source_description": "শুধুমাত্র {{email}} দ্বারা দেওয়া অর্ডারগুলি এখানে দেখানো হবে।",
+        "empty_state_redesign_cta": "এখনই কিনুন",
+        "empty_state_redesign_subtitle": "কেনাকাটার জন্য প্রস্তুত?",
+        "empty_state_redesign_welcome": "স্বাগতম",
+        "empty_state_redesign_welcome_with_name": "স্বাগতম, {{firstName}}",
+        "empty_state_title": "এখনো কোন অর্ডার নেই",
+        "empty_state_with_location_title": "{{locationName}} এর জন্য কোনো অর্ডার নেই",
+        "empty_state_title_for_pending_orders": "কোনো মুলতবি আদেশ নেই",
+        "no_order_banner": "অর্ডার স্ট্যাটাস পেজে আপনার এক্সটেনশন পরীক্ষা করার জন্য, একটি অর্ডার তৈরি করুন।",
+        "estimated_shortform": "প্রতিষ্ঠিত। {{date}}",
+        "estimated_delivery": "আনুমানিক {{date}}",
+        "one_images_accessibility_label": "Order includes {{lineItemName1}}",
+        "two_images_accessibility_label": "অর্ডারে রয়েছে {{lineItemName1}}, {{lineItemName2}}",
+        "three_images_accessibility_label": "অর্ডারে রয়েছে {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}"
+      }
     },
     "order_details": {
       "shipment_timeline": {
@@ -1846,6 +1875,109 @@
         "title": "পেমেন্টের পদ্ধতি হালনাগাদ করুন",
         "button_title": "হালনাগাদ"
       }
+    },
+    "navigation_and_structure": {
+      "store_credit_multi_currency_accessibility_label": {
+        "other": "{{formattedBalance}} এবং আরও {{count}} কারেন্সির স্টোর ক্রেডিট"
+      },
+      "settings_link": "সেটিংস",
+      "country_switcher_toast_message": "দেশ পরিবর্তন করে {{countryName}} করা হয়েছে",
+      "switch_country": "দেশ পরিবর্তন করুন",
+      "no_countries_found": "কোনো দেশ খুঁজে পাওয়া যায়নি",
+      "location_switcher_toast_message": "অবস্থান পরিবর্তন করে {{locationName}} করা হয়েছে",
+      "switch_location": "অবস্থান পরিবর্তন করুন",
+      "no_locations_found": "কোনো অবস্থান পাওয়া যায়নি",
+      "try_new_search": "নতুন করে খুঁজুন",
+      "view_details": "বিস্তারিত দেখুন",
+      "company_location": "কোম্পানির অবস্থান",
+      "search": "অনুসন্ধান",
+      "skip_to_content": "বিষয়বস্তুতে যান"
+    },
+    "announcement_bar": {
+      "expand_label": "ঘোষণা বার প্রসারিত করুন",
+      "collapse_label": "ঘোষণা বার সঙ্কুচিত করুন",
+      "close_label": "ঘোষণাপট বন্ধ করুন"
+    },
+    "account_information": {
+      "loading_accessibility_message": "অ্যাকাউন্ট লোড হচ্ছে",
+      "loading_finished_accessibility_message": "অ্যাকাউন্টের তথ্য লোড করা হয়েছে",
+      "profile_card": {
+        "cancel": "বাতিল করুন",
+        "cancel_accessibility_label": "প্রোফাইল সম্পাদনা বাতিল করুন",
+        "edit": "সম্পাদনা করুন",
+        "edit_accessibility_label": "প্রোফাইল সম্পাদন করুন",
+        "email_help_text": "ইমেইল এডিট করা যাবে না",
+        "editable_email_help_text": "এই ইমেইলটি সাইন-ইন এবং অর্ডারের আপডেট-এর জন্য ব্যবহৃত হয়।",
+        "first_name": "নামের প্রথম অংশ",
+        "last_name": "পদবি",
+        "email": "ইমেল",
+        "no_name_provided_accessibility_label": "কোনো নাম যোগ করা হয়নি",
+        "phone_number_help_text": "ফোন নম্বর এডিট করা যাবে না",
+        "save": "সংরক্ষণ করুন",
+        "save_accessibility_label": "প্রোফাইল সংরক্ষণ করুন",
+        "title": "প্রোফাইল",
+        "errors": {
+          "name_too_long": "{{fieldName}} খুব লম্বা (সর্বোচ্চ ২৫৫টি অক্ষর হতে পারে)",
+          "name_cannot_contain_url": "{{fieldName}} কোনো URL থাকতে পারে না",
+          "name_cannot_contain_html_tags": "{{fieldName}}-এ HTML ট্যাগ থাকতে পারবে না",
+          "email_cant_be_blank": "ইমেল খালি হতে পারে না",
+          "invalid_email_format": "একটি বৈধ ইমেইল লিখুন"
+        }
+      },
+      "verify_current_email_modal": {
+        "cancel_button": "বাতিল করুন",
+        "cancel_button_accessibility_label": "প্রোফাইল সম্পাদনা বাতিল করুন",
+        "description": "আপনার আসল ইমেইলে পাঠানো ৬-সংখ্যার কোডটি লিখুন:",
+        "email_resend_button_accessibility_label": "যাচাইকরণ কোড আবার পাঠান",
+        "title": "নিশ্চিত করুন এটা আপনি",
+        "verify_button": "পরবর্তী",
+        "verify_button_accessibility_label": "আপনার বর্তমান ইমেল যাচাই করুন"
+      },
+      "verify_new_email_modal": {
+        "title": "আপনার নতুন ইমেল যাচাই করুন",
+        "description": "এখন, আপনার নতুন ইমেইলে পাঠানো ৬-সংখ্যার কোডটি প্রবেশ করান:",
+        "one_time_password_label": "৬-সংখ্যার কোড",
+        "email_resend_button": "কোড পুনরায় পাঠান",
+        "email_resend_button_accessibility_label": "যাচাইকরণ কোড আবার পাঠান",
+        "verify_button": "যাচাই করুন",
+        "verify_button_accessibility_label": "ওয়ান টাইম পাসওয়ার্ড যাচাই করুন",
+        "cancel_button": "বাতিল করুন",
+        "cancel_button_accessibility_label": "প্রোফাইল সম্পাদনা বাতিল করুন",
+        "email_resend_button_success_toast_message": "যাচাইকরণ কোড পাঠানো হয়েছে",
+        "email_resend_button_failure_banner_message": "যাচাইকরণ কোড পাঠানো যায়নি"
+      },
+      "marketing_preferences": {
+        "email_label": "ইমেল",
+        "pending_confirmation": "নিশ্চিত করতে আপনার ইমেইলে দেওয়া লিঙ্কে ক্লিক করুন।",
+        "resend_email": "ইমেলটি আবার পাঠান",
+        "resend_email_success": "লিঙ্ক পাঠানো হয়েছে",
+        "title": "মার্কেটিং পছন্দগুলি",
+        "unsubscribe_confirmation": {
+          "cancel": "বাতিল করুন",
+          "description": "আপনি আর {{shopName}}-এর থেকে ইমেল মার্কেটিং পাবেন না",
+          "title": "ইমেইল থেকে আনসাবস্ক্রাইব করতে চান?",
+          "unsubscribe": "সদস্যতা ত্যাগ করুন"
+        },
+        "update_error": {
+          "description": "আপনার বিপণন পছন্দগুলি আপডেট করার সময় একটি সমস্যা হয়েছে। এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন অথবা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।"
+        },
+        "update_success": "বিপণন পছন্দগুলি আপডেট করা হয়েছে"
+      },
+      "email_update_success_modal": {
+        "title": "ইমেল যাচাই করুন",
+        "description": "ইমেল সফলভাবে আপডেট করা হয়েছে। লগইনে পুনঃনির্দেশিত করা হচ্ছে।"
+      },
+      "profile_update_confirmation_message": "প্রোফাইল আপডেট করা হয়েছে",
+      "email_update_confirmation_message": "ইমেল আপডেট করা হয়েছে {{email}}-এ",
+      "title": "প্রোফাইল",
+      "people": {
+        "pagination": {
+          "load_more": "আরো দেখান",
+          "load_more_accessibility_label": "আরও লোক দেখান",
+          "loading_accessibility_label": "মানুষ লোড করা হচ্ছে"
+        }
+      },
+      "add_button": "যোগ করুন"
     }
   }
 }
