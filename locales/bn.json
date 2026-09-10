@@ -1,0 +1,461 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "checkout": {
+      "general": {
+        "errors": {
+          "delivery": {
+            "local_pickup_no_delivery_strategy_available": "কোনো স্থানীয় পিকআপ বিতরণ কৌশল খুঁজে পাওয়া যায়নি।",
+            "origin_location_id_required": "RETAIL ডেলিভারি পদ্ধতি অনুরোধ করা হলে একটি উৎস স্থান আইডি প্রয়োজন।",
+            "invalid_origin_location_id": "উৎস স্থানের আইডির সাথে মেলে এমন কোনো অবস্থান খুঁজে পাওয়া যায়নি।",
+            "origin_location_id_not_allowed": "অনুরোধকৃত ডেলিভারি পদ্ধতিগুলি একটি অরিজিন লোকেশন আইডি সমর্থন করে না।",
+            "auto_fulfill_not_allowed": "এই সেশনের ফুরফিলমেন্ট আচরণ বাতিল করার অনুমতি নেই।",
+            "auto_fulfill_required": "যখন রিটেইল ডেলিভারি পদ্ধতি অনুরোধ করা হয়, তখন স্বয়ংক্রিয় পরিপূরণ আবশ্যক।",
+            "prefetch_shipping_rates_used": "Prefetched শিপিং রেটগুলিতে কখনও রেটগুলি ফেরত দেওয়া উচিত নয়।",
+            "fulfillment_constraints_not_satisfied": "এক বা একাধিক পূর্ণতার সীমাবদ্ধতা পূরণ হয়নি।",
+            "must_fulfill_from_constraint_not_satisfied": "পুরণের সীমাবদ্ধতা পূরণ করা যায় না কারণ প্রয়োজনীয় স্থান থেকে আইটেমগুলি পূরণ করা সম্ভব নয়।",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "পূর্ণতার সীমাবদ্ধতা পূরণ করা যায় না কারণ আইটেমগুলি একই অবস্থান থেকে পূরণ করা সম্ভব নয়।",
+            "delivery_strategy_conditions_not_satisfied": "এই অবস্থানে ডেলিভারির কৌশলগুলি উপলব্ধ আছে, তবে সেগুলির শর্তাবলী পূরণ করা হয়নি।",
+            "out_of_stock_at_origin_location": "উৎপত্তি স্থলে কোনো মজুদ নেই।",
+            "invalid_signature": "ছাড়ের স্বাক্ষরটি অবৈধ।",
+            "mixed_destination_countries": "ডেলিভারি উপলব্ধ নয় কারণ ডেলিভারি লাইনগুলো একাধিক দেশের উপর দিয়ে বিস্তৃত।"
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "বি২বি স্টোরগুলোতে ডিসকাউন্ট দেওয়ার অনুমতি নেই।",
+            "mixed_destination_countries": "ছাড় দেওয়া সম্ভব নয় কারণ ডেলিভারি লাইনগুলি একাধিক দেশে বিস্তৃত।",
+            "custom_discount_not_honoured": "প্রদত্ত কাস্টম ডিসকাউন্টটি গ্রহণ করা হয়নি।",
+            "unsupported_expectation": "সরবরাহকৃত ডিসকাউন্ট লাইনটিতে এমন একটি প্রত্যাশা ছিল যা নীতি দ্বারা ব্যাখ্যা করা যায়নি।",
+            "additional_requested_discount_code_discarded": "{{code}} বৈধ কিন্তু প্রযোজ্য নয়। ডিসকাউন্টের শর্তাবলী দেখুন।",
+            "additional_requested_discount_discarded": "আপনার ডিসকাউন্ট বৈধ, তবে প্রযোজ্য নয়। ডিসকাউন্টের শর্তাবলী দেখুন।",
+            "allocations_mismatch": "আপনার ডিসকাউন্ট কোড পরিবর্তন করা হয়েছে। আপনার কার্ট পর্যালোচনা করুন এবং আবার চেষ্টা করুন।",
+            "discount_code_not_honoured": "%{discount_rejection_message}",
+            "discount_title_too_long": "ছাড়ের শিরোনাম ২৫৫ অক্ষরের বেশি হতে পারবে না।"
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "আপনার অর্ডারের সাথে সম্পর্কিত কর পরিবর্তিত হয়েছে। পর্যালোচনা করুন এবং আবার চেষ্টা করুন।",
+            "unresolvable_tax_terms": "বর্তমান আলোচনার প্রেক্ষাপটে প্রস্তাবিত শর্তাবলী অমীমাংসিত।",
+            "delivery_price_is_abstract": "সম্পর্কিত বিতরণ মূল্য বিমূর্ত।",
+            "tax_inclusivity_mismatch": "কংক্রিট মোট কর ও শুল্কের পরিমাণ অথবা লক্ষ্যমাত্রার অন্তর্ভুক্ত মোট পরিমাণ দিয়ে পুনরায় আলোচনা করুন।",
+            "mixed_tax_inclusivity_not_supported": "ট্যাক্স লাইনগুলো হয় পুরোপুরি ট্যাক্স-যুক্ত হতে হবে অথবা পুরোপুরি ট্যাক্স-বর্জিত হতে হবে।",
+            "tax_exemption_not_supported": "বর্তমান আলোচনা সেশনের জন্য কর ছাড় অনুমোদিত নয়।",
+            "delivery_tax_exemption_not_supported": "ডেলিভারি লাইনের জন্য কর ছাড় বর্তমানে সমর্থিত নয়।",
+            "proposed_allocations_required": "'proposed allocations' ফিল্ডটি অনুপস্থিত।",
+            "merchandise_terms_must_be_defined": "পণ্যদ্রব্যের শর্তাবলী সংজ্ঞায়িত করতে হবে।",
+            "delivery_terms_must_be_defined": "সরবরাহের শর্তাবলী সংজ্ঞায়িত করতে হবে।",
+            "merchandise_discount_terms_must_be_defined": "পণ্য ছাড়ের শর্তাবলী অবশ্যই নির্দিষ্ট করতে হবে।",
+            "delivery_discount_terms_must_be_defined": "ডেলিভারি ডিসকাউন্ট শর্তাবলী সংজ্ঞায়িত করতে হবে।",
+            "allocated_required": "'allocated' ক্ষেত্রটি অনুপস্থিত।",
+            "value_required": "'value' ফিল্ডটি অনুপস্থিত।",
+            "line_splits_not_supported": "'merchandise lines' ফিল্ডটিকে এমনভাবে বিভক্ত করতে হবে যাতে প্রতিটি সেলারের প্রস্তাবে একটি মাত্র লাইন কম্পোনেন্ট থাকে।"
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B স্টোরে ম্যানুয়াল পেমেন্ট অনুমোদিত নয়।",
+            "positive_amount_expected": "পরিশোধের পরিমাণ অবশ্যই 0-এর বেশি হতে হবে।",
+            "total_amount_mismatch": "পরিশোধের মোট পরিমাণ, পরিশোধিত অর্থের যোগফলের সাথে মেলে না।",
+            "subscription_terms_not_accepted": "সাবস্ক্রিপশনের শর্তাবলী গ্রহণ করা হয়নি।",
+            "missing_session_id": "ক্রেডিট কার্ড সেশনের তথ্য অনুপস্থিত।",
+            "gateway_not_supported": "পেমেন্ট গেটওয়ে পেমেন্ট পদ্ধতি সংরক্ষণে সহায়তা করে না।",
+            "credit_card_last_name_required": "'পদবি' শূন্য হতে পারে না।",
+            "credit_card_update_failed": "ক্রেডিট কার্ড আপডেট ব্যর্থ হয়েছে।",
+            "invalid_address_type": "এই পেমেন্ট পদ্ধতির জন্য প্রদত্ত ঠিকানা অবৈধ।",
+            "missing_retail_attributions": "ম্যানুয়ালি প্রবেশ করা ক্রেডিট কার্ড পেমেন্টের জন্য খুচরা অ্যাট্রিবিউশন প্রয়োজন।",
+            "unexpected_retail_attributions": "ক্রেডিট কার্ড পেমেন্টের জন্য অপ্রত্যাশিতভাবে খুচরা অ্যাট্রিবিউশন প্রদান করা হয়েছে।",
+            "invalid_card_source": "এই সেশনের এই কার্ড সোর্স ব্যবহার করার অনুমতি নেই।",
+            "wallet_content_missing": "ওয়ালেটের বিষয়বস্তু অনুপস্থিত।",
+            "payment_instrument_not_found": "পেমেন্টের পদ্ধতি খুঁজে পাওয়া যায়নি",
+            "unauthorized_capture_method": "পেমেন্ট ক্যাপচার পদ্ধতি কনফিগার করার অনুমতি নেই।",
+            "saved_payment_methods_not_allowed": "সংরক্ষিত অর্থপ্রদানের পদ্ধতি অনুমোদিত নয়।",
+            "saved_payment_methods_not_enabled": "এই দোকানের জন্য সংরক্ষিত পেমেন্ট পদ্ধতি সক্রিয় করা নেই।",
+            "saved_payment_methods_cvv_verification_disabled": "নির্বাচিত পেমেন্ট পদ্ধতির জন্য CVV যাচাইকরণ প্রয়োজন, যা এই দোকানের জন্য সক্ষম করা নেই। একটি ভিন্ন পেমেন্ট পদ্ধতি নির্বাচন করুন।",
+            "store_credit_not_enabled": "এই দোকানের জন্য স্টোর ক্রেডিট সক্রিয় করা নেই।",
+            "store_credit_account_not_found": "স্টোর ক্রেডিটের অ্যাকাউন্ট খুঁজে পাওয়া যায়নি।",
+            "store_credit_account_mismatch": "স্টোর ক্রেডিট অ্যাকাউন্ট ক্রেতার পরিচয়ের সাথে মেলে না।",
+            "store_credit_mismatched_currency": "স্টোর ক্রেডিট অ্যাকাউন্টের মুদ্রা চেকআউট মুদ্রার সাথে মেলে না।",
+            "store_credit_insufficient_funds": "স্টোর ক্রেডিট অ্যাকাউন্টে অপর্যাপ্ত তহবিল আছে।",
+            "store_credit_buying_gift_card": "আপনি উপহার কার্ড কিনতে স্টোর ক্রেডিট ব্যবহার করতে পারবেন না।",
+            "gift_cards_not_allowed_for_b2b": "B2B স্টোরগুলিতে উপহার কার্ডের অনুমতি নেই।",
+            "method_required": "একটি অর্থপ্রদানের পদ্ধতি প্রস্তাব করা আবশ্যক।",
+            "paypal_express_address_invalid": "পেপ্যাল একটি অবৈধ ঠিকানা ফেরত দিয়েছে।"
+          },
+          "tip": {
+            "not_accepted_by_shop": "দোকান টিপস গ্রহণ করে না।",
+            "only_one_tip_line_allowed": "একাধিক টিপস লাইন সমর্থিত নয়।",
+            "tips_not_allowed_for_b2b": "B2B স্টোরগুলোতে টিপস দেওয়া অনুমোদিত নয়।",
+            "currency_change_reset": "মুদ্রা পরিবর্তনের কারণে টিপ রিসেট করা হয়েছে।",
+            "tips_not_allowed_for_deferred_purchase_options": "স্থগিত কেনার বিকল্পগুলির জন্য টিপস এখনও সমর্থিত নয়।"
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "এই খসড়া অর্ডারটি বর্তমান দোকানে নেই।",
+            "staff_member_not_exist": "এই কর্মী বর্তমান দোকানে নেই।",
+            "location_not_exist": "এই অবস্থানটি বর্তমান দোকানে বিদ্যমান নেই।",
+            "point_of_sale_device_not_exist": "এই পিওএস ডিভাইসটি বর্তমান দোকানে বিদ্যমান নেই।",
+            "unresolvable_target_merchandise_lines": "বর্তমান আলোচনার পরিপ্রেক্ষিতে প্রস্তাবিত বিক্রয় অ্যাট্রিবিউশনগুলি সমাধান করা সম্ভব নয়।"
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "আপনার ক্রেতার প্রস্তাবে অনমনীয় শর্তাবলী থাকা উচিত।",
+            "invalid_signature": "{{target_terms}}-এর জন্য স্বাক্ষরটি অবৈধ।"
+          },
+          "inventory": {
+            "missing_quantity_value": "ক্রেতার ইনভেন্টরি লাইনগুলিতে পরিমাণের ঘরটি অনুপস্থিত।",
+            "changing_behavior_not_allowed": "এই ক্লায়েন্টের ইনভেন্টরি আচরণ পরিবর্তনের অনুমতি নেই।",
+            "only_one_inventory_behavior_allowed": "বর্তমানে প্রতি চেকআউটে কেবলমাত্র একটি ইনভেন্টরি আচরণ অনুমোদিত।"
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "এই চেকআউটের জন্য দায়িত্ব অস্বীকার করা অনুমোদিত নয়।"
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "এই চেকআউটের জন্য খুচরা অ্যাট্রিবিউশন অনুমোদিত নয়।",
+            "retail_attribution_required": "এই চেকআউটের জন্য খুচরা অ্যাট্রিবিউশন প্রয়োজন।"
+          },
+          "captcha": {
+            "metadata_missing": "এই চেকআউটের জন্য একটি ক্যাপচা সম্পূর্ণ করা আবশ্যক।",
+            "metadata_mismatch": "প্রদত্ত ক্যাপচা প্রদানকারী এবং প্রকার প্রত্যাশিত মানের সাথে মেলে না।",
+            "token_missing": "এই চেকআউট সম্পন্ন করতে একটি ক্যাপচা টোকেন অবশ্যই প্রদান করতে হবে।",
+            "job_enqueue_failed": "ক্যাপচা যাচাইকরণের কাজটি সারিবদ্ধ করা যায়নি।",
+            "job_already_queued": "এই ক্যাপচা টোকেনের জন্য ক্যাপচা বৈধতা ইতিমধ্যেই সারিবদ্ধ করা হয়েছে।",
+            "token_expired": "প্রদত্ত ক্যাপচা টোকেনটির মেয়াদ শেষ হয়ে গেছে। চেকআউট চালিয়ে যেতে একটি নতুন ক্যাপচা সম্পূর্ণ করুন।",
+            "token_invalid": "প্রদত্ত ক্যাপচা টোকেনটি ভুল ছিল। চেকআউট চালিয়ে যাওয়ার জন্য একটি নতুন ক্যাপচা সম্পূর্ণ করুন।",
+            "token_not_valid_for_session": "প্রদত্ত ক্যাপচাটি এই চেকআউটের সাথে ব্যবহার করা যাবে না।"
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "প্রাপ্ত পরিমাণটি অবশ্যই স্টোরের মুদ্রায় হতে হবে।"
+          },
+          "checkout_source": {
+            "revoked": "এই চেকআউট আর উপলব্ধ নেই।"
+          }
+        },
+        "full_price": "পূর্ণ মূল্য:",
+        "title": "চেকআউট - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - চেকআউট",
+        "loading": "লোড হচ্ছে…",
+        "loading_title": "চেকআউট - {{shopName}}",
+        "google_map_title": "গুগল ম্যাপ",
+        "confirm_order_button_label": "অর্ডার নিশ্চিত করুন"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "আপনার কাছাকাছি স্টকের সাথে %{count}টি লোকেশন আছে",
+          "other": "আপনার কাছাকাছি স্টকে %{count}টি অবস্থান রয়েছে"
+        },
+        "location_information_far_away": {
+          "one": "আপনার জিনিসপত্র সহ %{count}টি অবস্থান আছে",
+          "other": "আপনার আইটেম সহ %{count}টি স্থান রয়েছে"
+        },
+        "location_information_far_away_one_item": {
+          "one": "আপনার জিনিসপত্র সহ %{count}টি অবস্থান আছে",
+          "other": "আপনার আইটেম সহ %{count}টি স্থান রয়েছে"
+        },
+        "location_information_far_away_other_items": {
+          "one": "আপনার জিনিসপত্র সহ %{count}টি স্থান আছে",
+          "other": "আপনার জিনিসপত্র সহ %{count}টি অবস্থান রয়েছে"
+        },
+        "location_nearby": {
+          "one": "আপনার আইটেম সহ কাছাকাছি %{count}টি লোকেশন রয়েছে",
+          "other": "আপনার জিনিসপত্র সহ %{count}টি কাছাকাছি অবস্থান রয়েছে"
+        },
+        "location_nearby_one_item": {
+          "one": "আপনার আইটেম সহ কাছাকাছি %{count}টি লোকেশন রয়েছে",
+          "other": "আপনার জিনিসপত্র সহ %{count}টি কাছাকাছি অবস্থান রয়েছে"
+        },
+        "location_nearby_other_items": {
+          "one": "আপনার জিনিসপত্র সহ %{count}টি কাছাকাছি জায়গা রয়েছে",
+          "other": "আপনার জিনিসপত্র সহ %{count}টি কাছাকাছি জায়গা আছে"
+        },
+        "location_nearby_short": {
+          "one": "আপনার জিনিস সহ %{count}টি কাছাকাছি অবস্থান",
+          "other": "আপনার আইটেম সহ কাছাকাছি %{count}টি স্থান"
+        },
+        "location_nearby_short_one_item": {
+          "one": "আপনার জিনিস সহ %{count}টি কাছাকাছি অবস্থান",
+          "other": "আপনার আইটেম সহ কাছাকাছি %{count}টি স্থান"
+        },
+        "location_nearby_short_other_items": {
+          "one": "আপনার সামগ্রী সহ %{count}টি কাছাকাছি অবস্থান",
+          "other": "আপনার জিনিসপত্র সহ %{count}টি কাছাকাছি অবস্থান"
+        },
+        "location_far_away": {
+          "one": "আপনার আইটেম সহ %{count}টি স্থান",
+          "other": "আপনার জিনিস সহ %{count}টি স্থান"
+        },
+        "location_far_away_one_item": {
+          "one": "আপনার আইটেম সহ %{count}টি স্থান",
+          "other": "আপনার জিনিস সহ %{count}টি স্থান"
+        },
+        "location_far_away_other_items": {
+          "one": "আপনার জিনিসপত্র সহ %{count}টি স্থান",
+          "other": "আপনার আইটেম সহ %{count}টি লোকেশন"
+        },
+        "toggle_location": "স্থান পরিবর্তন করুন",
+        "toggle_more_locations": {
+          "one": "আরও %{count}টি স্থান",
+          "other": "আরও %{count}টি লোকেশন"
+        },
+        "toggle_multiple_locations": "আরও %{count}টি লোকেশন",
+        "pick_up_location": "পিকআপের অবস্থান",
+        "or": "অথবা",
+        "cancel": "বাতিল করুন",
+        "your_location": "আপনার অবস্থান",
+        "search_button": "দোকান খুঁজুন",
+        "no_stores_found": "কোনো দোকান খুঁজে পাওয়া যায়নি",
+        "all_stores_far_away": {
+          "title": "নিকটস্থ স্থানগুলো %{distance} এর চেয়ে বেশি দূরে",
+          "title_with_item": {
+            "one": "আপনার জিনিস সহ নিকটতম স্থানটি %{location} থেকে %{distance} এর বেশি দূরে রয়েছে",
+            "other": "আপনার প্রয়োজনীয় জিনিসপত্র সহ নিকটতম অবস্থানটি %{location} থেকে %{distance} এর বেশি দূরে রয়েছে"
+          },
+          "title_with_location": "সবচেয়ে কাছের স্থানটি %{location} থেকে %{distance} এর বেশি দূরে",
+          "title_with_specific_location": "আপনার জিনিস সহ সবচেয়ে কাছের স্থানটি %{location} থেকে %{distance} এর বেশি দূরে রয়েছে",
+          "description": "একটি স্থান বা %{ship_to_address_link} নির্বাচন করুন",
+          "description_with_location": "%{change_location_link} অথবা %{ship_to_address_link}",
+          "ship_to_address_link": "ঠিকানায় পাঠান",
+          "change_location_link": "আপনার অবস্থান পরিবর্তন করুন"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "আপনার পূর্বে নির্বাচিত অবস্থান আর উপলব্ধ নয়",
+          "description": "আপনার আইটেমগুলির জন্য আমরা সবচেয়ে কাছের স্থানটি বেছে নিয়েছি যেখানে সেগুলি মজুত আছে"
+        },
+        "could_not_resolve_address": "আপনার ঠিকানা খুঁজে পাওয়া যায়নি। আবার চেষ্টা করুন অথবা অন্য একটি ঠিকানা ব্যবহার করুন।",
+        "paginator": {
+          "accessibility_label": "স্থানীয় পিকআপ পেজিনেশন",
+          "previous": "পূর্বের পৃষ্ঠা",
+          "next": "পরবর্তী পৃষ্ঠা",
+          "label": {
+            "one": "%{first} - %{last} এর %{count}টি স্টোর",
+            "other": "%{first} - %{last} / %{count}টি স্টোর"
+          }
+        },
+        "reveal_more_label": {
+          "one": "আরও %{count}টি লোকেশন দেখান",
+          "other": "আরও %{count}টি স্থান দেখান"
+        },
+        "no_pickup_locations_found": "কোন পিকআপ অবস্থান পাওয়া যায়নি",
+        "pickup_unavailable_banner_title": {
+          "one": "আপনার আইটেম সহ কোনো স্থান নেই",
+          "other": "আপনার আইটেমগুলো যুক্ত করার জন্য কোনো স্থান নেই"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "আপনার জিনিসপত্র সহ %{country} এর মধ্যে কোন স্থান নেই",
+          "other": "আপনার আইটেমগুলির জন্য %{country}-এ কোনো স্থান নেই"
+        },
+        "pickup_unavailable_banner_body": {
+          "try_different_location": "অন্য একটি জায়গা চেষ্টা করুন",
+          "ship_to_address": "ঠিকানায় পাঠান",
+          "there_are_no_stores": "আপনার ঠিকানার কাছাকাছি কোনো স্টোর নেই, অথবা আপনার জিনিসপত্র পিকআপের জন্য উপলব্ধ নয়।",
+          "ship_items": "আপনার জিনিসপত্র চালান",
+          "search_elsewhere": "অন্যত্র খুঁজুন",
+          "search_elsewhere_standalone": "অন্য কোথাও খুঁজুন",
+          "ship_items_or_search_elsewhere": "%{ship_items} অথবা %{search_elsewhere}"
+        },
+        "geolocation": {
+          "permission_not_allowed": "অবস্থানের তথ্য শেয়ার করার অনুমতি দিন অথবা অনুসন্ধান করুন।"
+        }
+      },
+      "split_delivery": {
+        "accessibility": {
+          "status": {
+            "ship_separately": "%{items} আলাদাভাবে পাঠানো হবে।",
+            "pickup_in_store": "%{items} দোকান থেকে সংগ্রহ করা হবে।",
+            "remove_items": "আপনার কার্ট থেকে %{items} সরানো হয়েছে।"
+          }
+        },
+        "pickup_all_items": "সব জিনিস তুলে নাও",
+        "items_for_pickup": "পিক-আপের জন্য জিনিসপত্র",
+        "items_for_shipping": "শিপিংয়ের জন্য পণ্য",
+        "items_moved_to_shipping_toast": "যে জিনিসগুলি তোলা যাবে না সেগুলিকে শিপিংয়ে সরানো হয়েছে",
+        "delivery_method": "বিভক্ত বিতরণ পদ্ধতি",
+        "delivery_method_menu": "বিভক্ত ডেলিভারি পদ্ধতি মেনু",
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "% {count}টি আইটেম নেওয়া যাবে না",
+              "other": "%কেইটি সংখ্যা সামগ্রী তোলা যাবে না"
+            },
+            "cannot_be_shipped": {
+              "one": "%{count}টি আইটেম পাঠানো যাবে না",
+              "other": "%{count}টি জিনিস পাঠানো যাবে না"
+            }
+          },
+          "remove_item": {
+            "one": "আইটেম সরান",
+            "other": "আইটেমগুলি সরান"
+          },
+          "remove_item_only": {
+            "one": "জিনিসটি সরিয়ে দিন",
+            "other": "আইটেমগুলি সরান"
+          },
+          "ship_separately": {
+            "one": "আলাদা করে পাঠান",
+            "other": "এগুলো আলাদাভাবে পাঠান"
+          },
+          "pick_them_up_in_store": {
+            "one": "দোকান থেকে সংগ্রহ করুন",
+            "other": "দোকান থেকে সংগ্রহ করুন"
+          },
+          "remove_items_or_ship": "%{ship_separately_link} অথবা %{remove_items_link}",
+          "remove_items_or_pickup": "%{pickup_in_store_link} অথবা %{remove_items_link}",
+          "merchandise_line_with_quantity": "%{title} (×%{quantity})"
+        },
+        "cross_border": {
+          "modal": {
+            "heading": "দেশ পরিবর্তন করবেন?",
+            "content": "আপনার পিকআপ এবং শিপিংয়ের স্থান একই দেশে হতে হবে। দেশ পরিবর্তন করলে শিপিংয়ের জন্য সমস্ত আইটেম রিসেট হয়ে যাবে।",
+            "country_changed_heading": "দেশ পরিবর্তন করা হয়েছে",
+            "change_country": "দেশ পরিবর্তন করুন"
+          },
+          "banner": "আপনার ডেলিভারি পদ্ধতি আপডেট করা হয়েছে"
+        }
+      },
+      "captcha": {
+        "title": "চালিয়ে যেতে ক্যাপচাটি পূরণ করুন",
+        "errors": {
+          "not_solved": "চালিয়ে যেতে ক্যাপচাটি পূরণ করুন"
+        }
+      },
+      "clipboard": {
+        "copied": "কপি করা হয়েছে"
+      }
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "arrives": "পৌঁছাচ্ছে {{date}}",
+        "delivery_estimate_backed_by": "সমর্থিত",
+        "delivery_estimate_delayed_description": "আপনার এলাকায় ডেলিভারি স্বাভাবিকের চেয়ে ধীর গতিতে হচ্ছে। আপনার অর্ডার বিলম্বে পৌঁছাতে পারে।",
+        "delivery_estimate_delayed_title": "বিলম্বিত",
+        "delivery_estimate_early_description": "আপনার এলাকায় ডেলিভারি স্বাভাবিকের চেয়ে দ্রুত হচ্ছে। এই অর্ডারটি আগে পৌঁছে যেতে পারে।",
+        "delivery_exception_action_required": "পদক্ষেপ প্রয়োজন",
+        "delivery_exception_attempted_action": "একটি নতুন ডেলিভারির সময় নির্ধারণ করুন",
+        "delivery_exception_attempted_description": "{{link}}-এর সাথে {{carrier}} ব্যবহার করুন অথবা ডেলিভারি বিজ্ঞপ্তি পরীক্ষা করুন",
+        "delivery_exception_attempted_description_unknown": "{{link}} অথবা ডেলিভারি নোটিশ দেখুন",
+        "delivery_exception_attempted_title": "সরবরাহের চেষ্টা করা হয়েছে",
+        "delivery_exception_delivery_failed": "ডেলিভারি ব্যর্থ হয়েছে",
+        "delivery_exception_failed_action": "{{carrier}}-এর সাথে চেক করুন",
+        "delivery_exception_failed_description": "{{link}} অথবা আরও তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন",
+        "delivery_exception_failed_description_unknown": "আরও তথ্যের জন্য বাহকের সাথে যোগাযোগ করুন",
+        "delivery_exception_failed_title": "পৌঁছানো হয়নি",
+        "delivery_exception_on_hold_action": "ডেলিভারির বিবরণ আপডেট করুন",
+        "delivery_exception_on_hold_description": "{{link}}-এর সাথে {{carrier}} ব্যবহার করে আপনার অর্ডার আবার সচল করুন",
+        "delivery_exception_on_hold_description_unknown": "{{link}} আপনার অর্ডার আবার চালু করতে",
+        "delivery_exception_on_hold_title": "অপেক্ষমাণ",
+        "delivery_exception_returning_to_sender_action": "যোগাযোগ করুন {{carrier}}",
+        "delivery_exception_returning_to_sender_description": "{{link}} আরও তথ্যের জন্য",
+        "delivery_exception_returning_to_sender_description_unknown": "আরও তথ্যের জন্য বাহকের সাথে যোগাযোগ করুন",
+        "delivery_exception_returning_to_sender_title": "পৌঁছানো হয়নি",
+        "delivery_exception_shop_promise_delivered_late_description": "আপনার অর্ডার শপ প্রমিস দ্বারা সুরক্ষিত। যেহেতু এটি দেরিতে পৌঁছেছে, তাই শপ ক্যাশ বাবদ {{amount}} দাবি করুন।",
+        "delivery_exception_shop_promise_delivered_late_title": "দেরিতে বিতরণ করা হয়েছে",
+        "pickup_address_map_link_accessibility_label": "ম্যাপে {{address}}-এ পিকআপের স্থান দেখুন (একটি নতুন উইন্ডোতে খুলবে)",
+        "pickup_location_label": "পিকআপের স্থান:",
+        "pickup_qr_code_accessibility_label": "দোকানে আপনার অর্ডার নেওয়ার সময় স্ক্যান করার জন্য QR কোড",
+        "predicted_by_shop": "শপের মাধ্যমে ভবিষ্যদ্বাণী করা হয়েছে"
+      },
+      "status_mark_as_delivered": "ডেলিভার করা হয়েছে হিসাবে চিহ্নিত করুন",
+      "fulfillment_status_title": "Fulfillment status: {{status}}",
+      "buy_again": "আবার কিনুন",
+      "buy_again_accessibility_label": "অর্ডার {{orderId}} আবার কিনুন",
+      "manage": "পরিচালনা করুন",
+      "manage_accessiblity_label": "অর্ডার পরিচালনা করুন {{orderId}}",
+      "group_title_label": "এর অংশ: {{groupTitle}}",
+      "group_title_label_with_parent": "জন্য: {{groupTitle}}"
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "বিস্তারিত দেখান",
+        "expand_events_accessibility_label": "অর্ডারের চালান বিবরণ দেখান",
+        "hide_events_label": "বিস্তারিত লুকান",
+        "hide_events_accessibility_label": "অর্ডার শিপমেন্টের বিবরণ লুকান"
+      },
+      "addresses_section_title": "বিলিং এবং শিপিং",
+      "order_details": "অর্ডারের বিবরণ",
+      "order_details_skeleton_accessibility_label": "আপনার অর্ডারের বিবরণ দেখতে সাইন ইন করুন।",
+      "billing_address": "বিলিং ঠিকানা",
+      "card_ending_with": "ending with {{lastDigits}}",
+      "contact": "যোগাযোগ",
+      "company": "সংস্থা",
+      "fully_refunded_label": "ফেরত দেওয়া হয়েছে",
+      "fulfillment_images": {
+        "one_products_accessibility_label": "<p>পরিপূর্ণতার মধ্যে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}</p>",
+        "two_products_accessibility_label": "পরিপূর্ণতায় রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}, {{lineItemName2}} পরিমাণ {{lineItemQuantity2}}",
+        "three_products_accessibility_label": "পূরণের মধ্যে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}, {{lineItemName2}} পরিমাণ {{lineItemQuantity2}}, {{lineItemName3}} পরিমাণ {{lineItemQuantity3}}",
+        "four_products_accessibility_label": "পরিপূরণ অন্তর্ভুক্ত {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}, {{lineItemName2}} পরিমাণ {{lineItemQuantity2}}, {{lineItemName3}} পরিমাণ {{lineItemQuantity3}}, {{lineItemName4}} পরিমাণ {{lineItemQuantity4}}",
+        "five_products_accessibility_label": "পরিপূর্ণতার মধ্যে আছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}, {{lineItemName2}} পরিমাণ {{lineItemQuantity2}}, {{lineItemName3}} পরিমাণ {{lineItemQuantity3}}, {{lineItemName4}} পরিমাণ {{lineItemQuantity4}}, {{lineItemName5}} পরিমাণ {{lineItemQuantity5}}",
+        "six_products_accessibility_label": "পূরণের মধ্যে আছে: {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}, {{lineItemName2}} পরিমাণ {{lineItemQuantity2}}, {{lineItemName3}} পরিমাণ {{lineItemQuantity3}}, {{lineItemName4}} পরিমাণ {{lineItemQuantity4}}, {{lineItemName5}} পরিমাণ {{lineItemQuantity5}}, {{lineItemName6}} পরিমাণ {{lineItemQuantity6}}",
+        "six_and_more_products_accessibility_label": "Fulfillment includes {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}, {{lineItemName2}} পরিমাণ {{lineItemQuantity2}}, {{lineItemName3}} পরিমাণ {{lineItemQuantity3}}, {{lineItemName4}} পরিমাণ {{lineItemQuantity4}}, {{lineItemName5}} পরিমাণ {{lineItemQuantity5}}, {{lineItemName6}} পরিমাণ {{lineItemQuantity6}} and more"
+      },
+      "group_title_label": "এর অংশ: {{groupTitle}}",
+      "group_title_label_with_parent": "জন্য: {{groupTitle}}",
+      "view_controls": {
+        "gallery": "গ্যালারী",
+        "list": "তালিকা"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "{{count}}টি জিনিস দেখান",
+        "collapse_line_items": "{{count}}টি আইটেম লুকান",
+        "line_item_summary_list_accessibility_label": "{{productTitle}} বান্ডেলের আইটেমগুলি"
+      },
+      "discount": "ছাড়",
+      "discount_order_stacking": {
+        "one": "অর্ডার ডিসকাউন্ট",
+        "other": "অর্ডারের উপর ডিসকাউন্ট"
+      },
+      "price_before_discount_accessibility_label": "আসল দাম",
+      "price_after_discount_accessibility_label": "ছাড়কৃত মূল্য",
+      "compare_at_sale": "বিক্রয় ({{saleAmount}})",
+      "hide_items": "আইটেম লুকান",
+      "loading": "অর্ডার বিবরণ লোড করা হচ্ছে",
+      "loading_finished_accessibility_message": "অর্ডারের বিবরণ লোড করা হয়েছে",
+      "location": "অবস্থান",
+      "image_gallery": {
+        "next": "পরবর্তী আইটেমগুলি দেখান",
+        "previous": "পূর্ববর্তী বিষয়গুলি দেখান",
+        "load_more_items": {
+          "one": "আরও {{count}} আইটেম দেখান",
+          "other": "আরও {{count}} আইটেম দেখান"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "অর্ডারের সারাংশ দেখান",
+        "closed": "অর্ডার সারাংশ লুকান"
+      },
+      "no_data": "কিছুই না",
+      "no_data_provided_accessibility_label": "{{fieldName}} খালি আছে",
+      "not_applicable": "প্রযোজ্য নয়",
+      "paid_amount": "পরিশোধিত",
+      "partially_refunded_label": "আংশিকভাবে ফেরত দেওয়া হয়েছে",
+      "payment_confirmation": {
+        "payment_received": "ধন্যবাদ! আপনার {{amount}} পেমেন্ট পেয়েছি।",
+        "full_payment_received": "ধন্যবাদ! আপনার {{amount}} পেমেন্ট গ্রহণ করা হয়েছে, এবং এই অর্ডারের সম্পূর্ণ বিল পরিশোধ করা হয়েছে।",
+        "payment_authorized": "ধন্যবাদ! পেমেন্ট পাওয়ার পর ব্যালেন্স আপডেট করা হবে।",
+        "dismiss_label": "পেমেন্ট নিশ্চিতকরণ বাতিল করুন"
+      },
+      "payment": {
+        "status_in_review": "পর্যালোচনা করার পর পেমেন্ট দিতে হবে",
+        "status_unpaid": "Payment due on {{date}}",
+        "title": "পেমেন্ট",
+        "payment_type": {
+          "gift_card": "উপহার কার্ড",
+          "store_credit": "স্টোর ক্রেডিট",
+          "money_order": "মানি অর্ডার",
+          "cash_on_delivery": "ক্যাশ অন ডেলিভারি (সিওডি)",
+          "bank_deposit": "ব্যাংকে জমা",
+          "manual": "ম্যানুয়াল"
+        },
+        "shop_pay_installments": {
+          "summary": "দোকানের কিস্তি",
+          "view_schedule": "সময়সূচী দেখুন"
+        },
+        "transactions": {
+          "show_all": "সবগুলো দেখান"
+        }
+      }
+    }
+  }
+}
