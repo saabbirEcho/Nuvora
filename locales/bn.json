@@ -331,7 +331,13 @@
         "failed_to_copy": "কপি করা যায়নি"
       },
       "change_currency": {
-        "currency_not_supported_by_shop": "আপনার নির্বাচিত মুদ্রা এখন আর উপলব্ধ নয়। সমস্ত মূল্য এখন %{currency_code} এ আছে।"
+        "currency_not_supported_by_shop": "আপনার নির্বাচিত মুদ্রা এখন আর উপলব্ধ নয়। সমস্ত মূল্য এখন %{currency_code} এ আছে।",
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "credit_card_will_be_charged_html": "আপনার ক্রেডিট কার্ড থেকে %{amount} কেটে নেওয়া হবে",
+        "payment_total_label": "মোট পেমেন্ট",
+        "conversion_rate": "১ %{from_currency_code} = %{rate} %{to_currency_code}",
+        "change_currency_link": "%{currency_name} তে পরিবর্তন করুন",
+        "card_provider_fx_charges_warning": "আপনার কার্ড প্রদানকারী %{currency_code} লেনদেনের উপর ফি চার্জ করতে পারে।"
       },
       "change_country": {
         "cart_updated_based_on_country": "আপনার শিপিং দেশের উপর ভিত্তি করে আপনার কার্ট আপডেট করা হয়েছে।",
@@ -877,7 +883,15 @@
         "in_transit_description": "আপনি এর অগ্রগতির আপডেট পাবেন।",
         "in_transit_description_days": "আপনি পরবর্তী %{number} দিনের মধ্যে আপনার অর্ডার পেয়ে যাবেন।",
         "in_transit_description_today": "আপনি আজ আপনার অর্ডার পেয়ে যাবেন।",
-        "in_transit_description_tomorrow": "আপনি আপনার অর্ডারটি আগামী দিনের মধ্যে পেয়ে যাবেন।"
+        "in_transit_description_tomorrow": "আপনি আপনার অর্ডারটি আগামী দিনের মধ্যে পেয়ে যাবেন।",
+        "verify_shop_account_message": "আপনার তথ্য Shop-এ সংরক্ষিত হয়েছে, লক্ষ লক্ষ দোকানে স্বয়ংক্রিয়ভাবে এটি ব্যবহার করতে আপনার অ্যাকাউন্ট যাচাই করুন।",
+        "verify_shop_account_cta": "আপনার অ্যাকাউন্ট যাচাই করুন",
+        "verify_shop_account_confirmation": "চেকআউটের বিবরণ সংরক্ষিত হয়েছে",
+        "announcement": {
+          "close": "বন্ধ করুন",
+          "expand": "প্রসারিত করুন",
+          "collapse": "ধসে পড়া"
+        }
       },
       "payment": {
         "order_edit_banner_multiple_items_returned": "ফেরত দেওয়া হয়েছে {{amount}}",
@@ -1267,6 +1281,136 @@
         "payment_due_label": "পেমেন্ট বাকি",
         "vat_label_html": "ট্যাক্স বাবদ %{amount} সহ",
         "duties_included_label": "মোট কর এবং শুল্ক অন্তর্ভুক্ত। ডেলিভারিতে কোনো অতিরিক্ত চার্জ নেই।"
+      },
+      "vaulted": {
+        "change_button": "পরিবর্তন",
+        "loading_section": "{{section}} লোড হচ্ছে…"
+      },
+      "review": {
+        "title": "পর্যালোচনা",
+        "review_title": "আপনার অর্ডার সম্পূর্ণ করুন",
+        "review_and_confirm_title": "পর্যালোচনা করুন এবং নিশ্চিত করুন",
+        "checkout_as_guest": "অতিথি হিসেবে চেকআউট করুন",
+        "account_more_actions": "এই অ্যাকাউন্টের জন্য আরও পদক্ষেপ",
+        "checkout_a_different_way": "অন্য একটি উপায় দেখুন",
+        "blocks": {
+          "contact_method_title": "যোগাযোগ",
+          "billing_address_title": "বিলিং",
+          "shipping_address_title": "এখানে পাঠান",
+          "shipping_method_title": "শিপিং পদ্ধতি",
+          "payment_method_title": "পেমেন্ট পদ্ধতি",
+          "change_link_label": "পরিবর্তন",
+          "change_contact_method_link_label": "যোগাযোগের তথ্য পরিবর্তন করুন",
+          "change_billing_address_link_label": "বিলিং ঠিকানা পরিবর্তন করুন",
+          "change_company_location_link_label": "কোম্পানির অবস্থান পরিবর্তন করুন",
+          "change_shipping_address_link_label": "শিপিং ঠিকানা পরিবর্তন করুন",
+          "change_shipping_method_link_label": "শিপিং পদ্ধতি পরিবর্তন করুন",
+          "change_payment_method_link_label": "পেমেন্টের পদ্ধতি পরিবর্তন করুন",
+          "pick_up_in_store_shipping_method_html": "দোকান থেকে সংগ্রহ করুন · %{location_name}",
+          "purchase_order_number_title": "পিও নম্বর",
+          "change_purchase_order_number_label": "পিও নম্বর পরিবর্তন করুন",
+          "change_delivery_method_link_label": "ডেলিভারির পদ্ধতি পরিবর্তন করুন",
+          "no_address": "(কোনো ঠিকানা নেই)",
+          "no_purchase_order_number": "(কোনো পিও নম্বর নেই)",
+          "no_purchase_order_number_long": "কোনো ক্রয়াদেশ নম্বর নেই",
+          "due_after_order_reviewed_html": "অর্ডার পর্যালোচনার পর প্রদেয়",
+          "review_title_free_order": "আপনার অর্ডার পর্যালোচনা করুন এবং সম্পন্ন করুন",
+          "payment_method_saved_company_location": "এই অবস্থানের জন্য কার্ড সংরক্ষণ করুন",
+          "company_location": "কোম্পানির অবস্থান",
+          "pickup_items_at": {
+            "one": "%{count}টি জিনিস এখানে সংগ্রহ করুন",
+            "other": "পিকআপ করুন %{count}টি আইটেম"
+          },
+          "ship_items_to": {
+            "one": "%{count}টি আইটেম এখানে পাঠান",
+            "other": "%{count}টি আইটেম পাঠান"
+          }
+        },
+        "block_title": "আপনার তথ্য পর্যালোচনা করুন",
+        "item_header": {
+          "change_value": "মান পরিবর্তন করুন",
+          "section": "ধারা",
+          "value": "মূল্য"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "খবর ও অফার পেতে আমাকে ইমেল করুন",
+        "post_accept_marketing_checkbox_label": "আপনি ইমেল সংবাদ এবং অফার পাওয়ার জন্য সাবস্ক্রাইব করেছেন",
+        "pending_accept_marketing_checkbox_label": "খবর এবং অফারগুলির জন্য আপনার সদস্যতা নিশ্চিত করতে আপনার ইমেল পরীক্ষা করুন",
+        "accept_sms_checkbox_label": "খবর ও অফার পেতে আমাকে টেক্সট করুন",
+        "accept_whatsapp_marketing_checkbox_label": "খবর এবং অফার পেতে আমাকে WhatsApp-এ মেসেজ করুন",
+        "disclaimer": {
+          "privacy_policy": "গোপনীয়তা নীতি",
+          "terms_of_service": "পরিষেবার শর্তাবলী"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "গোপনীয়তা নীতি",
+            "terms_of_service": "পরিষেবার শর্তাবলী",
+            "description_html": "টেক্সটের মাধ্যমে সাইন আপ করার মাধ্যমে, আপনি সম্মত হচ্ছেন যে প্রদত্ত ফোন নম্বরে কার্ট রিমাইন্ডার সহ স্বয়ংক্রিয় বিপণন বার্তাগুলি নিয়মিতভাবে পাবেন। সম্মতি ক্রয়ের একটি শর্ত নয়। সদস্যতা বাতিল করতে STOP লিখে পাঠান। সাহায্যের জন্য HELP লিখে পাঠান। বার্তার ফ্রিকোয়েন্সি ভিন্ন হতে পারে। মেসেজ ও ডেটা রেট প্রযোজ্য হতে পারে। আমাদের %{privacy_policy_link} এবং %{terms_of_service_link} দেখুন।",
+            "description_transactional_html": "আপনি অর্ডার নিশ্চিতকরণ এবং শিপিং আপডেট সম্পর্কিত পাঠ্য বার্তা পেতে পারেন। সদস্যতা ত্যাগ করতে STOP লিখে রিপ্লাই করুন। সাহায্যের জন্য HELP লিখে রিপ্লাই করুন। বার্তার ফ্রিকোয়েন্সি ভিন্ন হতে পারে। মেসেজ ও ডেটা রেট প্রযোজ্য হতে পারে। আমাদের %{privacy_policy_modal_link} এবং %{terms_of_service_modal_link} দেখুন।"
+          },
+          "mobile_phone_number": "মোবাইল ফোন নম্বর",
+          "get_offers_by_text": "এসএমএসের মাধ্যমে অফার পান"
+        },
+        "whatsapp": {
+          "disclaimer": {
+            "description_html": "WhatsApp-এর মাধ্যমে সাইন আপ করার মাধ্যমে, আপনি প্রদত্ত ফোন নম্বরে WhatsApp মার্কেটিং মেসেজ পেতে সম্মত হচ্ছেন। সম্মতি কেনাকাটার শর্ত নয়। আনসাবস্ক্রাইব করতে STOP রিপ্লাই করুন। মেসেজের ফ্রিকোয়েন্সি ভিন্ন হতে পারে। মেসেজ এবং ডেটা রেট প্রযোজ্য হতে পারে। আমাদের %{privacy_policy_link} এবং %{terms_of_service_link} দেখুন।"
+          }
+        },
+        "unsubscribe": {
+          "title": "আপনি সদস্যতা ত্যাগ করেছেন",
+          "description": "আমাদের কাছ থেকে আর কোনো কার্ট রিমাইন্ডার পাবেন না।"
+        },
+        "accept_shop_pay_marketing_checkbox_label": "এই স্টোর থেকে খবর এবং অফার পেতে আমাকে সাইন আপ করুন"
+      },
+      "shop_policies": {
+        "policy_label": "নীতিমালা",
+        "policies_label": "নীতিমালা",
+        "select_policy_label": "একটি নীতি নির্বাচন করুন",
+        "refund_policy": "ফেরত নীতি",
+        "privacy_policy": "গোপনীয়তা নীতি",
+        "terms_of_service": "পরিষেবার শর্তাবলী",
+        "legal_notice": "আইনি বিজ্ঞপ্তি",
+        "shipping_policy": "শিপিং",
+        "terms_of_sale": "বিক্রয়ের শর্তাবলী",
+        "subscription_policy": "বাতিলকরণ",
+        "purchase_options_policy": "ক্রয় বিকল্প নীতি",
+        "contact_information": "যোগাযোগ",
+        "purchase_options_cancellation_policy": "বাতিলকরণ",
+        "cookie_preferences": "কুকিজ",
+        "terms_and_policies": "শর্তাবলী ও নীতিসমূহ"
+      },
+      "remote_policies": {
+        "unavailable_policy": "এই স্টোরের জন্য কোনো %{policy_name} প্রদান করা হয়নি। আরও তথ্যের জন্য, সরাসরি %{shop_name}-এর সাথে যোগাযোগ করুন।"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "রেকর্ড মার্চেন্টের শর্তাবলী",
+        "privacy_policy": "মার্চেন্ট অফ রেকর্ড গোপনীয়তা নীতি"
+      },
+      "markets": {
+        "invalid_market_manager_error": "পেমেন্ট সম্পন্ন করার আগে আপনার যোগাযোগের তথ্য পর্যালোচনা করুন"
+      },
+      "notifications": {
+        "title": "বিজ্ঞপ্তিগুলি"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "অর্ডার %{order_name} এর জন্য পরিশোধের পরিমাণ",
+        "changes_summary": {
+          "added": {
+            "one": "যোগ করা হয়েছে",
+            "other": "যোগ করা হয়েছে %{count}টি"
+          },
+          "removed": "অপসারণ করা হয়েছে",
+          "subtracted": "%{count}টি মুছে ফেলা হয়েছে",
+          "returned": "ফেরত দেওয়া হয়েছে %{count}টি",
+          "return_line_item_removed": "রিটার্ন থেকে %{count} সরানো হয়েছে"
+        },
+        "additional_payment_requested": "%{total_outstanding} টাকা পরিশোধ করা আবশ্যক",
+        "checkout_review_and_pay": "আপনার অর্ডার %{order_name} আপডেট করা হয়েছে। এই পরিবর্তনগুলি পর্যালোচনা করুন, তারপর আপনার অর্ডার নিশ্চিত করতে অর্থপ্রদান করুন।",
+        "order_updated_on": "আপনার অর্ডার %{last_edited_at} এ আপডেট করা হয়েছিল।",
+        "order_review_and_pay": "আপনার অর্ডার আপডেট করা হয়েছে। আপনার অর্ডার নিশ্চিত করতে পর্যালোচনা করুন এবং অর্থপ্রদান করুন।",
+        "pay_now": "এখনই পরিশোধ করুন"
       }
     },
     "errors": {
