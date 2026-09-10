@@ -1716,7 +1716,21 @@
         "transactions": {
           "show_all": "সবগুলো দেখান"
         }
-      }
+      },
+      "fees": {
+        "restocking_fee": "পুনরায় মজুত করার ফি",
+        "return_shipping_fee": "ফেরত পাঠানো"
+      },
+      "vat_invoices": {
+        "label": "ভ্যাট"
+      },
+      "link_sent": "লিঙ্ক পাঠানো হয়েছে",
+      "cash_rounding": "নগদ অর্থের সাপেক্ষে মূল্য পরিবর্তন",
+      "adjusted_payment": "সমন্বিত পেমেন্ট",
+      "adjusted_total": "সমন্বিত মোট",
+      "due_on_date": "দেয়ার কথা {{date}}",
+      "due_on_fulfillment": "পরিশোধের পর প্রাপ্য",
+      "due_on_receipt": "প্রাপ্তির পর প্রদেয়"
     },
     "payment_method_brands": {
       "elo": "ইলো",
@@ -1905,6 +1919,20 @@
         "modal_po_number_input_max_length_error": "PO নম্বরের সর্বাধিক {{maxLength}}টি অক্ষর থাকে।",
         "save": "সংরক্ষণ করুন",
         "title": "PO #{{poNumber}}"
+      },
+      "account_information": {
+        "company_card_name_label": "প্রতিষ্ঠানের নাম",
+        "company_card_section_accessibility_label": "সংস্থা"
+      },
+      "locations": {
+        "contact_contact": "যোগাযোগ",
+        "contact_email": "ইমেল",
+        "contact_list_title": "মানুষ",
+        "contact_name": "নাম",
+        "contact_permissions": "অনুমতিসমূহ",
+        "contact_phone_number": "ফোন নম্বর",
+        "location_picker_label": "অবস্থানের নাম",
+        "location_picker_accessibility_label": "অবস্থানের নাম: {{locationName}}"
       }
     },
     "errors": {
@@ -2234,6 +2262,106 @@
         }
       },
       "add_button": "যোগ করুন"
+    },
+    "addresses": {
+      "add_button": "ঠিকানা যোগ করুন",
+      "add_button_text": "যোগ করুন",
+      "add_button_accessibility_label": "ঠিকানা যোগ করুন",
+      "back_button": "পিছনে",
+      "back_button_accessibility_label": "Back to editing address {{address}}",
+      "add_address_banner": "চেকআউটের সময় ব্যবহার করার জন্য ঠিকানা যোগ করুন",
+      "no_addresses_banner": "কোন ঠিকানা যোগ করা হয়নি",
+      "address_deleted_notification": "ঠিকানা মুছে ফেলা হয়েছে",
+      "cancel_adding_address_accessibility_label": "ঠিকানা যোগ করা বাতিল করুন",
+      "cancel_deletion_button": "বাতিল করুন",
+      "cancel_deletion_button_accessibility_label": "{{address}} বাতিল করুন",
+      "default_address": {
+        "badge_label": "ডিফল্ট",
+        "title": "ডিফল্ট ঠিকানা",
+        "title_accessibility_label": "ডিফল্ট ঠিকানা: {{address}}"
+      },
+      "delete_button": "মুছে দিন",
+      "delete_button_accessibility_label": "ডিলিট করুন {{address}}",
+      "delete_confirmation_button": "ঠিকানা মুছে ফেলুন",
+      "delete_confirmation_button_accessibility_label": "ডিলিট করুন {{address}}",
+      "delete_confirmation_message": "ঠিকানা মুছে ফেলবেন? বর্তমান অর্ডারগুলিতে কোনো প্রভাব পড়বে না।",
+      "delete_confirmation_title": "ঠিকানা মুছে ফেলবেন?",
+      "delete_confirmation_description": "বিদ্যমান আদেশগুলি প্রভাবিত হয় না।",
+      "edit_button": "সম্পাদনা করুন",
+      "edit_button_accessibility_label": "সম্পাদনা করুন {{address}}",
+      "edit_section_accessibility_label": "সম্পাদনা করুন {{address}}",
+      "edit_modal_title": {
+        "default": "ঠিকানা পরিবর্তন করুন",
+        "billing": "বিলিং ঠিকানা এডিট করুন",
+        "shipping": "শিপিং ঠিকানা পরিবর্তন করুন"
+      },
+      "loading_accessibility_message": "ঠিকানা লোড হচ্ছে",
+      "loading_addresses_accessibility_message": "ঠিকানা লোড হচ্ছে",
+      "loading_billing_accessibility_message": "বিলিং ঠিকানা লোড করা হচ্ছে",
+      "loading_finished_accessibility_message": "ঠিকানার নতুন পৃষ্ঠা লোড হয়েছে",
+      "loading_shipping_accessibility_message": "শিপিং ঠিকানা লোড হচ্ছে",
+      "pagination": {
+        "load_more": "আরো দেখান",
+        "load_more_accessibility_label": "আরও ঠিকানা দেখান"
+      },
+      "save_new_address_accessibility_label": "ঠিকানা সেভ করুন",
+      "title": "ঠিকানা",
+      "billing_address_dropdown_placeholder": "বিলিং ঠিকানা"
+    },
+    "address_form": {
+      "attention": "দৃষ্টি আকর্ষণ",
+      "attention_company": "কোম্পানি/দৃষ্টি আকর্ষণ",
+      "attention_help_text": "ব্যক্তি বা বিভাগের নাম",
+      "auto_complete_close_accessibility_label": "পরামর্শ বন্ধ করুন",
+      "auto_complete_title": "পরামর্শ",
+      "billing_address": "বিলিং ঠিকানা হিসাবে ব্যবহার করুন",
+      "cancel": "বাতিল করুন",
+      "cancel_accessibility_label": "ঠিকানা সম্পাদনা বাতিল করুন {{address}}",
+      "creation_success_notification": "ঠিকানা যোগ করা হয়েছে",
+      "default_address": "এটা আমার ডিফল্ট ঠিকানা",
+      "default_address_creation_success_notification": "ডিফল্ট ঠিকানা যোগ করা হয়েছে",
+      "default_address_update_success_notification": "ডিফল্ট ঠিকানা আপডেট করা হয়েছে",
+      "loading_add_form_accessibility_message": "নতুন ঠিকানা ফর্ম লোড হচ্ছে",
+      "loading_edit_form_accessibility_message": "ঠিকানা পরিবর্তনের ফর্ম লোড করা হচ্ছে",
+      "loading_form_accessibility_message": "ঠিকানার ফর্ম লোড করা হচ্ছে",
+      "loading_finished_accessibility_message": "ঠিকানার ফর্ম লোড করা হয়েছে",
+      "save": "সংরক্ষণ করুন",
+      "save_accessibility_label": "ঠিকানা সংরক্ষণ করুন {{address}}",
+      "section_title_accessibility_label": "ঠিকানা যোগ করুন",
+      "update_success_notification": "ঠিকানা আপডেট করা হয়েছে"
+    },
+    "account_menu": {
+      "signed_out_state": {
+        "sheet_title": "সাইন ইন করুন অথবা অ্যাকাউন্ট তৈরি করুন",
+        "section_divider": "লগইন করার আরও পদ্ধতি",
+        "alternate_divider": "অথবা",
+        "use_email_button": "ইমেইল ব্যবহার করুন",
+        "email_field_label": "ইমেল",
+        "orders_button": "আদেশসমূহ",
+        "profile_button": "প্রোফাইল",
+        "shop_login_button": "শপ দিয়ে সাইন ইন করুন",
+        "continue_with_google": "গুগল দিয়ে চালিয়ে যান",
+        "continue_with_facebook": "ফেসবুক দিয়ে চালিয়ে যান"
+      },
+      "signed_in_state": {
+        "greeting_with_name": "নমস্কার, {{first_name}}",
+        "greeting_without_name": "হিসাব",
+        "orders_button": "আদেশসমূহ",
+        "profile_button": "প্রোফাইল"
+      },
+      "location_picker": {
+        "sheet_title": "অবস্থানগুলি",
+        "search_field_placeholder": "অনুসন্ধান"
+      },
+      "aria_labels": {
+        "close_menu": "মেনু বন্ধ করুন",
+        "back_to_main_menu": "{{title}} থেকে মূল মেনুতে ফিরে যান",
+        "open_submenu": "{{title}}, সাবমেনু খোলে",
+        "loading_menu": "মেনু লোড হচ্ছে",
+        "account": "হিসাব",
+        "sign_in_with_email": "ইমেইল দিয়ে সাইন ইন করুন",
+        "sign_in": "সাইন ইন করুন"
+      }
     }
   }
 }
