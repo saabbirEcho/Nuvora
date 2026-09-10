@@ -2066,7 +2066,8 @@
         "shipping_method_rollup_accessibility_label": "শিপিং পদ্ধতির বিকল্পগুলি",
         "shipping_method_one_time_purchase_group_title": "এককালীন কেনাকাটা",
         "shipping_method_first_shipment_group_title": {
-          "one": "প্রথম চালান"
+          "one": "প্রথম চালান",
+          "other": "প্রথম চালান"
         },
         "shipping_information_redirect_link": "এখানে আপনার তথ্য দিন",
         "loading_progressive_rates": "আরও রেট খোঁজা হচ্ছে…",
@@ -2149,7 +2150,158 @@
         "split_shipping_option_custom": "কাস্টম",
         "add_shipping_address": "শিপিং ঠিকানা যোগ করুন",
         "add_new_delivery_address": "একটি নতুন ডেলিভারি ঠিকানা যোগ করুন",
-        "choose_new_address": "নতুন ঠিকানা দিন"
+        "choose_new_address": "নতুন ঠিকানা দিন",
+        "shipping_method_subscription_group_title": "সদস্যতা",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "পুনরাবৃত্ত চালান",
+          "other": "পুনরাবৃত্তিমূলক চালান"
+        },
+        "subscription_shipping": "সাবস্ক্রিপশন শিপিং",
+        "subscription_local_delivery": "সাবস্ক্রিপশন স্থানীয় ডেলিভারি",
+        "subscription_pickup": "সাবস্ক্রিপশন পিকআপ",
+        "waiting_on_rate_notice": "উপলব্ধ শিপিং রেট পাওয়া যাচ্ছে...",
+        "waiting_on_pickup_location_notice": "উপলব্ধ পিক আপ লোকেশনগুলি দেখা হচ্ছে...",
+        "no_rates_for_cart_or_destination_notice": "আপনার কার্ট বা ঠিকানার জন্য কোনো শিপিং পদ্ধতি উপলব্ধ নেই",
+        "no_pickup_location_notice": "আপনার অন্তত একটি পণ্য পিক আপের জন্য উপলব্ধ নয়",
+        "no_rates_for_country_notice": "এই ঠিকানার জন্য কোনো শিপিং রেট পাওয়া যায়নি।",
+        "no_rates_contact_notice": "আরও তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন",
+        "free_rate_label": "বিনামূল্যে",
+        "cheapest_rate_label": "সবচেয়ে সস্তা",
+        "estimated_delivery_date": {
+          "one": "%{count} কার্যদিবস",
+          "other": "%{count} কার্যদিবস"
+        },
+        "estimated_delivery_date_range": "%{minimum} থেকে %{maximum} কার্যদিবস",
+        "delivery_date_range": "% সময় বাকি আছে: %{min_time}–%{max_time}",
+        "estimated_delivery_time": "আনুমানিক ডেলিভারি %{time}",
+        "estimated_delivery_time_range": "আনুমানিক ডেলিভারি %{min_time}–%{max_time}",
+        "delivery_today": "একই দিনে ডেলিভারি %{time}",
+        "delivery_tomorrow": "পরের দিন ডেলিভারি %{time}",
+        "two_day_delivery": "২-দিনের ডেলিভারি %{time}",
+        "delivery": "ডেলিভারি %{time}",
+        "delivery_to": "পৌঁছে দিন",
+        "arrives_time": "পৌঁছায় %{time}",
+        "arrives_time_range": "আসে %{min_time}–%{max_time}",
+        "estimated_time": "আনুমানিক %{time}",
+        "estimated_time_range": "আনুমানিক %{min_time}–%{max_time}",
+        "default_description": "১ কার্যদিবসের মধ্যে পাঠানো হবে",
+        "unbranded_default_description": "প্রেরণের জন্য প্রস্তুত",
+        "unbranded_description_same_day": "একই কার্যদিবসে পাঠানো হবে",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "পরের কার্যদিবসে পাঠানো হবে",
+          "other": "%{count} কার্যদিবসের মধ্যে পাঠানো হবে"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "%{count} সপ্তাহের মধ্যে পাঠানো হবে",
+          "other": "%{count} সপ্তাহের মধ্যে পাঠানো হবে"
+        },
+        "shipping_line_phone_label": "মোবাইল ফোন নম্বর (আবশ্যক)",
+        "shipping_line_phone": "আপনার কুরিয়ার আপনার সাথে যোগাযোগ করতে এই নম্বরটি ব্যবহার করতে পারে।",
+        "shipping_line_delivery_phone_label": "মোবাইল ফোন নম্বর",
+        "shipping_line_delivery_phone": "আপনার ডেলিভারির বিষয়ে আপডেট জানানো হতে পারে।",
+        "optional_shipping_line_delivery_instructions_label": "ডেলিভারি সংক্রান্ত নির্দেশাবলী (ঐচ্ছিক)",
+        "shipping_line_delivery_instructions": "প্রয়োজনীয় তথ্য যেমন দরজার কোড বা পৌঁছে দেওয়ার নির্দেশাবলী লিখুন।",
+        "other_method": {
+          "zero": "অন্যান্য পদ্ধতি উপলব্ধ নেই",
+          "one": "অন্যান্য %{count}টি পদ্ধতি এখানে পাওয়া যাচ্ছে",
+          "other": "আরও %{count}টি পদ্ধতি আছে, শুরু হচ্ছে"
+        },
+        "shipping_rate_discounted_amount": "আগে: %{original_amount}। এখন: %{amount}",
+        "local_delivery": "স্থানীয় ডেলিভারি",
+        "prime_not_available": {
+          "default": "আপনার অর্ডারের জন্য প্রাইম ডেলিভারি উপলব্ধ নয়। আপনার শিপিং বিকল্পগুলি আপডেট করা হয়েছে।"
+        },
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "আরও %{count}টি ডেলিভারির জন্য বিনামূল্যে শিপিং",
+            "other": "আরও %{count} ডেলিভারির জন্য বিনামূল্যে শিপিং"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য বিনামূল্যে শিপিং",
+            "other": "%{count} ডেলিভারির জন্য বিনামূল্যে শিপিং"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "আরও %{count} ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}",
+            "other": "আরও %{count} ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}",
+            "other": "%{count}টি ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{count}টি ডেলিভারি বাকি আছে %{shipping_price}-এর জন্য",
+            "other": "আরও %{count}টি ডেলিভারি প্রতিটি %{shipping_price} করে"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} ডেলিভারি %{shipping_price}-এর জন্য",
+            "other": "আরও %{count}টি ডেলিভারি প্রতিটি %{shipping_price} করে"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "প্রথম %{cycle}-এর জন্য বিনামূল্যে শিপিং, তারপরে %{recurring_order_shipping_price}",
+            "other": "প্রথম %{cycle}-এর জন্য বিনামূল্যে শিপিং, তারপরে %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{count}টি ডেলিভারির জন্য অতিরিক্ত %{shipping_price}",
+            "other": "আরও %{count} ডেলিভারির জন্য %{shipping_price} (প্রতি ডেলিভারি %{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য %{shipping_price}",
+            "other": "%{count}টি ডেলিভারি বাবদ %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{count}টি ডেলিভারির জন্য %{shipping_price}, তারপর %{recurring_order_shipping_price}",
+            "other": "%{count}টি ডেলিভারির জন্য %{shipping_price} টাকা (%{per_delivery_cost} টাকা প্রতি ডেলিভারিতে), এরপর %{recurring_order_shipping_price} টাকা"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য %{shipping_price}, এরপর %{recurring_order_shipping_price}",
+            "other": "%{count} ডেলিভারির জন্য %{shipping_price} (প্রতি ডেলিভারিতে %{per_delivery_cost}), এরপর %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "বিনামূল্যে শিপিং %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "%{count}টি ডেলিভারির জন্য",
+            "other": "%{count}টি ডেলিভারির জন্য"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "প্রতিদিন",
+              "other": "প্রতি %{count} দিন"
+            },
+            "week": {
+              "one": "প্রতি সপ্তাহে",
+              "other": "প্রতি %{count} সপ্তাহ"
+            },
+            "month": {
+              "one": "প্রতি মাসে",
+              "other": "প্রতি %{count} মাস অন্তর"
+            },
+            "year": {
+              "one": "প্রতি বছর",
+              "other": "প্রতি %{count} বছর"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "প্রতি ডেলিভারিতে %{shipping_price}",
+          "prepaid_shipping_price_label": "প্রতি ডেলিভারি %{shipping_price} x %{delivery_interval_count}",
+          "initial_order_discounted": "প্রথম ডেলিভারির খরচ %{discounted_shipping_cost}, তারপর %{frequency_description}",
+          "prepaid_initial_order_discounted": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency}, তারপর %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), তারপর %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "অন্তর্ভুক্ত",
+          "recurring_order_shipping_price": "তারপরে %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "প্রথম অর্ডারের শিপিং মূল্য অন্তর্ভুক্ত, এরপর %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} প্রতি ডেলিভারিতে), এরপর %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "প্রথম অর্ডারে ফ্রি",
+            "other": "প্রথম %{count} অর্ডার বিনামূল্যে"
+          },
+          "free_for_first_n_order": {
+            "one": "প্রথম ক্রমের জন্য",
+            "other": "প্রথম %{count}টি অর্ডারের জন্য"
+          }
+        },
+        "one_time_purchase_shipping": "এককালীন শিপিং",
+        "duties_and_taxes_title": "শুল্ক ও কর",
+        "shipping_information_required_notice": "শিপিং তথ্য প্রয়োজন। {{link}}."
       },
       "localized_fields": {
         "additional_information": {
