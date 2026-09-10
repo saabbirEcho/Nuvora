@@ -1913,15 +1913,98 @@
       "shop_404": {
         "ctas": {
           "editions": {
-            "link_text": "সাম্প্রতিক সংস্করণগুলি দেখুন"
+            "link_text": "সাম্প্রতিক সংস্করণগুলি দেখুন",
+            "header": "শপিফাই এডিশনস দেখুন",
+            "caption": "১০০টির বেশি প্রোডাক্ট আপডেটের সাথে আপনি আরও বেশি প্রোডাক্টিভ, ক্রিয়েটিভ এবং বাণিজ্যে আরও শক্তিশালী হতে পারবেন, যা আপনি আগে কখনো কল্পনাও করেননি।"
           },
           "store_owner": {
             "header": "আপনি কি দোকানের মালিক?",
             "caption": "আপনার দোকানে ঢুকতে কি সমস্যা হচ্ছে? %{forgot_your_store_link} ফিচারটি ব্যবহার করে দেখুন। আপনি যদি আপনার দোকানটি পুনরায় চালু করতে চান তাহলে %{shopify_support_link} -এ যোগাযোগ করুন।",
             "shopify_support_link_text": "Shopify সহায়তা"
+          },
+          "sell_in_person": {
+            "header": "সরাসরি বিক্রি করুন",
+            "caption": "আপনার খুচরা ব্যবসার জন্য প্রয়োজনীয় ফিচারগুলি পান, তা আপনি নতুন শুরু করুন বা ব্যবসা বাড়াতে চান।",
+            "link_text": "বিনামূল্যে ট্রায়াল শুরু করুন"
+          },
+          "open_a_store": {
+            "header": "একটি নতুন Shopify স্টোর খুলুন",
+            "caption": "৩ দিনের বিনামূল্যে ট্রায়াল শুরু করুন, তারপর পরবর্তী ৩ মাসের জন্য প্রতি মাসে $১ করে উপভোগ করুন।",
+            "link_text": "এখনই সাইন আপ করুন"
           }
+        },
+        "title": "একটি ই-কমার্স ওয়েবসাইট তৈরি করুন এবং অনলাইনে বিক্রি করুন! শপিফাই দ্বারা ই-কমার্স সফটওয়্যার",
+        "title_unavailable": "স্টোর অনুপলব্ধ",
+        "heros": {
+          "store_will_be_right_back": "এই স্টোরটি শীঘ্রই আবার চালু হবে",
+          "store_unavailable": "এই দোকানটি বর্তমানে উপলব্ধ নয়।",
+          "store_not_exist": "এই দোকানটির অস্তিত্ব নেই।",
+          "no_storefront": "এই দোকানে এখনো কোনো ওয়েবসাইট নেই।"
+        },
+        "subtitles": {
+          "store_will_be_right_back": "যত দ্রুত সম্ভব এটিকে অনলাইনে ফিরিয়ে আনতে কাজ করছে Shopify।"
+        },
+        "links": {
+          "refresh_page": "পৃষ্ঠাটি রিফ্রেশ করুন",
+          "explore_other_stores": "অন্যান্য দোকানে যান",
+          "start_free_trial": "বিনামূল্যে ব্যবহার শুরু করুন"
+        },
+        "status_card": {
+          "eyebrow": "দোকান মালিকদের জন্য সাহায্য",
+          "header": "শপফাইয়ের অবস্থা পরীক্ষা করুন",
+          "caption": "Shopify-এ এই দোকানটি ছাড়া আরও কোথাও বিভ্রাট হচ্ছে কিনা তা খুঁজে দেখুন।",
+          "link_text": "Shopify সিস্টেমের বর্তমান অবস্থা দেখুন"
+        },
+        "owner_ctas": {
+          "header": "আপনি কি দোকানের মালিক?",
+          "fix_domain": "আপনার নতুন ওয়েব ঠিকানা সেট আপ করা শেষ করুন, %{domain_settings_link} -এ যান। \"ডোমেন কানেক্ট করুন\" এ ক্লিক করুন এবং লিখুন: %{domain}।<br>আপনার স্টোরে প্রবেশ করতে সমস্যা হলে, %{forgot_your_store_link} পেজটি চেষ্টা করুন।",
+          "fix_domain_link_text": "আপনার ডোমেইন সেটিংস",
+          "forgot_your_store_link_text": "আপনার স্টোর ভুলে গেছেন",
+          "add_storefront": "আপনি আপনার %{admin_link}-এ অনলাইন স্টোর চ্যানেল যোগ করে আপনার ওয়েবসাইট সেট আপ করতে পারেন। আপনার স্টোরে প্রবেশ করতে সমস্যা হলে, %{forgot_your_store_link} পেজটি ব্যবহার করে দেখতে পারেন।",
+          "admin_link_text": "অ্যাডমিন"
         }
-      }
+      },
+      "blank": "খালি হতে পারে না",
+      "blocked_address": "এই লোকেশনটি সমর্থিত নয়",
+      "credit_card_session_expired": "ক্রেডিট কার্ড অনুমোদনের মেয়াদ শেষ হয়ে গেছে, অনুগ্রহ করে আপনার পেমেন্টের তথ্য আবার দিন। আপনার কার্ড থেকে কোনো টাকা কাটা হয়নি।",
+      "empty": "খালি হতে পারে না",
+      "invalid_email": "অবশ্যই একটি বৈধ ইমেল ঠিকানা হতে হবে",
+      "discount_disabled": "এই ডিসকাউন্টটি নিষ্ক্রিয় করা হয়েছে",
+      "discount_expired": "এই ছাড়টি আর বৈধ নয়",
+      "discount_limit_reached": "এই ছাড়ের ব্যবহার সীমা অতিক্রম করেছে",
+      "discount_not_found": "প্রদত্ত কোডের সাথে মানানসই কোনো বৈধ ছাড় খুঁজে পাওয়া যায়নি",
+      "customer_already_used_once_per_customer_discount_notice": "এই ছাড়ের ব্যবহার সীমা অতিক্রম করেছে",
+      "gift_card_already_applied": "আপনার চেকআউটে ইতিমধ্যেই কোড প্রয়োগ করা হয়েছে",
+      "gift_card_code_invalid": "কোডটি অবৈধ",
+      "gift_card_currency_mismatch": "এই কেনাকাটার জন্য এই উপহার কার্ড ব্যবহার করা যাবে না। এটি পুনরায় ইস্যু করার জন্য %{shop_name}-এর সাথে যোগাযোগ করুন।",
+      "gift_card_depleted": "এই উপহার কার্ডে আর কোনো তহবিল অবশিষ্ট নেই",
+      "gift_card_disabled": "গিফট কার্ড নিষ্ক্রিয় আছে",
+      "gift_card_expired": "উপহার কার্ডের মেয়াদ শেষ হয়ে গেছে",
+      "invalid": "অবৈধ",
+      "bad_domain": "একটি অবৈধ ডোমেন নাম রয়েছে",
+      "taken": "ইতিমধ্যেই নেওয়া হয়ে গেছে",
+      "contains_html_tags": "এইচটিএমএল ট্যাগ থাকতে পারবে না",
+      "too_short": "খুব ছোট (সর্বনিম্ন %{count} অক্ষর)",
+      "too_long": "অনেক লম্বা (সর্বোচ্চ %{count}টি অক্ষর হতে পারে)",
+      "password_mismatch": "প্রদত্ত পাসওয়ার্ডের সাথে মিলতে হবে",
+      "contains_spaces": "স্পেস দিয়ে শুরু বা শেষ হয়।",
+      "invalid_for_country": "%{country} এর জন্য বৈধ নয়",
+      "invalid_for_country_and_province": "%{province} এবং %{country} এর জন্য বৈধ নয়",
+      "invalid_province_in_country": "%{country}-এ একটি বৈধ প্রদেশ নয়",
+      "invalid_state_in_country": "%{country}-এর একটি বৈধ রাজ্য নয়",
+      "invalid_region_in_country": "%{country}-এ একটি বৈধ অঞ্চল নয়",
+      "less_than_or_equal_to": "অবশ্যই %{count} এর কম বা সমান হতে হবে",
+      "not_supported": "সমর্থিত নয়",
+      "full_name_required": "নামের প্রথম অংশ এবং নামের শেষ অংশ লিখুন",
+      "invalid_for_card_type": "বৈধ নয়",
+      "invalid_type": "দুঃখিত, আমরা এই ধরনের কার্ড গ্রহণ করি না।",
+      "invalid_format": "বিন্যাসটি বৈধ নয়",
+      "expired": "মেয়াদ উত্তীর্ণ হয়েছে",
+      "invalid_start_date_or_issue_number_for_debit": "একটি বৈধ শুরুর তারিখ বা ইস্যু নম্বর প্রয়োজন",
+      "invalid_expiry_year": "বৈধ মেয়াদের বছর নয়",
+      "reset_password_html": "এই ইমেল ঠিকানাটি ইতিমধ্যেই একটি অ্যাকাউন্টের সাথে যুক্ত। যদি এই অ্যাকাউন্টটি আপনার হয়, তাহলে আপনি <a href=\"/account/login#recover\">আপনার পাসওয়ার্ড রিসেট করতে পারবেন</a>",
+      "verify_email": "আমরা %{customer_email} -এ একটি ইমেল পাঠিয়েছি, আপনার ইমেল ঠিকানা যাচাই করতে অনুগ্রহ করে ইমেলের লিঙ্কে ক্লিক করুন।",
+      "product_not_available": "এই গ্রাহকের জন্য পণ্যটি প্রকাশিত নয়।"
     },
     "notices": {
       "customer": {
@@ -2053,6 +2136,49 @@
       },
       "sms_unsubscribe_confirm": {
         "message": "আপনি কি সত্যিই এসএমএস মার্কেটিং থেকে সদস্যতা ত্যাগ করতে চান?"
+      }
+    },
+    "links": {
+      "learn_more": "আরও জানুন"
+    },
+    "feed": {
+      "more": "আরও"
+    },
+    "attributes": {
+      "email": "ইমেল",
+      "password": "পাসওয়ার্ড",
+      "password_confirmation": "পাসওয়ার্ড নিশ্চিতকরণ",
+      "first_name": "নামের প্রথম অংশ",
+      "last_name": "শেষ নাম",
+      "body": "শরীর",
+      "signature": "ঠিকানা"
+    },
+    "addresses": {
+      "zip_code": "জিপ কোড",
+      "postal_code": "পোস্টাল কোড",
+      "postcode": "পোস্টকোড",
+      "pincode": "পিনকোড",
+      "region": "অঞ্চল",
+      "prefecture": "প্রিফেকচার",
+      "province": "প্রদেশ",
+      "state": "রাষ্ট্র",
+      "state_and_territory": "রাজ্য/অঞ্চল",
+      "county": "কাউন্টি",
+      "emirate": "আমিরাত",
+      "governorate": "রাজ্যপালশাসিত এলাকা",
+      "confirm": "আপনি কি নিশ্চিত যে আপনি এই ঠিকানাটি মুছে ফেলতে চান?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "বৈশিষ্ট্যযুক্ত",
+        "best_selling": "বেস্ট সেলিং",
+        "az": "বর্ণানুক্রমে, A-Z",
+        "za": "বর্ণানুক্রমিকভাবে, Z-A",
+        "price_ascending": "দাম, কম থেকে বেশি",
+        "price_descending": "দাম, বেশি থেকে কম",
+        "date_ascending": "তারিখ, পুরোনো থেকে নতুন",
+        "date_descending": "তারিখ, নতুন থেকে পুরানো",
+        "most_relevant": "সবচেয়ে প্রাসঙ্গিক"
       }
     }
   },
@@ -2488,7 +2614,17 @@
       "badge_traffic": "{{percentage}} ট্র্যাফিক",
       "edit": "সম্পাদনা করুন",
       "exit_preview": "প্রিভিউ থেকে বেরিয়ে আসুন",
-      "hide_bar_action": "বারটি লুকান"
+      "hide_bar_action": "বারটি লুকান",
+      "rollout_label": "ঘূর্ণায়মান",
+      "customize_button": "পছন্দমতো বানান",
+      "hide_bar": "বার লুকান",
+      "navigate_to_admin": "অ্যাডমিনে যান",
+      "close_preview": "পূর্বরূপ বন্ধ করুন",
+      "previewing": "আপনি দেখছেন:",
+      "saved_at": "সংরক্ষিত হয়েছে {{date}} {{time}}-এ",
+      "viewing": "আপনি দেখছেন:",
+      "not_available": "প্রোফাইল ডেটা উপলব্ধ নেই",
+      "actions_button": "কার্যক্রম"
     },
     "B2B": {
       "draft_order_details": {
@@ -3137,6 +3273,103 @@
         "account": "হিসাব",
         "sign_in_with_email": "ইমেইল দিয়ে সাইন ইন করুন",
         "sign_in": "সাইন ইন করুন"
+      }
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "{{extensionName}} নামের এক্সটেনশনটি নির্বাচন করুন",
+        "unselect": "{{extensionName}} নামের এক্সটেনশনটি আনসিলেক্ট করুন",
+        "move_down": "পরবর্তী অবস্থানে এক্সটেনশন সরান",
+        "move_up": "এক্সটেনশনটিকে আগের অবস্থানে সরান",
+        "remove": "এক্সটেনশন সরান",
+        "move_down_tooltip": "পরের অবস্থানে যান",
+        "move_up_tooltip": "পূর্বের অবস্থানে যান",
+        "remove_tooltip": "অপসারণ করুন"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "<p>এই লিঙ্কটি এডিটরের ভিতরে খোলা যাবে না। এটি একটি নতুন উইন্ডোতে ({{resolved_to_link}}) খোলা হবে। চালিয়ে যেতে OK-তে ক্লিক করুন।</p>"
+    },
+    "settings": {
+      "title": "সেটিংস",
+      "loading_accessibility_message": "সেটিংস পৃষ্ঠা লোড হচ্ছে",
+      "log_out_everywhere": {
+        "title": "সব জায়গা থেকে সাইন আউট করুন",
+        "description": "আপনি যদি কোনো ডিভাইস হারিয়ে ফেলে থাকেন অথবা আপনার যদি নিরাপত্তার উদ্বেগ থাকে, আপনার অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করতে সব জায়গা থেকে লগ আউট করুন।",
+        "button": "সমস্ত ডিভাইস থেকে সাইন আউট করুন",
+        "warning_message": "আপনাকে এই ডিভাইস থেকেও সাইন আউট করা হবে।"
+      }
+    },
+    "shop_ads": {
+      "title": "অন্যান্য পণ্য যা আপনার পছন্দ হতে পারে",
+      "subtitle": "সীমিত সময়ের জন্য উপলব্ধ",
+      "button": "দোকানে দেখুন",
+      "previous_button": "পূর্ববর্তী",
+      "next_button": "পরবর্তী"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "গ্রাহকরা নিজেরাই রিটার্নের অনুরোধ করতে এবং তা পরিচালনা করতে পারবেন।",
+        "disabled": "ফেরত চাওয়ার জন্য গ্রাহকদের অবশ্যই মার্চেন্টের সাথে যোগাযোগ করতে হবে।"
+      }
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "title": "পেমেন্টের পদ্ধতি পরিবর্তন করুন",
+        "loading": "পেমেন্টের পদ্ধতি লোড হচ্ছে",
+        "no_payment_methods_available": "কোন পেমেন্ট পদ্ধতি উপলব্ধ নেই",
+        "select_new_payment_method": "একটি নতুন পেমেন্ট পদ্ধতি নির্বাচন করুন",
+        "current_method": "বর্তমান",
+        "cancel": "বাতিল করুন",
+        "save": "সংরক্ষণ করুন",
+        "success": "পেমেন্ট পদ্ধতি আপডেট করা হয়েছে",
+        "use_new_payment_method": "+ নতুন পেমেন্ট পদ্ধতি ব্যবহার করুন"
+      }
+    },
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "কার্ড নম্বর",
+        "title": "পেমেন্টের পদ্ধতি পরিবর্তন করুন",
+        "replace_with": "বদলে দিন",
+        "add_new_payment_method": "নতুন যোগ করুন",
+        "save_button": "সংরক্ষণ করুন",
+        "close_button": "বন্ধ করুন",
+        "loading": "পেমেন্টের মাধ্যম পরিবর্তনের মোডাল লোড হচ্ছে",
+        "success": "পেমেন্ট পদ্ধতি আপডেট করা হয়েছে",
+        "invalid_subscription_contract": "সাবস্ক্রিপশন খুঁজে পাওয়া যায়নি",
+        "expiry_date": "মেয়াদ {{expiryDate}}",
+        "edit_current_payment_method": "বর্তমান অর্থপ্রদানের পদ্ধতি সম্পাদনা করুন",
+        "edit_selected_payment_method": "নির্বাচিত পেমেন্ট পদ্ধতি এডিট করুন"
+      }
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "%{shop_name}-এর লোগো",
+      "processing": "প্রক্রিয়াকরণ চলছে...",
+      "step_one": {
+        "page_title": "সাইন ইন করুন - %{shop_name}",
+        "heading": "সাইন ইন করুন",
+        "subheading": "আপনার ইমেল লিখুন এবং আমরা আপনাকে একটি যাচাইকরণ কোড পাঠাব",
+        "subheading_with_sign_in_options": "সাইন ইন করুন অথবা একটি অ্যাকাউন্ট তৈরি করুন",
+        "input_field_label": "ইমেল",
+        "button": "চালিয়ে যান",
+        "or": "অথবা",
+        "consent_agreement": "চালিয়ে গেলে, আপনি আমাদের %{terms}-এ সম্মত হবেন",
+        "last_used_pill": "শেষ ব্যবহৃত"
+      },
+      "step_two": {
+        "page_title": "কোড লিখুন - %{shop_name}",
+        "heading": "কোড দিন",
+        "subheading": "%{email}-এ পাঠানো হয়েছে",
+        "change_email": "পরিবর্তন",
+        "restart_link": "অন্য একটি ইমেল দিয়ে সাইন ইন করুন",
+        "input_field_label": "৬-সংখ্যার কোড",
+        "button": "জমা দিন"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "একটি বৈধ ইমেল ঠিকানা লিখুন",
+          "invalid_code": "সঠিক ৬-সংখ্যার কোডটি প্রবেশ করান"
+        }
       }
     }
   }
