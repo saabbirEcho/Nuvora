@@ -775,7 +775,109 @@
         "thank_you_unconfirmed_items_description": {
           "one": "এটার জন্য আপনাকে চার্জ করা হয়নি",
           "other": "এগুলোর জন্য আপনার কাছে চার্জ নেওয়া হয়নি"
-        }
+        },
+        "thank_you_item_label": {
+          "one": "%{count}টি আইটেম",
+          "other": "%{count}টি আইটেম"
+        },
+        "thank_you_from_shop": "% {shop_name} থেকে",
+        "thank_you_from_other_store": "অন্য দোকান থেকে",
+        "thank_you_payments_app_failed_pending_payment": "আপনার অর্ডারের জন্য আপনাকে চার্জ করা হয়নি। আপনার অর্ডার পর্যালোচনা করতে এবং আবার অর্থ প্রদান করতে আপনার কার্টে ফিরে যান।",
+        "thank_you_payments_app_failed_pending_payment_payment": "আপনার অর্ডারের জন্য আপনাকে চার্জ করা হয়নি। আপনার অর্ডার পর্যালোচনা করতে এবং আবার অর্থ প্রদান করতে আপনার কার্টে ফিরে যান।",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "আপনার অর্ডারের জন্য আপনাকে চার্জ করা হয়নি। আপনার অর্ডার পর্যালোচনা করতে এবং আবার অর্থ প্রদান করতে আপনার কার্টে ফিরে যান।",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "খুব শীঘ্রই আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ বার্তা পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "খুব শীঘ্রই আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ বার্তা পাবেন।",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "খুব শীঘ্রই আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ বার্তা পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পর, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ মেসেজ পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পর, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ মেসেজ পাবেন।",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পর, আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ মেসেজ পাবেন।",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "আপনার পেমেন্ট নিশ্চিত হলে একটি ইমেল পাবেন।",
+        "track_your_order_link_text": "আপনার অর্ডার ট্র্যাক করুন",
+        "checkout_again": "আবার দেখুন",
+        "checkout_on_remote_shop_link_text": "%{remoteShopName}-এ দেখুন",
+        "checkout_on_another_store": "অন্য দোকানে দেখুন",
+        "order_status_confirmed_order_with_email": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "order_status_confirmed_order_with_phone": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি টেক্সট পেতে পারেন।",
+        "order_status_confirmed_order_with_email_and_phone": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "order_status_confirmed_order_with_email_payment": "আপনি আপনার অর্ডারের জন্য %{date} তারিখে একটি পেমেন্ট করেছেন।",
+        "order_status_confirmed_order_with_phone_payment": "আপনি আপনার অর্ডারের জন্য %{date} তারিখে একটি পেমেন্ট করেছেন।",
+        "order_status_confirmed_order_with_email_and_phone_payment": "আপনি আপনার অর্ডারের জন্য %{date} তারিখে একটি পেমেন্ট করেছেন।",
+        "order_status_confirmed_order_with_email_pick_up": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "order_status_confirmed_order_with_phone_pick_up": "আপনার অর্ডার প্রস্তুত হয়ে গেলে আপনি একটি টেক্সট মেসেজ পাবেন।",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল ও টেক্সট পাবেন।",
+        "order_status_payments_app_pending_payment_description_default_with_missing": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_missing_payment": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_missing_pick_up": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_payment": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_email": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_email_payment": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_email_pick_up": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_phone": "আপনি শীঘ্রই একটি নিশ্চিতকরণ টেক্সট পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_phone_payment": "আপনি শীঘ্রই একটি নিশ্চিতকরণ টেক্সট পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_default_with_phone_pick_up": "আপনি শীঘ্রই একটি নিশ্চিতকরণ টেক্সট পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "আপনার পেমেন্ট সম্পূর্ণ হওয়ার পরে, আপনি একটি নিশ্চিতকরণ ইমেল পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "পেমেন্ট সম্পূর্ণ হওয়ার পর আপনি একটি কনফার্মেশন টেক্সট পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "পেমেন্ট সম্পূর্ণ হওয়ার পর আপনি একটি কনফার্মেশন টেক্সট পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "পেমেন্ট সম্পূর্ণ হওয়ার পর আপনি একটি কনফার্মেশন টেক্সট পাবেন। শপ অ্যাপ ব্যবহার করে আপনার অর্ডার ট্র্যাক করুন।",
+        "order_status_payments_app_failed_pending_payment": "আপনার অর্ডারের জন্য আপনাকে চার্জ করা হয়নি। আপনার অর্ডার পর্যালোচনা করতে এবং আবার অর্থ প্রদান করতে আপনার কার্টে ফিরে যান।",
+        "order_status_payments_app_failed_pending_payment_payment": "আপনার অর্ডারের জন্য আপনাকে চার্জ করা হয়নি। আপনার অর্ডার পর্যালোচনা করতে এবং আবার অর্থ প্রদান করতে আপনার কার্টে ফিরে যান।",
+        "order_status_payments_app_failed_pending_payment_pick_up": "আপনার অর্ডারের জন্য আপনাকে চার্জ করা হয়নি। আপনার অর্ডার পর্যালোচনা করতে এবং আবার অর্থ প্রদান করতে আপনার কার্টে ফিরে যান।",
+        "order_status_confirmed_order_local": "আমরা আপনার অর্ডার ডেলিভারির জন্য প্রস্তুত করছি।",
+        "order_status_confirmed_order_local_pick_up": "আমরা আপনার অর্ডার প্রস্তুত করছি।",
+        "order_status_confirmed_order_local_payment": "আমরা আপনার অর্ডার প্রস্তুত করছি।",
+        "order_status_updates_with_email": "আপনি ইমেলের মাধ্যমে শিপিং এবং ডেলিভারি সংক্রান্ত আপডেট পাবেন।",
+        "order_status_updates_with_phone": "আপনি টেক্সটের মাধ্যমে শিপিং এবং ডেলিভারি সংক্রান্ত আপডেট পেতে পারেন।",
+        "order_status_updates_with_email_and_phone": "আপনি ইমেলের মাধ্যমে শিপিং এবং ডেলিভারি সংক্রান্ত আপডেট পাবেন।",
+        "order_status_updates_with_missing": "শিপিং আপডেটের জন্য আপনার পছন্দের বিকল্প বেছে নিন।",
+        "order_status_confirmed_with_installments_payment_return": "বিক্রয় সহযোগীর দিকে আবার মনোযোগ দিন।",
+        "order_status_confirmed_with_installments_payment_confirm": "আপনি আপনার অর্ডার নম্বর এবং কিস্তির সময়সূচীর বিবরণ সহ একটি নিশ্চিতকরণ ইমেল শীঘ্রই পাবেন।",
+        "confirmed_title": "আপনার অর্ডার নিশ্চিত করা হয়েছে",
+        "confirmed_description": "আমরা আপনার অর্ডার গ্রহণ করেছি এবং এটি প্রস্তুত করছি। আপনার শিপমেন্টের অবস্থা সম্পর্কে তথ্যের জন্য এই পৃষ্ঠায় ফিরে আসুন।",
+        "confirmed_orders_title": "আপনার অর্ডারগুলি নিশ্চিত করা হয়েছে",
+        "ready_for_pickup_title": "আপনার অর্ডার প্রস্তুত আছে",
+        "ready_for_pickup_description": "আপনার অর্ডার প্রস্তুত আছে। অর্ডার নেওয়ার সময় আপনার অর্ডার নিশ্চিতকরণ সঙ্গে আনুন।",
+        "ready_for_delivery_title": "আপনার অর্ডার ডেলিভারির জন্য প্রস্তুত",
+        "ready_for_delivery_description": "আমরা আপনার অর্ডার প্রস্তুত করেছি।",
+        "order_updates_title": "অর্ডার আপডেটগুলি",
+        "shop_phone_description": "আপনার অর্ডার ট্র্যাক করতে সাহায্য করার জন্য আপনি শপ অ্যাপের একটি লিঙ্ক সহ একটি টেক্সট পাবেন।",
+        "order_updates_description_html": "আপডেটগুলি %{customer_contact} -এ পাঠানো হবে।",
+        "order_updates_current_step_prefix": "বর্তমান ধাপ:",
+        "order_updates_past_step_prefix": "পূর্ববর্তী পদক্ষেপ: ",
+        "order_updates_upcoming_step_prefix": "আসন্ন পদক্ষেপ:",
+        "in_transit": "আসছে",
+        "in_transit_title": "আপনার অর্ডার পাঠানো হয়েছে",
+        "in_transit_description": "আপনি এর অগ্রগতির আপডেট পাবেন।",
+        "in_transit_description_days": "আপনি পরবর্তী %{number} দিনের মধ্যে আপনার অর্ডার পেয়ে যাবেন।",
+        "in_transit_description_today": "আপনি আজ আপনার অর্ডার পেয়ে যাবেন।",
+        "in_transit_description_tomorrow": "আপনি আপনার অর্ডারটি আগামী দিনের মধ্যে পেয়ে যাবেন।"
       },
       "payment": {
         "order_edit_banner_multiple_items_returned": "ফেরত দেওয়া হয়েছে {{amount}}",
@@ -1442,6 +1544,180 @@
       "edit": "সম্পাদনা করুন",
       "exit_preview": "প্রিভিউ থেকে বেরিয়ে আসুন",
       "hide_bar_action": "বারটি লুকান"
+    },
+    "B2B": {
+      "draft_order_details": {
+        "payment_status": {
+          "draft": {
+            "submitted": {
+              "deposit": {
+                "title": "মূল্য পরিশোধের শেষ দিন",
+                "due_later": "বাকি টাকা {{translatedName}} শর্ত অনুযায়ী {{dueDate}} তারিখে পরিশোধ করতে হবে।",
+                "due_on_fulfillment": "এই অর্ডারের সমস্ত আইটেম পূরণ হওয়ার পর বকেয়া পরিশোধ করতে হবে।",
+                "due_on_receipt": "আপনি অবশিষ্ট পরিমাণের জন্য একটি চালান পাবেন।",
+                "due_on_date": "The balance is due on {{dueDate}}."
+              }
+            },
+            "deposit": {
+              "due_later": "{{depositAmount}} আপনার অর্ডার নিশ্চিত হলে দিতে হবে। বাকি অর্থ {{translatedName}} শর্তাবলীর উপর হবে।",
+              "due_on_fulfillment": "{{depositAmount}} আপনার অর্ডার নিশ্চিত হলে দিতে হবে। অর্ডার পূরণ হওয়ার পরে বাকি অর্থ পরিশোধ করতে হবে।",
+              "due_on_receipt": "{{depositAmount}} আপনার অর্ডার নিশ্চিত হলে প্রদেয় হবে। বাকি টাকা পরে প্রদেয় হবে।",
+              "due_on_date": "{{depositAmount}} আপনার অর্ডার নিশ্চিত হলে দিতে হবে। বাকি বকেয়া {{dueDate}} তারিখে দিতে হবে।"
+            }
+          },
+          "paid": {
+            "title": "পরিশোধিত",
+            "title_with_date": "পেমেন্ট করা হয়েছে {{date}}",
+            "description": "আপনার অর্ডার সম্পূর্ণরূপে পরিশোধ করা হয়েছে।"
+          },
+          "refund": {
+            "title": "ফেরত দেওয়া হয়েছে",
+            "title_with_date": "ফেরত দেওয়া হয়েছে {{date}}",
+            "description_full_refund": "আপনি এই অর্ডারের জন্য সম্পূর্ণ টাকা ফেরত পেয়েছেন।",
+            "description_single_refund": "আপনি এই অর্ডারের জন্য আংশিক অর্থ ফেরত পেয়েছেন।",
+            "description_multiple_refunds": "আপনি এই অর্ডারের জন্য আংশিক ফেরত পেয়েছেন।"
+          },
+          "canceled": {
+            "title": "পেমেন্ট বাতিল করা হয়েছে",
+            "description": "আপনার বিরুদ্ধে কোনো অভিযোগ আনা হয়নি।"
+          },
+          "due_date": "দেয়ার কথা {{date}}",
+          "total_balance": "মোট ব্যালেন্স",
+          "pay_now": "এখনই পরিশোধ করুন",
+          "pay_now_accessibility_label": "এখন পেমেন্ট করুন {{orderName}} অর্ডারের জন্য",
+          "title": "পেমেন্টের অবস্থা"
+        },
+        "order_timeline": {
+          "expand_events_label": "বিস্তারিত দেখান",
+          "expand_events_accessibility_label": "খসড়া অর্ডারের বিবরণ দেখান",
+          "hide_events_label": "বিস্তারিত লুকান",
+          "hide_events_accessibility_label": "ড্রাফ্ট অর্ডারের বিবরণ লুকান"
+        },
+        "subtitle": "জমা দেওয়া হয়েছে {{date}}",
+        "title": "অর্ডার করুন {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "এই পেমেন্ট পদ্ধতিটি এই স্থান থেকে ভবিষ্যতের কেনাকাটার জন্য আর উপলব্ধ থাকবে না।",
+          "description_with_replacement": "এই পেমেন্ট পদ্ধতিটি মুছে ফেললে এই জায়গার জন্য আগে থেকে অনুমোদিত পেমেন্ট প্রভাবিত হবে। আপনার আসন্ন অর্ডারগুলি পেতে বিকল্প পেমেন্ট পদ্ধতি যোগ করুন।"
+        },
+        "payment_details": {
+          "order_label": "অর্ডার করুন {{name}}",
+          "draft_label": "খসড়া আদেশ {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "পিও নম্বর যোগ করুন",
+        "add_modal_title": "পিও নম্বর যোগ করুন",
+        "cancel": "বাতিল করুন",
+        "close_modal_accessibility_label": "PO নম্বর মোডাল বন্ধ করুন",
+        "discard": "বাতিল করুন",
+        "discard_changes_modal_title": "পরিবর্তন বাতিল করবেন?",
+        "edit_accessibility_label": "পিও নম্বর এডিট করুন",
+        "edit_modal_title": "পিও নম্বর এডিট করুন",
+        "empty_state": "কোনো পিও নম্বর নেই",
+        "modal_po_number_input_label": "পিও নম্বর",
+        "modal_po_number_input_max_length_error": "PO নম্বরের সর্বাধিক {{maxLength}}টি অক্ষর থাকে।",
+        "save": "সংরক্ষণ করুন",
+        "title": "PO #{{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "এই ঠিকানাটি মুছে ফেলতে সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা পৃষ্ঠাটি রিফ্রেশ করুন।"
+      },
+      "addresses_loading_issue": {
+        "description": "সংযোগ ত্রুটি। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন এবং আবার চেষ্টা করুন।"
+      },
+      "banner_title": {
+        "one": "{{count}}টি ত্রুটি রয়েছে",
+        "other": "এখানে {{count}}টি ত্রুটি রয়েছে"
+      },
+      "failed_address_creation": {
+        "description": "আপনার ঠিকানা তৈরি করার সময় একটি সমস্যা হয়েছে। অনুগ্রহ করে এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন অথবা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।"
+      },
+      "failed_address_update": {
+        "description": "আপনার ঠিকানা হালনাগাদ করার সময় একটি সমস্যা হয়েছে। এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন অথবা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।"
+      },
+      "load_address_form_error": {
+        "title": "ঠিকানা ফর্ম লোড করা যাচ্ছে না",
+        "description": "ঠিকানার ফর্ম লোড করা যায়নি।",
+        "refresh_button": "পৃষ্ঠাটি রিফ্রেশ করুন"
+      },
+      "load_orders_error": {
+        "title": "অর্ডার লোড করা যাচ্ছে না",
+        "description": "পুনরায় চেষ্টা করুন অথবা পরে আসুন।",
+        "retry_button": "আবার চেষ্টা করুন"
+      },
+      "load_paypal_error": {
+        "description": "পেপাল লোড করতে সমস্যা হচ্ছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
+      },
+      "logout_everywhere": {
+        "description": "সাইন-আউটের সময় কিছু ভুল হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
+      },
+      "no_access_to_locations": {
+        "description": "আপনার কোনো লোকেশনের অ্যাক্সেস নেই"
+      },
+      "not_found": {
+        "description": "ইউআরএলটি পরীক্ষা করুন অথবা কয়েক মিনিট পর আবার চেষ্টা করুন।",
+        "title": "এই পৃষ্ঠাটি লোড করতে সমস্যা হচ্ছে"
+      },
+      "order_not_found": {
+        "description": "এই অর্ডারটি বিদ্যমান নেই অথবা আপনার এটি দেখার অনুমতি নেই।",
+        "title": "অর্ডার পাওয়া যায়নি"
+      },
+      "profile_update_error": {
+        "description": "আপনার প্রোফাইল আপডেটে সমস্যা হয়েছে। এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন অথবা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।"
+      },
+      "profile_name_update_error": {
+        "description": "আপনার নাম আপডেট করার ক্ষেত্রে একটি সমস্যা হয়েছে। এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন অথবা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।"
+      },
+      "retry_action_label": "আবার চেষ্টা করুন",
+      "resend_link": {
+        "too_many_requests": "অনেক বেশি অনুরোধ। পরে আবার চেষ্টা করুন।",
+        "generic": "অনুরোধ ব্যর্থ হয়েছে"
+      },
+      "load_extension_error": {
+        "title": "ত্রুটি",
+        "description": "এই পৃষ্ঠাটি রিফ্রেশ করুন অথবা কয়েক মিনিট পর আবার চেষ্টা করুন।",
+        "refresh_button": "পৃষ্ঠাটি রিফ্রেশ করুন"
+      },
+      "already_upgraded": "গ্রাহকদের অ্যাকাউন্ট ইতিমধ্যেই আপগ্রেড করা হয়েছে।",
+      "failed_to_upgrade": "গ্রাহকের অ্যাকাউন্ট সেটিংস আপগ্রেড করা যায়নি।",
+      "not_upgraded": "গ্রাহক অ্যাকাউন্ট আপগ্রেড করা হয় না।",
+      "failed_to_revert": "গ্রাহক অ্যাকাউন্টের সেটিংস প্রত্যাবর্তন করা যায়নি।",
+      "revert_window_expired": "রিভার্ট উইন্ডো শেষ হয়ে গেছে।"
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "অনেক বেশি প্রচেষ্টা",
+        "description": "অনুগ্রহ করে কয়েক মিনিট পর আবার চেষ্টা করুন"
+      }
+    },
+    "payment_methods": {
+      "replacement_payment_method_title": "বিকল্প অর্থপ্রদানের পদ্ধতি",
+      "title": "পেমেন্ট পদ্ধতি",
+      "add_payment_method_button": "পেমেন্ট পদ্ধতি যোগ করুন",
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "পেমেন্ট পদ্ধতি যোগ করার মাধ্যমে, আপনি আপনার কার্ড অথবা ব্যাংক অ্যাকাউন্ট থেকে আপনার অনুমোদিত ভবিষ্যৎ কেনাকাটার জন্য চার্জ করার অনুমতি দিচ্ছেন, যতক্ষণ না আপনি বাতিল করেন।"
+      },
+      "bank_account": {
+        "loading_accessibility_message": "ব্যাঙ্ক অ্যাকাউন্ট বাটন লোড হচ্ছে",
+        "iframe_title_accessibility_label": "ব্যাংক অ্যাকাউন্ট সেটআপ",
+        "display_name": "ব্যাংক অ্যাকাউন্ট",
+        "generic_error": "ব্যাংক অ্যাকাউন্ট যোগ করা যায়নি। পরে আবার চেষ্টা করুন।"
+      },
+      "add_payment_method_banner": "দ্রুত চেকআউট বা পূর্ব-অনুমোদিত পরিষেবাগুলির জন্য পেমেন্ট পদ্ধতি যোগ করুন",
+      "no_payment_methods_banner": "কোনো অর্থপ্রদানের পদ্ধতি যোগ করা হয়নি",
+      "edit_payment_method_button_accessibility_label": "{{paymentMethodName}} যার শেষ সংখ্যা {{lastDigits}} তা এডিট করুন",
+      "edit_payment_method_brand_button_accessibility_label": "{{paymentMethodName}} এডিট করুন",
+      "delete_payment_method_button": "মুছে দিন",
+      "delete_payment_method_button_accessibility_label": "{{paymentMethodName}} মুছুন",
+      "back_button": "পিছনে",
+      "back_button_accessibility_label": "{{paymentMethodStepTitle}}-এ ফিরে যান",
+      "default": "ডিফল্ট",
+      "generic_card": "কার্ড",
+      "expiration_warning_button_accessibility_label": "{{paymentMethodName}}-এর জন্য মেয়াদ শেষ হওয়ার সতর্কতা দেখান, যার শেষ নম্বরগুলি হল {{lastDigits}}"
     }
   }
 }
