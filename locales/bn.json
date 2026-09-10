@@ -3079,7 +3079,35 @@
         "preview": "গ্রাহকেরা যখন সদস্যতা বাতিল করবেন, তখন তাঁরা কী দেখবেন, তার পূর্বরূপ এখানে দেওয়া আছে।"
       },
       "sms_unsubscribe_confirm": {
-        "message": "আপনি কি সত্যিই এসএমএস মার্কেটিং থেকে সদস্যতা ত্যাগ করতে চান?"
+        "message": "আপনি কি সত্যিই এসএমএস মার্কেটিং থেকে সদস্যতা ত্যাগ করতে চান?",
+        "button": "সদস্যতা ত্যাগ করুন"
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>আপনি ইমেল খোলা ট্র‍্যাকিং-এর জন্য বেছে নিয়েছেন।</b>",
+          "visibility": "ইমেইল খোলার হার বেনামে জানানো হবে। সমষ্টিগত ইমেইল খোলার হারের অংশ হিসেবে আপনি একটি ইমেইল খুলেছেন কিনা, তা আমরা কেবল দেখতে পাব।",
+          "opt_out_html": "আপনি যদি এই তথ্য শেয়ার করতে না চান তাহলে ইমেল ওপেন ট্র্যাকিং থেকে <a style=\"text-decoration:underline;\" href=\"%{link}\">অপ্ট আউট</a> করতে পারেন।",
+          "preview_bar": "আপনি প্রিভিউ দেখছেন যে গ্রাহকরা ইমেল ওপেন ট্র্যাকিং-এর অপ্ট ইন করলে কী দেখতে পাবেন।"
+        },
+        "opt_out": {
+          "opted_out_html": "<b>আপনি ইমেলের ওপেন ট্র্যাকিং থেকে অপ্ট আউট করেছেন।</b>",
+          "visibility": "আপনি আমাদের ইমেল খুলেছেন কিনা তা আমরা দেখতে পাব না।",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">ইমেল ওপেন ট্র্যাকিং-এর জন্য অপ্ট ইন করুন</a>।",
+          "preview_bar": "আপনি দেখছেন গ্রাহকরা ইমেল ওপেন ট্র্যাকিং থেকে অপ্ট-আউট করলে কী দেখতে পাবেন।"
+        },
+        "no_longer_track": {
+          "status_html": "<b>আমরা এখন আর ইমেল খোলার ট্র্যাক করি না।</b>",
+          "privacy_policy": "এই ইমেইলটি পাঠানোর পর, আমরা আমাদের গোপনীয়তা নীতি হালনাগাদ করেছি এবং আমরা আর খোলা ট্র‍্যাক করি না।"
+        },
+        "track": {
+          "status_html": "<b>ইমেইল খোলা হয়েছে বলে রিপোর্ট করা হয়েছে।</b>",
+          "visibility": "আমরা কেবল দেখবো যে আপনি ইমেলটি খুলেছেন কিনা, যা মোট ইমেল খোলার হারের অংশ।"
+        },
+        "updated_policy": {
+          "status_html": "<b>ইমেইল খোলা হয়েছে বলে রিপোর্ট করা হয়েছে।</b>",
+          "visibility": "আমরা আমাদের নীতি আপডেট করেছি, এবং এখন ইমেল খোলা ট্র্যাক করি। ইমেল খোলার হার বেনামে রিপোর্ট করা হবে। মোট ইমেল খোলার হারের অংশ হিসেবে আমরা শুধুমাত্র দেখতে পাব যে আপনি একটি ইমেল খুলেছেন কিনা।",
+          "opt_out_html": "আপনি যদি এই তথ্য শেয়ার করতে না চান, তাহলে <a style=\"text-decoration:underline;\" href=\"%{link}\">আনসাবস্ক্রাইব</a> করতে পারেন।"
+        }
       }
     },
     "links": {
@@ -3134,6 +3162,77 @@
       "words_connector": ",",
       "two_words_connector": "এবং",
       "last_word_connector": ", এবং "
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "স্টকে আছে",
+          "out_of_stock": "স্টক নেই"
+        }
+      },
+      "boolean": {
+        "true_label": "হ্যাঁ",
+        "false_label": "না"
+      }
+    },
+    "search": {
+      "error": "আপনার অনুসন্ধানের ফলাফল লোড করতে সমস্যা হয়েছে। অনুগ্রহ করে পৃষ্ঠাটি রিফ্রেশ করুন অথবা পরে আবার চেষ্টা করুন।",
+      "sorting": {
+        "relevance": "প্রাসঙ্গিকতা",
+        "price_ascending": "দাম, কম থেকে বেশি",
+        "price_descending": "দাম, বেশি থেকে কম"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "ত্রুটি - %{title}",
+      "products": "পণ্যসমূহ",
+      "shopping_cart": "আপনার কেনাকাটার তালিকা",
+      "account": "হিসাব",
+      "create_account": "অ্যাকাউন্ট তৈরি করুন",
+      "reset_account": "অ্যাকাউন্ট রিসেট করুন",
+      "addresses": "ঠিকানা",
+      "order": "অর্ডার করুন %{name}",
+      "search": "অনুসন্ধান",
+      "search_results": {
+        "one": "অনুসন্ধান: \"%{terms}\" এর জন্য %{count}টি ফলাফল পাওয়া গেছে",
+        "other": "অনুসন্ধান: \"%{terms}\"-এর জন্য %{count}টি ফলাফল পাওয়া গেছে"
+      },
+      "collections": "সংগ্রহসমূহ",
+      "not_found": "404 খুঁজে পাওয়া যায়নি",
+      "challenge": "চ্যালেঞ্জ",
+      "checkpoint": "চেকপয়েন্ট"
+    },
+    "cart": {
+      "discounts_with_count": "%{count}টি ছাড় প্রয়োগ করা হয়েছে"
+    },
+    "challenge": {
+      "message": "চালিয়ে যেতে, জানান আপনি রোবট নন।",
+      "error": "আপনার উত্তরটি সঠিক ছিল না, অনুগ্রহ করে আবার চেষ্টা করুন।",
+      "submit_button_text": "জমা দিন"
+    },
+    "checkpoint": {
+      "message": "চালিয়ে যেতে ক্যাপচা সমাধান করুন",
+      "error": "ক্যাপচা যাচাই ব্যর্থ হয়েছে",
+      "submit_button_text": "জমা দিন"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "সাধারণত ১ ঘন্টার মধ্যে তৈরি হয়ে যায়",
+        "two_hours": "সাধারণত ২ ঘণ্টার মধ্যে প্রস্তুত হয়ে যায়",
+        "four_hours": "সাধারণত ৪ ঘণ্টার মধ্যে প্রস্তুত হয়ে যায়",
+        "twenty_four_hours": "সাধারণত ২৪ ঘণ্টার মধ্যে প্রস্তুত হয়ে যায়",
+        "two_to_four_days": "সাধারণত ২-৪ দিনের মধ্যে প্রস্তুত হয়",
+        "five_or_more_days": "সাধারণত ৫+ দিনে প্রস্তুত হয়",
+        "zero_to_two_hours": "সাধারণত ২ ঘণ্টার মধ্যে প্রস্তুত হয়ে যায়",
+        "two_to_four_hours": "সাধারণত ৪ ঘণ্টার মধ্যে প্রস্তুত হয়ে যায়",
+        "immediately": "এখনই নেওয়ার জন্য প্রস্তুত",
+        "next_day": "পরের দিন সংগ্রহের জন্য প্রস্তুত"
+      }
+    },
+    "subscriptions": {
+      "buyer_consent_product": "এই আইটেমটি একটি পুনরাবৃত্ত বা স্থগিত কেনাকাটা। চালিয়ে যাওয়ার মাধ্যমে, আমি %{cancellationPolicyLink} সম্মত হচ্ছি এবং আমার অর্ডার পূরণ না হওয়া পর্যন্ত অথবা, যদি অনুমতি দেওয়া হয়, আমি বাতিল না করা পর্যন্ত এই পৃষ্ঠায় তালিকাভুক্ত মূল্য, ফ্রিকোয়েন্সি এবং তারিখে আমার পেমেন্ট পদ্ধতি চার্জ করার জন্য আপনাকে অনুমতি দিচ্ছি।",
+      "buyer_consent_cart": "আপনার কার্টের এক বা একাধিক আইটেম একটি পুনরাবৃত্ত বা স্থগিত কেনাকাটা। চালিয়ে যাওয়ার মাধ্যমে, আমি %{cancellationPolicyLink} সম্মত হচ্ছি এবং আপনাকে আমার পেমেন্টের পদ্ধতি থেকে এই পৃষ্ঠায় তালিকাভুক্ত মূল্য, ফ্রিকোয়েন্সি এবং তারিখ অনুযায়ী চার্জ করার অনুমতি দিচ্ছি যতক্ষণ না আমার অর্ডার পূরণ হচ্ছে অথবা আমি বাতিল করছি, যদি অনুমতি দেওয়া হয়।",
+      "cancellation_policy": "বাতিলকরণ নীতি"
     }
   },
   "customer_accounts": {
@@ -4152,7 +4251,8 @@
     },
     "navigation_and_structure": {
       "store_credit_multi_currency_accessibility_label": {
-        "other": "{{formattedBalance}} এবং আরও {{count}} কারেন্সির স্টোর ক্রেডিট"
+        "other": "{{formattedBalance}} এবং আরও {{count}} কারেন্সির স্টোর ক্রেডিট",
+        "one": "{{formattedBalance}} এবং আরও {{count}} কারেন্সি স্টোর ক্রেডিট"
       },
       "settings_link": "সেটিংস",
       "country_switcher_toast_message": "দেশ পরিবর্তন করে {{countryName}} করা হয়েছে",
@@ -4165,7 +4265,43 @@
       "view_details": "বিস্তারিত দেখুন",
       "company_location": "কোম্পানির অবস্থান",
       "search": "অনুসন্ধান",
-      "skip_to_content": "বিষয়বস্তুতে যান"
+      "skip_to_content": "বিষয়বস্তুতে যান",
+      "account_menu": {
+        "hide_accessibility_label": "অ্যাকাউন্ট মেনু লুকান",
+        "show_accessibility_label": "অ্যাকাউন্ট মেনু দেখান",
+        "nav_accessibility_label": "অ্যাকাউন্ট নেভিগেশন",
+        "open_menu_accessibility_label": "অ্যাকাউন্ট খুলুন নেভিগেশন",
+        "close_menu_accessibility_label": "অ্যাকাউন্ট বন্ধ করুন নেভিগেশন",
+        "label": "হিসাব",
+        "loading_message": "অ্যাকাউন্ট নেভিগেশন লোড হচ্ছে"
+      },
+      "action_menu_accessibility_label": "আরও অপশনগুলি",
+      "back_button_accessibility_label": "পিছনে",
+      "go_to_store_link": "দোকানে যাও",
+      "orders_link_label": "আদেশসমূহ",
+      "subscriptions_link_label": "সদস্যতাগুলি",
+      "close_menu_accessibility_label": "প্রধান নেভিগেশন বন্ধ করুন",
+      "contact_email_subject": "{{shopName}} অনলাইন স্টোর থেকে যোগাযোগ করুন",
+      "contact_link": "যোগাযোগের তথ্য",
+      "delete_confirmation": {
+        "cancel": "বাতিল করুন",
+        "delete": "মুছে দিন"
+      },
+      "dismiss_toast": "খারিজ করুন",
+      "document_title": "{{sectionName}} - {{shopName}} - অ্যাকাউন্ট",
+      "loading_message": "লোড হচ্ছে",
+      "loading_policy_content_accessibility_label": "নীতি সামগ্রী লোড করা হচ্ছে",
+      "loading_section_accessibility_label": "লোডিং {{sectionName}}",
+      "policy_load_error": "{{policyName}} লোড করা যায়নি",
+      "policy_try_again": "আবার চেষ্টা করুন",
+      "log_out_link": "সাইন আউট করুন",
+      "logout_overlay_label": "সাইন আউট করা হচ্ছে...",
+      "nav_label_accessibility_label": "মূল নেভিগেশন",
+      "navigation_accessibility_message": "আপনি {{sectionName}}-এ নেভিগেট করেছেন",
+      "open_menu_accessibility_label": "মূল নেভিগেশন খুলুন",
+      "shop_logo_accessibility_label": "{{shopName}} লোগো",
+      "store_credit_accessibility_label": "{{formattedBalance}} স্টোর ক্রেডিট",
+      "store_credit_balances_list_accessibility_label": "স্টোর ক্রেডিট ব্যালেন্স"
     },
     "announcement_bar": {
       "expand_label": "ঘোষণা বার প্রসারিত করুন",
@@ -4449,6 +4585,22 @@
           "invalid_code": "সঠিক ৬-সংখ্যার কোডটি প্রবেশ করান"
         }
       }
-    }
+    },
+    "callback": {
+      "try_again": "আবার চেষ্টা করুন"
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "one": "{{count}} মিনিট আগে",
+          "other": "{{count}} মিনিট আগে"
+        },
+        "lessThanOneMinuteAgo": "এইমাত্র",
+        "yesterday": "গতকাল {{time}} এ",
+        "today": "আজ {{time}}-এ",
+        "tomorrow": "আগামীকাল {{time}}"
+      }
+    },
+    "enable_javascript": "আপনার অ্যাকাউন্ট দেখতে, আপনার ব্রাউজারের সেটিংসে JavaScript চালু করুন অথবা অন্য কোনো ব্রাউজার থেকে সাইন ইন করুন।"
   }
 }
