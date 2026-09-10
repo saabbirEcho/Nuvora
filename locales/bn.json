@@ -26,7 +26,15 @@
             "delivery_strategy_conditions_not_satisfied": "এই অবস্থানে ডেলিভারির কৌশলগুলি উপলব্ধ আছে, তবে সেগুলির শর্তাবলী পূরণ করা হয়নি।",
             "out_of_stock_at_origin_location": "উৎপত্তি স্থলে কোনো মজুদ নেই।",
             "invalid_signature": "ছাড়ের স্বাক্ষরটি অবৈধ।",
-            "mixed_destination_countries": "ডেলিভারি উপলব্ধ নয় কারণ ডেলিভারি লাইনগুলো একাধিক দেশের উপর দিয়ে বিস্তৃত।"
+            "mixed_destination_countries": "ডেলিভারি উপলব্ধ নয় কারণ ডেলিভারি লাইনগুলো একাধিক দেশের উপর দিয়ে বিস্তৃত।",
+            "only_one_delivery_line_allowed": "কার্টে শুধুমাত্র একটি ডেলিভারি লাইন থাকতে হবে।",
+            "wrong_number_of_delivery_lines": "পণ্যদ্রব্যের প্রতিটি দলের জন্য একটি বিতরণ লাইন উল্লেখ করা আবশ্যক।",
+            "external_delivery_promise_error": "একটি বাহ্যিক ডেলিভারি প্রতিজ্ঞা আনার ত্রুটি।",
+            "options_instructions_invalid": "নির্দিষ্ট নির্দেশাবলী প্রত্যাশিত প্যাটার্নের সাথে মেলে না।",
+            "destination_address_required": "চালিয়ে যেতে একটি গন্তব্য ঠিকানা প্রয়োজন।",
+            "pickup_points_unavailable": "পিকআপ পয়েন্টগুলো বর্তমানে অনুপলব্ধ।",
+            "local_pickup_delivery_line_detail_changed": "চালিয়ে যাওয়ার জন্য বর্তমান স্থানীয় পিকআপ ডেলিভারি কৌশল পরিবর্তন করতে হবে।",
+            "selected_pickup_option_no_longer_available": "আগে যে পিকআপ অপশনটি বেছে নেওয়া হয়েছিল, সেটি এখন আর উপলব্ধ নয়।"
           },
           "discount": {
             "discounts_not_allowed_for_b2b": "বি২বি স্টোরগুলোতে ডিসকাউন্ট দেওয়ার অনুমতি নেই।",
@@ -130,6 +138,61 @@
           },
           "checkout_source": {
             "revoked": "এই চেকআউট আর উপলব্ধ নেই।"
+          },
+          "only_empty_terms_accepted": "এই নীতি শুধুমাত্র ফাঁকা পদ গ্রহণ করে।",
+          "session_identifier_not_unique_error": "আপনার অর্ডারে কিছু সমস্যা হয়েছে, আবার অর্ডার করার চেষ্টা করুন।",
+          "line_item_limit_reached": "লাইন আইটেমের সর্বোচ্চ সংখ্যায় পৌঁছানো হয়েছে।",
+          "session_is_already_finished": "এই চেকআউট সেশনটি ইতিমধ্যেই চূড়ান্ত করা হয়েছে।",
+          "merchandise": {
+            "only_value_constraint": "পণ্য ইনপুটে শুধুমাত্র সঠিক মান অনুমোদিত।",
+            "merchandise_not_found": "পণ্যটি খুঁজে পাওয়া যায়নি।",
+            "merchandise_variant_not_found": "পণ্যের প্রকারভেদ পাওয়া যায়নি।",
+            "merchandise_not_applicable": "পণ্য প্রকার কেনা যাবে না।",
+            "mixed_currencies": "চেকআউটে বিভিন্ন মুদ্রার আইটেম রয়েছে।",
+            "bundle_products_not_supported_for_b2b": "এই অবস্থানের জন্য B2B অর্ডারে বান্ডেল করা আইটেম যোগ করা যাবে না।",
+            "gift_card_quantity_mismatch": "উপহার কার্ড কোড নির্দিষ্ট করার সময়, লাইন আইটেমের পরিমাণ এবং উপহার কার্ড কোডের সংখ্যা অবশ্যই মিলতে হবে।",
+            "gift_card_not_supported": "এই চেকআউটে গিফট কার্ড সমর্থিত নয়।",
+            "gift_card_not_unique": "কোড {{code}} সহ উপহার কার্ড এই চেকআউটে একাধিকবার এসেছে। তুলনার আগে কোডগুলি ফরম্যাট করা হয়।",
+            "gift_card_used": "গিফট কার্ড কোড {{code}} ইতিমধ্যেই একটি গিফট কার্ডের সাথে যুক্ত আছে। তুলনা করার আগে কোডগুলি বিন্যাস করা হয়।",
+            "gift_card_invalid": "গিফট কার্ড কোড {{code}} অবৈধ।",
+            "gift_card_code_changed": "গিফট কার্ড কোড {{proposed_code}} ফরম্যাটিং নিয়ম অনুসারে পরিবর্তিত করে {{formatted_code}} করা হয়েছে।",
+            "gift_card_with_attributes_not_supported": "কাস্টম অ্যাট্রিবিউট সহ উপহার কার্ড এই চেকআউটে সমর্থিত নয়।",
+            "gift_card_with_components_not_supported": "উপাদান সহ উপহার কার্ড এই চেকআউটে সমর্থিত নয়।",
+            "selling_plan_mismatch": "সাবস্ক্রিপশন আপডেট করা হয়েছে।",
+            "selling_plan_not_supported": "সাবস্ক্রিপশন সমর্থিত নয়।",
+            "selling_plan_not_supported_b2b": "B2B চেকআউটের জন্য সাবস্ক্রিপশন সমর্থিত নয়।",
+            "fixed_selling_plans_not_supported_for_draft_orders": "খসড়া অর্ডারের জন্য এই কেনাকাটার বিকল্পটি সমর্থিত নয়।",
+            "price_mismatch": "এই পণ্যের জন্য পূর্বে প্রস্তাবিত মূল্য অবৈধ ছিল এবং তা আপডেট করা হয়েছে।",
+            "inventory_not_found": "এই পণ্যের জন্য কোনো ইনভেন্টরি পাওয়া যায়নি।",
+            "product_not_published": "পণ্য প্রকাশিত হয়নি।",
+            "product_not_published_in_buyer_location": "পণ্যটি বর্তমান ক্রেতার অবস্থানে অনুপলব্ধ।",
+            "duplicated_stable_id": "এই পণ্য সারির অন্য একটি সারির সাথে একই স্টেবল-আইডি রয়েছে।",
+            "minimum_quantity_not_met": "কিছু আইটেমের পরিমাণ প্রয়োজনীয় ন্যূনতম মাত্রা পূরণ করছে না।",
+            "maximum_quantity_exceeded": "কিছু জিনিসের পরিমাণ অনুমোদিত সর্বোচ্চ সীমা অতিক্রম করেছে।",
+            "quantity_increment_not_met": "কিছু আইটেমের পরিমাণ অর্ডারের সীমা পূরণ করছে না।",
+            "quantity_rules_not_met": "কিছু আইটেমের পরিমাণ অর্ডারের সীমা পূরণ করছে না।",
+            "bundle_requires_components": "এই বান্ডেল পণ্যটির কোনো উপাদান নেই।",
+            "combined_listing_parent_not_purchasable": "সম্মিলিত তালিকাভুক্ত প্রধান পণ্যগুলি সরাসরি কেনা যাবে না।",
+            "title_too_long": "পণ্যের শিরোনাম অনেক লম্বা।",
+            "title_empty": "পণ্য শিরোনামটি খালি আছে।"
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "কোম্পানির পরিচিতির কাছে কোম্পানির অ্যাক্সেস নেই।",
+            "customer_account_required": "চালিয়ে যেতে আপনাকে অবশ্যই সাইন ইন করতে হবে।",
+            "company_location_required": "চালিয়ে যেতে হলে গ্রাহককে অবশ্যই একটি কোম্পানির অবস্থান বেছে নিতে হবে।",
+            "company_purchase_permission_required": "গ্রাহকের কোম্পানি অর্ডার দেওয়ার অনুমতি নেই।",
+            "personal_order_not_allowed": "এই দোকানে ব্যক্তিগত অর্ডার অনুমোদিত নয়।",
+            "lost_access_to_company": "গ্রাহক কোনো কোম্পানির প্রবেশাধিকার হারিয়েছেন।",
+            "contact_info_does_not_match_customer_account": "যোগাযোগের তথ্য আপনার সাইন-ইন করা অ্যাকাউন্টের সাথে মিলতে হবে।",
+            "phone_number_does_not_match_expected_pattern": "নির্দিষ্ট ফোন নম্বর প্রত্যাশিত প্যাটার্নের সাথে মেলে না।",
+            "email_required": "সাবস্ক্রিপশন ব্যবহার করে পণ্য কেনা হলে একটি ইমেলের প্রয়োজন।",
+            "email_domain_is_invalid": "এই নির্দিষ্ট ডোমেনটি সমাধান করা যায় না।",
+            "missing_contact_method": "একটি বৈধ যোগাযোগ পদ্ধতি অনুপস্থিত।",
+            "checkout_completion_target_is_missing": "চেকআউট সম্পন্ন করার লক্ষ্য অনুপস্থিত।",
+            "invalid_customer_profile": "একটি অবৈধ গ্রাহক প্রোফাইল দেওয়া হয়েছিল।",
+            "customer_profile_access_restricted": "চেকআউটের কাস্টমার প্রোফাইল অ্যাক্সেস করার অনুমতি নেই।",
+            "checkout_completion_target_is_invalid_proc": "অবৈধ চেকআউট সম্পন্নকরণের লক্ষ্য।",
+            "buyer_identity_presentment_currency_does_not_match": "আপনার অর্ডার প্রক্রিয়া করতে সমস্যা হয়েছে। অনুগ্রহ করে কয়েক মিনিট পর আবার চেষ্টা করুন।"
           }
         },
         "full_price": "পূর্ণ মূল্য:",
@@ -138,7 +201,48 @@
         "loading": "লোড হচ্ছে…",
         "loading_title": "চেকআউট - {{shopName}}",
         "google_map_title": "গুগল ম্যাপ",
-        "confirm_order_button_label": "অর্ডার নিশ্চিত করুন"
+        "confirm_order_button_label": "অর্ডার নিশ্চিত করুন",
+        "page_title": "চেকআউট",
+        "error_page_title": "ত্রুটি",
+        "skip_to_content": "বিষয়বস্তুতে যান",
+        "breadcrumb": "ব্রেডক্রাম্ব",
+        "continue_button_label": "চালিয়ে যান",
+        "complete_purchase_button_label": "অর্ডার সম্পন্ন করুন",
+        "pay_now_button_label": "এখনই পরিশোধ করুন",
+        "finalize_order_accessibility_label": "অর্ডার চূড়ান্ত করুন",
+        "authenticate_purchase_button_label": "পেমেন্ট যাচাই করুন",
+        "edit_link_label": "সম্পাদনা করুন",
+        "all_rights_reserved": "সর্বস্বত্ব সংরক্ষিত %{shop_name}",
+        "print_policies_link_label": "মুদ্রণ",
+        "cart": "কার্ট",
+        "close_modal_label": "বন্ধ করুন",
+        "close_notice_label": "বন্ধ করুন",
+        "expand_notice_label": "আরও দেখুন",
+        "continue_to_shipping_method": "চালানে এগিয়ে যান",
+        "continue_to_payment_method": "পেমেন্ট-এ এগিয়ে যান",
+        "continue_to_review": "অর্ডার পর্যালোচনা করুন",
+        "back_to_cart": "কার্টে ফিরে যান",
+        "back_to_contact_information": "তথ্যে ফিরে যান",
+        "back_to_shipping_method": "শিপিং-এ ফিরে যান",
+        "back_to_payment_method": "পেমেন্টে ফিরে যান",
+        "choose_shipping_method": "শিপিং পদ্ধতি নির্বাচন করুন",
+        "choose_payment_method": "একটি পেমেন্ট পদ্ধতি বেছে নিন",
+        "choose_billing_address": "একটি বিলিং ঠিকানা বেছে নিন",
+        "contact_us_html": "আরও তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন",
+        "autocomplete_title": "পরামর্শ",
+        "autocomplete_single_item": "১টি পণ্য উপলব্ধ",
+        "autocomplete_multi_item": "{{number}}টি আইটেম উপলব্ধ",
+        "autocomplete_close": "পরামর্শ বন্ধ করুন",
+        "forwarding_indicator": {
+          "new_window": "নতুন উইন্ডোতে খুলুন।",
+          "external": "বাহ্যিক ওয়েবসাইট খুলবে।",
+          "external_and_new_window": "নতুন উইন্ডোতে বাইরের ওয়েবসাইট খোলে।"
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - চেকআউট"
+        },
+        "tooltip_accessibility_label": "আরও তথ্য",
+        "qr_code": "QR কোড"
       },
       "local_pickup": {
         "location_information": {
@@ -2576,6 +2680,11 @@
           "instructions": "এই কেনাকাটা সম্পূর্ণ করতে আপনার অ্যাপে পেমেন্ট নিশ্চিত করুন"
         },
         "close": "চ্যালেঞ্জটি বন্ধ করুন"
+      },
+      "ucp": {
+        "standard_errors": {
+          "item_unavailable": "পণ্য কেনা যাবে না"
+        }
       }
     },
     "errors": {
@@ -2854,6 +2963,11 @@
     "pagination": {
       "previous": "পূর্ববর্তী",
       "next": "পরবর্তী"
+    },
+    "sentence": {
+      "words_connector": ",",
+      "two_words_connector": "এবং",
+      "last_word_connector": ", এবং "
     }
   },
   "customer_accounts": {
