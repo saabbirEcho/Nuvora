@@ -653,6 +653,254 @@
       },
       "online_store_chat": {
         "title": "প্রশ্ন? আমাদের সাথে চ্যাট করুন"
+      },
+      "failed_payment": {
+        "title": "পেমেন্ট প্রক্রিয়া করা যায়নি",
+        "payment_not_processed_title": "আপনার অর্থপ্রদান সম্পন্ন করা যায়নি।",
+        "payment_not_processed_text": "আপনাকে চার্জ করা হয়নি। আপনার কেনাকাটা সম্পন্ন করতে আপনার কার্টে ফিরে যান।",
+        "return_to_cart_button_label": "কার্টে ফিরে যান"
+      },
+      "payment_gateway": {
+        "credit_card_label": "ক্রেডিট কার্ড",
+        "bogus_label": "টেস্ট পেমেন্ট গেটওয়ে",
+        "bank_deposit_label": "ব্যাংকে জমা",
+        "bank_account_label": "ব্যাংক অ্যাকাউন্ট",
+        "cash_on_delivery_label": "ক্যাশ অন ডেলিভারি (সিওডি)",
+        "money_order_label": "মানি অর্ডার",
+        "debit_card_label": "ডেবিট কার্ড",
+        "credit_or_debit_card_label": "ক্রেডিট/ডেবিট",
+        "deferred_payment_label": "পরে পেমেন্ট পদ্ধতি বেছে নিন",
+        "fixed_payment_label": "আপনার অর্থপ্রদানের শেষ তারিখ {{dueDate}}।",
+        "generic_payment_terms": "আপনি {{translatedName}} শর্তাবলীতে আছেন। আপনার পেমেন্ট {{dueDate}} তারিখে হবে।",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} এই অবস্থানে প্রবেশাধিকার আছে এমন একটি অ্যাকাউন্টে পেমেন্ট পদ্ধতি যোগ অথবা ব্যবহার করতে।",
+            "link": "প্রবেশ করুন"
+          }
+        },
+        "direct_payment_terms": "আপনি {{translatedName}} শর্তাবলীতে আছেন। আপনার কার্ডে {{dueDate}} তারিখে চার্জ করা হবে।",
+        "fixed_direct_payment_terms": "আপনার কার্ড থেকে {{dueDate}} তারিখে চার্জ করা হবে।",
+        "order_due_on_fulfillment_choose_later": "আপনার অর্ডার পূরণ হয়ে গেলে আপনার পেমেন্ট পরিশোধের জন্য প্রস্তুত হবে।",
+        "order_due_on_fulfillment_payment": "আপনার অর্ডার সম্পন্ন হলে আপনার কার্ড থেকে অর্থ কেটে নেওয়া হবে।",
+        "order_due_on_receipt_choose_later": "প্রাপ্তির পরেই আপনার পেমেন্ট পরিশোধ করতে হবে।",
+        "order_deposit_due_now": "{{depositAmount}} আজ পাওনা হয়েছে। {{translatedName}} শর্তানুযায়ী বাকি টাকা {{dueDate}} তারিখে পাওনা হবে।",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} আজ প্রদেয়। আপনার অর্ডার পূরণ হয়ে গেলে বাকি অর্থ প্রদেয় হবে।",
+        "order_deposit_due_on_receipt": "{{depositAmount}} আজ পাওনা হয়েছে। বাকিটা পরে পাওনা হবে।",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} আজ পাওনা। {{dueDate}} তারিখে বাকি টাকা পাওনা হবে।",
+        "draft_order_payment_due_later_no_terms": "আপনার অর্ডার নিশ্চিত হওয়ার পরে আপনার পেমেন্ট নির্ধারিত হবে।",
+        "draft_order_payment_due_later_no_terms_payment_selected": "আপনার অর্ডার নিশ্চিত হওয়ার পর আপনার কার্ড থেকে অর্থ কেটে নেওয়া হবে।",
+        "draft_order_payment_due_later_terms": "অর্ডার নিশ্চিত হয়ে গেলে আপনি {{translatedName}} শর্তাবলীর অধীনে থাকবেন।",
+        "draft_order_payment_due_on_fulfillment": "আপনার অর্ডার নিশ্চিত ও পূরণ হওয়ার পর আপনার পেমেন্টের তারিখ হবে।",
+        "draft_order_deposit_due_later": "{{depositAmount}} আপনার অর্ডার নিশ্চিত হলে দিতে হবে। বাকি অর্থ {{translatedName}} শর্তাবলীর উপর হবে।",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} আপনার অর্ডার নিশ্চিত হলে জমা দিতে হবে। আপনার অর্ডার পূরণ হলে বাকি অর্থ প্রদান করতে হবে।"
+      },
+      "thank_you": {
+        "title": "আপনার কেনাকাটার জন্য আপনাকে ধন্যবাদ!",
+        "confirmation_email_sent_text": "একটি নিশ্চিতকরণ ইমেল %{email}-এ পাঠানো হয়েছে",
+        "return_to_store_link_label": "কেনাকাটা চালিয়ে যান",
+        "print_link_label": "রসিদ প্রিন্ট করুন",
+        "payment_information_title": "পেমেন্টের তথ্য",
+        "shipping_information_title": "শিপিংয়ের তথ্য",
+        "page_title": "আপনাকে ধন্যবাদ, %{display_name}!",
+        "page_title_no_name": "ধন্যবাদ!",
+        "purchase_order_number_title": "PO নম্বর #%{purchase_order_number}",
+        "cancelled_page_title": "অর্ডার বাতিল করা হয়েছে",
+        "failed_pending_payment_page_title": "আপনার পেমেন্টে একটি সমস্যা হয়েছে",
+        "customer_information_title": "অর্ডারের বিবরণ",
+        "contact_information_title": "যোগাযোগের তথ্য",
+        "billing_address_title": "বিলিং ঠিকানা",
+        "cashback_notice": "আপনি ৩০ দিন পর আপনার ক্যাশব্যাক পাবেন।",
+        "company_location_title": "অবস্থান",
+        "shipping_address_title": "শিপিং ঠিকানা",
+        "shipping_address_map_title": "গুগল ম্যাপে শিপিং ঠিকানার সুনির্দিষ্ট অবস্থান দেখানো হচ্ছে: %{address}",
+        "payment_method_title": "পেমেন্ট পদ্ধতি",
+        "payment_method_not_charged": "চার্জ করা হয়নি",
+        "shipping_method_title": "শিপিং পদ্ধতি",
+        "tracking_number": "ট্র্যাকিং নম্বর:",
+        "company_tracking_number": "%{company} ট্র্যাকিং নম্বর:",
+        "estimated_arrival": "আনুমানিক ডেলিভারি তারিখ:",
+        "estimated_delivery": "বর্তমান আনুমানিক ডেলিভারি সময়: ",
+        "re-order": "একই জিনিসগুলি পুনরায় সাজান",
+        "confirmed": "নিশ্চিত করা হয়েছে",
+        "confirmed_items_count": "মোট %{total_count}টির মধ্যে %{confirmed_count}টি আইটেম নিশ্চিত করা হয়েছে",
+        "items_fulfilled_by_store": {
+          "one": "আপনার কেনা জিনিসগুলি %{remote_shop_name} থেকে আসবে।",
+          "other": "আপনার কেনা জিনিসগুলি অন্য দোকান থেকে আসবে।"
+        },
+        "gift_card_confirmation_by_text": "আপনি যদি এটি না পেয়ে থাকেন, তাহলে টেক্সটটি আবার পাঠান অথবা আমাদের সাথে যোগাযোগ করুন।",
+        "gift_card_confirmation_by_email": "যদি আপনি এটি না পেয়ে থাকেন, তাহলে ইমেলটি আবার পাঠান অথবা আমাদের সাথে যোগাযোগ করুন।",
+        "gift_card_title": "উপহার কার্ড",
+        "resend_gift_cards": "উপহার কার্ডগুলো পুনরায় পাঠান",
+        "thank_you_title": "আপনার অর্ডার নিশ্চিত করা হয়েছে",
+        "thank_you_title_payment": "আপনার পেমেন্ট নিশ্চিত করা হয়েছে",
+        "thank_you_title_review": "আপনার অর্ডার পর্যালোচনার জন্য জমা দেওয়া হয়েছে",
+        "thank_you_title_payments_app_pending_default": "আপনার পেমেন্ট প্রক্রিয়া করা হচ্ছে",
+        "thank_you_title_payments_app_pending_buyer_action_required": "আপনার অর্ডার গ্রহণ করা হয়েছে",
+        "thank_you_title_payments_app_failed_pending_payment": "আপনার অর্থপ্রদান সম্পন্ন করা যায়নি।",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন",
+          "multi_store": "আপনি শীঘ্রই প্রতিটি স্টোর থেকে আলাদা নিশ্চিতকরণ ইমেল পাবেন।"
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "আপনি শীঘ্রই একটি নিশ্চিতকরণ বার্তা পাবেন",
+          "multi_store": "আপনি প্রতিটি স্টোর থেকে শীঘ্রই আলাদা কনফার্মেশন টেক্সট পাবেন"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "আপনি শীঘ্রই একটি নিশ্চিতকরণ ইমেল পাবেন",
+          "multi_store": "আপনি শীঘ্রই প্রতিটি স্টোর থেকে আলাদা নিশ্চিতকরণ ইমেল পাবেন।"
+        },
+        "thank_you_confirmed_order_with_email": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_confirmed_order_with_phone": "খুব শীঘ্রই আপনি আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ বার্তা পাবেন।",
+        "thank_you_confirmed_order_with_email_and_phone": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ একটি নিশ্চিতকরণ ইমেল পাবেন।",
+        "thank_you_confirmed_orders_with_email": "আপনি আপনার অর্ডার নম্বর সহ আলাদা নিশ্চিতকরণ ইমেল শীঘ্রই পেয়ে যাবেন",
+        "thank_you_confirmed_orders_with_phone": "আপনি শীঘ্রই আপনার অর্ডার নম্বর সহ আলাদা নিশ্চিতকরণ টেক্সট পাবেন",
+        "thank_you_confirmed_orders_with_email_and_phone": "আপনি আপনার অর্ডার নম্বর সহ আলাদা নিশ্চিতকরণ ইমেল শীঘ্রই পেয়ে যাবেন",
+        "thank_you_confirmed_order_with_email_payment": "আপনি আপনার অর্ডারের জন্য %{date} তারিখে একটি পেমেন্ট করেছেন।",
+        "thank_you_confirmed_order_with_phone_payment": "আপনি আপনার অর্ডারের জন্য %{date} তারিখে একটি পেমেন্ট করেছেন।",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "আপনি আপনার অর্ডারের জন্য %{date} তারিখে একটি পেমেন্ট করেছেন।",
+        "thank_you_confirmed_order_with_email_pick_up": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "thank_you_confirmed_order_with_phone_pick_up": "আপনার অর্ডার প্রস্তুত হয়ে গেলে আপনি একটি টেক্সট মেসেজ পাবেন।",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "thank_you_confirmed_order_with_missing": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_confirmed_order_with_missing_payment": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_confirmed_order_with_missing_pick_up": "একটি অর্ডার নিশ্চিতকরণ পেতে ইমেল বা ফোনের মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+        "thank_you_confirmed_order_with_draft": "আপনার অর্ডার নিশ্চিত হলে অথবা আরও তথ্যের প্রয়োজন হলে আমরা আপনাকে জানাবো।",
+        "thank_you_confirmed_order_with_draft_payment": "আপনার অর্ডার নিশ্চিত হলে অথবা আরও তথ্যের প্রয়োজন হলে আমরা আপনাকে জানাবো।",
+        "thank_you_confirmed_order_with_draft_pick_up": "আপনার অর্ডার নিশ্চিত হলে অথবা আরও তথ্যের প্রয়োজন হলে আমরা আপনাকে জানাবো।",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "১টি আইটেম নিশ্চিত করা হয়নি",
+          "other": "কিছু আইটেম নিশ্চিত করা হয়নি"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "এটার জন্য আপনাকে চার্জ করা হয়নি",
+          "other": "এগুলোর জন্য আপনার কাছে চার্জ নেওয়া হয়নি"
+        }
+      },
+      "payment": {
+        "order_edit_banner_multiple_items_returned": "ফেরত দেওয়া হয়েছে {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "ফেরত থেকে বাদ দেওয়া হয়েছে",
+        "order_edit_banner_multiple_items_return_line_item_removed": "রিটার্ন থেকে {{amount}} সরানো হয়েছে",
+        "order_edit_banner_single_item_updated": "হালনাগাদ করা হয়েছে",
+        "order_edit_banner_updated_order_label": "অর্ডার আপডেট করা হয়েছে",
+        "order_edit_banner_previous_taxes_label": "পূর্ববর্তী কর:",
+        "order_edit_banner_new_taxes_label": "নতুন কর:",
+        "order_edit_banner_no_taxes_label": "কিছুই না",
+        "gift_card_wrapper": {
+          "heading": "উপহার কার্ড",
+          "apply_gift_card_label": "একটি উপহার কার্ড ব্যবহার করুন",
+          "apply_another_gift_card_label": "আরেকটি উপহার কার্ড ব্যবহার করুন",
+          "gift_card_label": "গিফট কার্ড %{identifier}",
+          "payment_tag": "উপহার কার্ড",
+          "add_label": "একটি গিফট কার্ড যোগ করুন",
+          "manage_label": "গিফট কার্ড পরিচালনা করুন"
+        },
+        "gift_card_store_credit": {
+          "add_label": "একটি উপহার কার্ড বা স্টোর ক্রেডিট যোগ করুন",
+          "manage_label": "গিফট কার্ড বা স্টোর ক্রেডিট পরিচালনা করুন"
+        },
+        "gift_card_checkbox_label": "উপহার কার্ড ব্যবহার করুন",
+        "custom_onsite_payment_method_modal": {
+          "title": "কাস্টম অনসাইট পেমেন্ট নিশ্চিতকরণ"
+        },
+        "markets_pro_disclaimer_label": "অর্ডার দেওয়ার মাধ্যমে আপনি Global-e-এর %{markets_pro_terms} এবং %{privacy_policy} অনুযায়ী মার্চেন্ট অফ রেকর্ড হিসেবে Global-e থেকে কেনাকাটা করতে সম্মত হচ্ছেন, এছাড়াও আপনার তথ্য %{shop_name}-এর সাথে শেয়ার করতেও সম্মত হচ্ছেন।",
+        "markets_pro_disclaimer_terms_and_conditions": "শর্তাবলী",
+        "markets_pro_disclaimer_privacy_policy": "গোপনীয়তা নীতি",
+        "markets_pro_disclaimer_terms_and_conditions_title": "রেকর্ড মার্চেন্টের শর্তাবলী",
+        "markets_pro_disclaimer_privacy_policy_title": "মার্চেন্ট অফ রেকর্ড গোপনীয়তা নীতি",
+        "purchase_order_number": {
+          "title": "পিও নম্বর",
+          "label": "পিও নম্বর (ঐচ্ছিক)"
+        },
+        "alternative_payment_currency_total_notice": "দ্রষ্টব্য: আপনার থেকে %{amount_due} চার্জ করা হবে।",
+        "alternative_payment_currency_total_manual_payment_notice": "দ্রষ্টব্য: মোট রূপান্তরিত পরিমাণ হলো %{amount_due}।",
+        "waiting_on_taxes_message": "আপনার করগুলি যদি পরবর্তী কয়েক সেকেন্ডের মধ্যে গণনা না হয়, তাহলে পৃষ্ঠাটি রিফ্রেশ করুন।",
+        "waiting_on_taxes_notice": "ট্যাক্স গণনা করা হচ্ছে",
+        "payment_method": "পেমেন্ট পদ্ধতি",
+        "payment_method_rollup_accessibility_label": "পেমেন্ট পদ্ধতির বিকল্পগুলি",
+        "expired_payment_method": "নির্বাচিত অর্থপ্রদানের পদ্ধতিটির মেয়াদ শেষ হয়ে গেছে",
+        "payment_method_update_failed": "পেমেন্ট পদ্ধতি আপডেট করা যায়নি।",
+        "payment_method_incompatible_with_payment_terms": "পেমেন্টের পদ্ধতি পেমেন্টের শর্তাবলীর সাথে অসঙ্গতিপূর্ণ।",
+        "proposed_gateway_unavailable": "প্রস্তাবিত পেমেন্ট গেটওয়েটি অনুপলব্ধ",
+        "pay_in_installments_split_pay_short": "%{amount} এর ৪টি পেমেন্ট",
+        "gift_cards_unavailable": "আপনার উপহার কার্ড এই অর্ডারে আর প্রয়োগ করা যাবে না এবং সেটি সরিয়ে ফেলা হয়েছে",
+        "payment_flexibility_terms_id_mismatch": "পেমেন্ট ফ্লেক্সিবিলিটি শর্তাবলীর আইডি অমিল",
+        "payment_option": {
+          "accessibility_label": "একটি অর্থপ্রদানের বিকল্প বেছে নিন"
+        },
+        "bank_account_type": {
+          "checking": "পর্যবেক্ষণ করা হচ্ছে",
+          "savings": "সঞ্চয়"
+        },
+        "new_bank_account_disclaimer": "আপনার অর্ডারটি সম্পন্ন করার মাধ্যমে, আপনি %{shop_name}-কে নিচের অ্যাকাউন্ট থেকে প্রদর্শিত পরিমাণ এবং সময় অনুযায়ী ACH এর মাধ্যমে ডেবিট করার অনুমতি দিচ্ছেন।",
+        "bank_account_disclaimer": "এসিএইচ পেমেন্ট প্রক্রিয়া করতে ৪ কার্যদিবস পর্যন্ত সময় লাগতে পারে।",
+        "bank_account_choose": "আপনার কেনাকাটা নিরাপদে সম্পন্ন করতে একটি অ্যাকাউন্ট বেছে নিন",
+        "bank_account_connect_another": "অন্য একটি ব্যাংক অ্যাকাউন্ট সংযুক্ত করুন",
+        "bank_account_connect": "ব্যাংক অ্যাকাউন্ট সংযুক্ত করুন",
+        "bank_account_missing": "ব্যাংক অ্যাকাউন্ট সংযুক্ত করতে হবে",
+        "bank_account_generic_error": "ব্যাংক অ্যাকাউন্ট যোগ করা যায়নি। পরে আবার চেষ্টা করুন।",
+        "separate_payments_label": "আপনার জিনিসপত্র একাধিক দোকানের। আপনাকে %{separate_payments_link} চার্জ করা হবে।",
+        "separate_payments_text": "আলাদা পেমেন্ট",
+        "payments": "পেমেন্টস",
+        "add_payment_method": "পেমেন্ট পদ্ধতি যোগ করুন",
+        "add_new_payment_method": "নতুন অর্থপ্রদানের পদ্ধতি যোগ করুন",
+        "choose_new_payment_method": "একটি নতুন অর্থপ্রদানের পদ্ধতি বেছে নিন",
+        "multiple_primary_payment_not_allowed": "অবৈধ অর্থপ্রদানের পদ্ধতি",
+        "vault_for_payment_later": {
+          "pay_button_label": "অর্ডার দিন",
+          "notice": "আপনাকে এখন চার্জ করা হবে না। আপনার পেমেন্ট চালিয়ে যাওয়ার মাধ্যমে, আপনি সম্মত হচ্ছেন যে আপনার অর্ডার প্রক্রিয়া করার সময় আপনার পেমেন্ট পদ্ধতিতে চার্জ করা হবে।"
+        }
+      },
+      "billing": {
+        "billing_address_title": "বিল করতে",
+        "billing_address_rollup_accessibility_label": "বিল করার বিকল্পগুলি",
+        "same_as_shipping": "শিপিং ঠিকানা হিসাবে একই",
+        "add_address": "অন্য ঠিকানা ব্যবহার করুন",
+        "edit": "সম্পাদনা করুন",
+        "delete": "মুছে দিন",
+        "address_more": "এই ঠিকানার জন্য আরও পদক্ষেপ",
+        "address_edit": "ঠিকানা পরিবর্তন করুন",
+        "address_delete": "ঠিকানা মুছে ফেলুন",
+        "address_confirm": "আপনি কি সত্যিই আপনার অ্যাকাউন্ট থেকে এই ঠিকানাটি মুছে ফেলতে চান?",
+        "address_form": {
+          "add_address": "ঠিকানা যোগ করুন",
+          "save": "সংরক্ষণ করুন",
+          "cancel": "বাতিল করুন"
+        }
+      },
+      "company_location": {
+        "location_title": "কোম্পানির অবস্থান",
+        "location_rollup_accessibility_label": "কোম্পানির অবস্থানের বিকল্পসমূহ"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "বর্তমান স্থিতি %{amount}",
+        "credit_card_expires_on_notice": "মেয়াদ শেষ হবে %{month}/%{year}",
+        "express_payment_gateway_label": "প্রকাশ করুন",
+        "manual_payment_gateway_label": "ম্যানুয়াল",
+        "billing_address_title": "বিলিং ঠিকানা",
+        "free_label": "বিনামূল্যে"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "একটি বৈধ ফোন নম্বর লিখুন",
+        "handle_email_invalid": "একটি বৈধ ইমেইল লিখুন",
+        "email_invalid": "একটি বৈধ ইমেইল লিখুন",
+        "email_or_phone_blank": "ইমেইল অথবা ফোন নম্বর দিন",
+        "email_or_phone_invalid": "একটি বৈধ ইমেল বা একটি মোবাইল ফোন নম্বর লিখুন",
+        "address_first_name_blank": "প্রথম নাম লিখুন",
+        "address_first_name_too_long": "প্রথম নামটি খুব দীর্ঘ (সর্বোচ্চ ২৫৫ অক্ষর)",
+        "address_first_name_contains_emojis": "নামের প্রথম অংশে ইমোজি ব্যবহার করা যাবে না",
+        "address_first_name_contains_html_tags": "নামের প্রথম অংশে HTML ট্যাগ থাকতে পারবে না।",
+        "address_first_name_contains_url": "নামের প্রথম অংশে কোনো ইউআরএল থাকতে পারবে না",
+        "address_first_name_contains_mathematical_symbols": "নামের প্রথম অংশে গাণিতিক প্রতীক থাকতে পারবে না",
+        "address_last_name_blank": "শেষের নামটি লিখুন",
+        "address_last_name_too_long": "শেষ নামটি খুব দীর্ঘ (সর্বোচ্চ ২৫৫টি অক্ষর)",
+        "address_last_name_contains_emojis": "শেষ নামে ইমোজি থাকতে পারবে না",
+        "address_last_name_contains_html_tags": "শেষ নামে HTML ট্যাগ থাকতে পারবে না।",
+        "address_last_name_contains_url": "পদবিতে কোনো URL থাকতে পারবে না",
+        "address_last_name_contains_mathematical_symbols": "শেষ নামে গাণিতিক চিহ্ন থাকতে পারবে না",
+        "address_address1_blank": "একটি ঠিকানা লিখুন",
+        "address_address1_too_long": "প্রথম ঠিকানাটি খুব দীর্ঘ (সর্বোচ্চ ২৫৫টি অক্ষর)",
+        "address_address1_contains_emojis": "ঠিকানা১-এ ইমোজি থাকতে পারবে না",
+        "address_address1_contains_html_tags": "ঠিকানা১-এ HTML ট্যাগ থাকতে পারবে না।"
       }
     },
     "errors": {
