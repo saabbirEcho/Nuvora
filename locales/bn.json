@@ -1151,6 +1151,122 @@
         "milliliter": "মিলি",
         "centiliter": "ক্ল",
         "cubic_meter": "ঘনমিটার"
+      },
+      "order_summary": {
+        "shopping_cart_label": "শপিং কার্ট",
+        "discount_title": "ছাড়",
+        "discount_title_with_position": "ডিসকাউন্ট %{position}",
+        "discount_title_stacking": {
+          "one": "ছাড়",
+          "other": "ছাড়"
+        },
+        "discount_order_stacking": {
+          "one": "অর্ডার ডিসকাউন্ট",
+          "other": "অর্ডারের উপর ডিসকাউন্ট"
+        },
+        "discount_label": "ডিসকাউন্ট কোড",
+        "discount_not_found": "প্রদত্ত কোডের সাথে মানানসই কোনো বৈধ ছাড় খুঁজে পাওয়া যায়নি",
+        "discount_placeholder": "ডিসকাউন্ট কোড",
+        "discount_code_applied": "ডিসকাউন্ট কোড প্রয়োগ করা হয়েছে",
+        "discount_code_applied_with_code": "ডিসকাউন্ট কোড %{code} প্রয়োগ করা হয়েছে",
+        "discount_code_removed": "ডিসকাউন্ট কোড %{code} সরিয়ে দেওয়া হয়েছে",
+        "discount_code_replaced": "ডিসকাউন্ট কোড %{old_code} সরানো হয়েছে এবং %{code} প্রয়োগ করা হয়েছে",
+        "discount_code_replaced_multiple": "একাধিক ডিসকাউন্ট কোড সরানো হয়েছে এবং %{code} প্রয়োগ করা হয়েছে",
+        "discount_code_allocations_mismatch": "আপনার <strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোড পরিবর্তন করা হয়েছে। আপনার কার্ট পর্যালোচনা করুন এবং আবার চেষ্টা করুন।",
+        "order_discounts_apply_to_local_shop": "অর্ডারের ডিসকাউন্ট শুধুমাত্র %{shop_name}-এর জিনিসগুলিতে প্রযোজ্য",
+        "gift_card_applied": "উপহার কার্ড প্রয়োগ করা হয়েছে",
+        "enter_shipping_address": "শিপিং ঠিকানা লিখুন",
+        "gift_card_title": "উপহার কার্ড",
+        "gift_card_label": "উপহার কার্ড",
+        "gift_card_placeholder": "উপহার কার্ড",
+        "gift_card_and_discount_title": "ছাড়ের কোড অথবা গিফট কার্ড",
+        "gift_card_and_discount_label": "ছাড়ের কোড অথবা গিফট কার্ড",
+        "gift_card_and_discount_placeholder": "ছাড়ের কোড অথবা গিফট কার্ড",
+        "gift_cards_apply_to_local_shop": "গিফট কার্ড শুধুমাত্র %{shop_name}-এর জিনিসপত্রের জন্য প্রযোজ্য",
+        "add_discount_or_gift_card": "একটি ডিসকাউন্ট কোড বা গিফট কার্ড যোগ করুন",
+        "remove_gift_card_label": "উপহার কার্ড সাফ করুন",
+        "remove_discount_label": "ছাড় বাদ দিন",
+        "return_restocking_fee_label": "পুনরায় মজুত করার ফি",
+        "return_shipping_fee_label": "ফেরত পাঠানো",
+        "free_shipping_discount_label": "বিনামূল্যে ডেলিভারি",
+        "applied_free_shipping_discount_label": "আবেদন করা হয়েছে",
+        "apply_discount_button_label": "আবেদন করুন",
+        "applied_discount_message": "মোট অর্ডারের মূল্যের উপর %{amount} ছাড়",
+        "discount_has_been_applied": "ছাড় প্রয়োগ করা হয়েছে",
+        "discount_has_been_removed": "ডিসকাউন্ট তুলে নেওয়া হয়েছে",
+        "automatic_discount_tooltip": "স্বয়ংক্রিয়ভাবে প্রয়োগ করা ডিসকাউন্টগুলি সরানো যাবে না",
+        "gift_card_has_been_applied": "উপহার কার্ড প্রয়োগ করা হয়েছে",
+        "gift_card_has_been_removed": "উপহার কার্ড সরানো হয়েছে",
+        "gift_card_subscriptions_notice": "উপহার কার্ডগুলো শুধুমাত্র আপনার প্রথম পেমেন্টের জন্য প্রযোজ্য হবে",
+        "discount_already_applied": "এই অর্ডারে একটি ডিসকাউন্ট প্রয়োগ করা হয়েছে। আপনি অন্য কোনো ডিসকাউন্ট যোগ করতে পারবেন না।",
+        "cart_does_not_meet_discount_requirements_notice": "আপনার কার্টের আইটেমগুলির জন্য <strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোডটি বৈধ নয়",
+        "discount_requires_customer_notice": "ডিসকাউন্ট কোড <strong style=\"text-transform:uppercase\">%{code}</strong> প্রয়োগ করতে আপনার শিপিংয়ের তথ্য লিখুন",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোডটি এখন আপনার জন্য উপলব্ধ নয়",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোডের জন্য যোগ্য গ্রাহক প্রয়োজন",
+        "shipping_information_does_not_meet_discount_requirements_notice": "আপনার শিপিং ঠিকানার জন্য <strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোড উপলব্ধ নেই",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোডটি ইতিমধ্যেই ব্যবহার করা হয়েছে",
+        "subtotal_label": "উপমোট",
+        "subtotal_label_with_quantity": {
+          "one": "সাবটোটাল · %{count}টি আইটেম",
+          "other": "মোট · %{count}টি জিনিস"
+        },
+        "shipping_label": "শিপিং",
+        "pickup_label": "দোকানে সংগ্রহ করুন",
+        "no_pickup_location": "কোনো পিকআপ লোকেশন উপলব্ধ নেই।",
+        "pickup_unavailable_banner_title": {
+          "one": "আপনার আইটেম সহ কোনো দোকান উপলব্ধ নেই",
+          "other": "আপনার জিনিসপত্র সহ কোনো দোকান উপলব্ধ নেই"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "আপনার আইটেমের জন্য %{country}-তে কোনো স্টোর উপলব্ধ নেই",
+          "other": "আপনার জিনিসপত্রের জন্য %{country} তে কোনো স্টোর উপলব্ধ নেই"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "প্রাপকের ঠিকানা",
+          "ship_to_address_instead_html": "এর পরিবর্তে %{link}"
+        },
+        "tip_label": "টিপ",
+        "unconfirmed_label": "অনিশ্চিত",
+        "calculating_shipping": "গণনা চলছে…",
+        "calculating": "গণনা চলছে…",
+        "shipping_default_value": "পরবর্তী ধাপে গণনা করা হয়েছে",
+        "shipping_discount_title": "শিপিং ডিসকাউন্ট",
+        "shipping_pending_message": "এখনো উপলব্ধ নয়",
+        "shipping_policy_link": "শিপিং খরচ",
+        "taxes_label": "কর",
+        "tax_line": {
+          "hst": "এইচএসটি",
+          "gst": "জিএসটি",
+          "pst": "পিএসটি",
+          "rst": "আরএসটি",
+          "qst": "প্রশ্ন",
+          "vpt": "ভিপিটি"
+        },
+        "estimated_taxes_label": "আনুমানিক কর",
+        "estimated_taxes_label_short": "আনুমানিক",
+        "information_estimated_taxes_label": "আনুমানিক কর",
+        "estimated_taxes_finalization_tooltip_content": "আপনার অর্ডার দেওয়ার পর চূড়ান্ত কর এবং মোট পরিমাণ ইমেল বা টেক্সটের মাধ্যমে নিশ্চিত করা হবে।",
+        "estimated_taxes_finalization_tooltip_content_short": "পেমেন্টের পর কর চূড়ান্ত করা হয়েছে",
+        "order_total_label": "মোট অর্ডার",
+        "price_before_discount_aria_text": "আসল দাম",
+        "price_after_discount_aria_text": "ছাড়কৃত মূল্য",
+        "discount_code_aria_text": "ডিসকাউন্ট কোড",
+        "total_savings": "মোট সঞ্চয়",
+        "total_label": "মোট",
+        "total_due_label": "মোট পাওনা",
+        "total_paid_label": "মোট পরিশোধিত",
+        "total_price_label": "মোট মূল্য",
+        "total_outstanding_label": "পরিশোধের পরিমাণ",
+        "deposit_label": "জমা",
+        "total_due_today_label": "আজ মোট প্রদেয়",
+        "total_due_later_label": "বাকি আছে",
+        "partial_total_label": "মোট",
+        "free_total_label": "বিনামূল্যে",
+        "free_shipping_total_label": "বিনামূল্যে",
+        "paid_label": "পরিশোধিত",
+        "payment_due_label": "পেমেন্ট বাকি",
+        "vat_label_html": "ট্যাক্স বাবদ %{amount} সহ",
+        "duties_included_label": "মোট কর এবং শুল্ক অন্তর্ভুক্ত। ডেলিভারিতে কোনো অতিরিক্ত চার্জ নেই।"
       }
     },
     "errors": {
@@ -1331,7 +1447,147 @@
         "pickup_address_map_link_accessibility_label": "ম্যাপে {{address}}-এ পিকআপের স্থান দেখুন (একটি নতুন উইন্ডোতে খুলবে)",
         "pickup_location_label": "পিকআপের স্থান:",
         "pickup_qr_code_accessibility_label": "দোকানে আপনার অর্ডার নেওয়ার সময় স্ক্যান করার জন্য QR কোড",
-        "predicted_by_shop": "শপের মাধ্যমে ভবিষ্যদ্বাণী করা হয়েছে"
+        "predicted_by_shop": "শপের মাধ্যমে ভবিষ্যদ্বাণী করা হয়েছে",
+        "ready_for_pickup_description": "এই জিনিসগুলো সংগ্রহের জন্য প্রস্তুত। আপনার অর্ডার সংগ্রহ করার সময় দয়া করে আপনার অর্ডার নিশ্চিতকরণ সাথে আনবেন।",
+        "ready_for_pickup_location": "আপনার অর্ডার পিকআপের জন্য প্রস্তুত",
+        "ready_for_pickup_show_qr_description": "আপনার অর্ডার নেওয়ার সময় এই QR কোডটি দেখান।",
+        "picked_up_label": "পিক আপ করা হয়েছে",
+        "canceled_label": "বাতিল করা হয়েছে",
+        "canceled_title": "আপনার অর্ডার বাতিল করা হয়েছে",
+        "come_back": "আপনার চালানের অবস্থা সম্পর্কে আপডেটের জন্য এই পৃষ্ঠায় ফিরে আসুন।",
+        "company_tracking_number": "{{company}} ট্র্যাকিং নম্বর:",
+        "confirmed_label": "নিশ্চিত করা হয়েছে",
+        "confirmed_title": "আপনার অর্ডার নিশ্চিত করা হয়েছে",
+        "confirmed_description_pickup": "আমরা ডেলিভারির জন্য এই জিনিসগুলি প্রস্তুত করছি।",
+        "confirmed_description_shipping": "আমরা এই জিনিসগুলো পাঠানোর জন্য প্রস্তুত করছি।",
+        "confirmed_description_digital": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "confirmed_description_gift_card_text": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি টেক্সট পাবেন।",
+        "complete_label": "সম্পূর্ণ",
+        "delivered_label": "বিতরণ করা হয়েছে",
+        "delivered_description_gift_card": {
+          "one": "উপহার কার্ড ইমেলের মাধ্যমে পাঠানো হয়েছে।",
+          "other": "উপহার কার্ডগুলো ইমেইলের মাধ্যমে পাঠানো হয়েছিল।"
+        },
+        "delivered_description_gift_card_text": {
+          "one": "উপহার কার্ডটি টেক্সটের মাধ্যমে পাঠানো হয়েছে।",
+          "other": "উপহার কার্ডগুলি টেক্সট করে পাঠানো হয়েছিল।"
+        },
+        "gift_card_label": {
+          "one": "উপহার কার্ড",
+          "other": "উপহার কার্ড"
+        },
+        "gift_card_resend_button": {
+          "one": "উপহার কার্ড আবার পাঠান",
+          "other": "উপহার কার্ডগুলো পুনরায় পাঠান"
+        },
+        "gift_resend_success": {
+          "one": "উপহার কার্ড পুনরায় পাঠানো হয়েছে",
+          "other": "উপহার কার্ড পুনরায় পাঠানো হয়েছে"
+        },
+        "gift_resend_failure": {
+          "one": "আপনার গিফট কার্ডটি আবার পাঠানোর ক্ষেত্রে সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা আমাদের সাথে যোগাযোগ করুন।",
+          "other": "আপনার উপহার কার্ডগুলো পুনরায় পাঠানোর ক্ষেত্রে একটি সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা আমাদের সাথে যোগাযোগ করুন।"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "উপহার কার্ড একটি আলাদা ইমেইলে পাঠানো হবে।",
+          "other": "প্রতিটি উপহার কার্ড একটি আলাদা ইমেইলে পাঠানো হবে।"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "গিফট কার্ডটি আলাদা টেক্সটে পাঠানো হবে।",
+          "other": "প্রতিটি উপহার কার্ড আলাদা টেক্সট মেসেজে পাঠানো হবে।"
+        },
+        "status_timestamp": "আপডেট করা হয়েছে {{date}}",
+        "estimated_delivery": "আনুমানিক {{date}}",
+        "expected_by": "{{date}} এর মধ্যে পাওয়ার সম্ভাবনা",
+        "was_expected_by": "{{date}}-এর মধ্যে প্রত্যাশিত ছিল",
+        "delivered": "ডেলিভার করা হয়েছে {{date}}",
+        "buy_with_prime_logo_accessibility_label": "অ্যামাজন বাই উইথ প্রাইম লোগো",
+        "in_review_label": "পর্যালোচনাধীন",
+        "in_review_title": "আপনার অর্ডার পর্যালোচনা করা হচ্ছে",
+        "last_updated": "সর্বশেষ আপডেট করা হয়েছে {{date}}",
+        "multiple_shipments_label": "একাধিক চালান",
+        "multiple_statuses_label": "একাধিক অর্ডার স্ট্যাটাস",
+        "no_tracking_number": "এই চালানের জন্য কোনো ট্র্যাকিং নম্বর নেই।",
+        "tracking_number": {
+          "one": "ট্র্যাকিং নম্বর",
+          "other": "ট্র্যাকিং নম্বর"
+        },
+        "on_its_way_label": "আসছে",
+        "out_for_delivery_label": "বিতরণের জন্য পাঠানো হয়েছে",
+        "resume_tracking": "জীবনবৃত্তান্ত ট্র্যাকিং",
+        "submitted_label": "দাখিল করা হয়েছে",
+        "submitted_description": "অর্ডার এবং পেমেন্টের বিবরণ পর্যালোচনা করুন।",
+        "there_was_a_problem_label": "একটি সমস্যা ছিল",
+        "track_shipment": "শিপমেন্ট ট্র্যাক করুন",
+        "request_return": "ফেরত অনুরোধ",
+        "view_order_for_details": "বিশদ বিবরণের জন্য অর্ডার দেখুন",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "অ্যামাজনে পরিচালনা করুন"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "অ্যামাজনের সাথে পরিচালনা করুন",
+            "new_window_disclaimer": "(একটি নতুন উইন্ডো খোলে)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "ডেলিভারি নিশ্চিত",
+            "external_promise_brand_label": "দ্বারা বিতরণ",
+            "not_delivered_by_label": "{{date}}-এর পরে ডেলিভারি দেওয়া হয়েছে",
+            "delivery_guarantee_expired_label": "ডেলিভারির গ্যারান্টি মেয়াদ উত্তীর্ণ হয়েছে",
+            "modal_accessibility_button_label": "ডেলিভারি সংক্রান্ত তথ্যাদি",
+            "download_shop_app_button_label": "শপ ট্র্যাক করতে ডাউনলোড করুন",
+            "track_with_shop_button_label": "দোকানসহ ট্র্যাক",
+            "claim_shop_cash_button_label": "দোকান ক্যাশ দাবি করুন"
+          },
+          "details_modal": {
+            "title": "ডেলিভারি গ্যারান্টি",
+            "active_delivery_guarantee_label": "ডেলিভারি {{date}}-এর মধ্যে",
+            "expired_delivery_guarantee_description": "এই অর্ডারের ৩০ দিনের শপ প্রমিজ গ্যারান্টি মেয়াদ উত্তীর্ণ হয়েছে।",
+            "expired_badge_label": "মেয়াদ উত্তীর্ণ",
+            "order_includes_guarantees_label": "আপনার অর্ডারে {{deliveryAgreementsCount}}টি গ্যারান্টি অন্তর্ভুক্ত আছে",
+            "order_includes_guarantees_description": "Shop Promise দ্রুত, নির্ভরযোগ্য ডেলিভারির নিশ্চয়তা দেয়। আপনার অর্ডার {{date}}-এর পরে এসে পৌঁছালে শপ ক্যাশ দাবি করুন।",
+            "delivered_after_label": "{{date}}-এর পরে ডেলিভারি দেওয়া হয়েছে",
+            "delivered_after_description": "আপনার অর্ডার দেরিতে আসার কারণে, আপনি {{amount}} শপ ক্যাশ পাওয়ার যোগ্য।",
+            "claimed_shop_cash_description": "কারণ এই অর্ডারটি দেরিতে এসেছে, আপনি {{amount}} শপ ক্যাশ দাবি করেছেন।",
+            "eligible_to_claim_shop_cash_description": "আপনার অর্ডার দেরিতে আসার কারণে, আপনি {{amount}} শপ ক্যাশ পাওয়ার যোগ্য।",
+            "learn_more_button_label": "আরও জানুন",
+            "claim_shop_cash_button_label": "দোকান ক্যাশ দাবি করুন",
+            "view_balance_in_shop_button_label": "দোকানের ব্যালেন্স দেখুন",
+            "scan_to_claim_shop_cash_label": "<span dir=\"ltr\">{{amount}}</span> শপ ক্যাশ দাবি করতে স্ক্যান করুন"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "ডেলিভারি সমর্থিত",
+            "mixed_brands_label": "ডেলিভারি নিশ্চিত",
+            "not_delivered_by_label": "{{date}}-এর মধ্যে ডেলিভার হয়নি",
+            "modal_accessibility_button_label": "ডেলিভারি সংক্রান্ত তথ্যাদি"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "আপনার শপ ক্যাশ দাবি করুন",
+            "no_shop_app_label": "{{appDownloadLink}} শপ ক্যাশ দাবি করতে",
+            "download_shop_app_label": "শপ ডাউনলোড করুন"
+          },
+          "details_modal": {
+            "title": "ডেলিভারি সমর্থিত",
+            "modal_accessiblity_label": "ডেলিভারি সংক্রান্ত তথ্যাদি",
+            "delivery_guarantee_label": "ডেলিভারি গ্যারান্টি",
+            "delivery_by_label": "ডেলিভারি {{date}}-এর মধ্যে",
+            "delivery_guaranteed_by_label": "ডেলিভারি নিশ্চিত করা হয়েছে {{date}} এর মধ্যে",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "শপ প্রমিজ দ্রুত, নির্ভরযোগ্য ডেলিভারির নিশ্চয়তা দেয়। আপনার অর্ডার দেরিতে পৌঁছালে শপ ক্যাশ দাবি করুন।",
+              "may_be_eligible_not_authorized_label": "এই অর্ডারটি দেরিতে আসার কারণে আপনি শপ ক্যাশ পাওয়ার যোগ্য হতে পারেন। বিস্তারিত দেখতে সাইন ইন করুন।",
+              "redeemed_label": "আপনি ইতিমধ্যেই শপ ক্যাশ দাবি করেছেন কারণ এই অর্ডারটি দেরিতে পৌঁছেছে।",
+              "expired_label": "এই অর্ডারটি দেরিতে ডেলিভারির অভিযোগের জন্য উপযুক্ত নয় কারণ ৩০ দিনের গ্যারান্টি মেয়াদ উত্তীর্ণ হয়ে গেছে।",
+              "no_shop_cash_label": "এই অর্ডারটি দেরিতে ডেলিভারির জন্য ক্ষতিপূরণের যোগ্য নয় কারণ এটি শপ পে (Shop Pay)-এর মাধ্যমে পেমেন্ট করা হয়নি।",
+              "no_longer_guaranteed_label": "এই পণ্যগুলির জন্য আর ডেলিভারি গ্যারান্টি নেই।",
+              "claim_shop_cash_title": "দাবি করতে স্ক্যান করুন {{amount}} শপ ক্যাশ",
+              "claim_shop_cash_description": "আপনি শপ অ্যাপে ভবিষ্যতের কেনাকাটার জন্য আপনার শপ ক্যাশ ব্যবহার করতে পারবেন।"
+            }
+          }
+        }
       },
       "status_mark_as_delivered": "ডেলিভার করা হয়েছে হিসাবে চিহ্নিত করুন",
       "fulfillment_status_title": "Fulfillment status: {{status}}",
