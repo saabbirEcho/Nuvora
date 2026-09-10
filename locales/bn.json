@@ -138,7 +138,81 @@
         "loading": "লোড হচ্ছে…",
         "loading_title": "চেকআউট - {{shopName}}",
         "google_map_title": "গুগল ম্যাপ",
-        "confirm_order_button_label": "অর্ডার নিশ্চিত করুন"
+        "confirm_order_button_label": "অর্ডার নিশ্চিত করুন",
+        "submit_order_button_label": "অর্ডার জমা দিন",
+        "submit_for_review_button_label": "পর্যালোচনার জন্য জমা দিন",
+        "submit_for_review_notice_label": "আপনার অর্ডার পর্যালোচনা না করা পর্যন্ত অর্থপ্রদান করতে হবে না।",
+        "continue_to_payment_plans_button_label": "পেমেন্ট প্ল্যানে চালিয়ে যান",
+        "back_button_label": "ফেরত",
+        "choose_delivery_strategy": "ডেলিভারির একটি পদ্ধতি বেছে নিন",
+        "autocomplete_zero_item": "কোনো আইটেম উপলব্ধ নেই",
+        "autocomplete_powered_by_google": "পরিচালিত {{brandName}}",
+        "submit": "জমা দিন",
+        "processing": "প্রক্রিয়াকরণ চলছে...",
+        "stepper": {
+          "increase": "{{type}} বৃদ্ধি করুন",
+          "decrease": "{{type}} হ্রাস করুন",
+          "minimum_reached": "সর্বনিম্ন {{value}} পূরণ হয়েছে",
+          "maximum_reached": "সর্বোচ্চ {{value}}-তে পৌঁছেছে"
+        },
+        "remove_chip": "জিনিসটি সরিয়ে দিন",
+        "remove_item": "অপসারণ করুন %{label}",
+        "remove_tag": "ট্যাগ সরান",
+        "dates": {
+          "weekdays": {
+            "monday": "সোমবার",
+            "tuesday": "মঙ্গলবার",
+            "wednesday": "বুধবার",
+            "thursday": "বৃহস্পতিবার",
+            "friday": "শুক্রবার",
+            "saturday": "শনিবার",
+            "sunday": "রবিবার"
+          },
+          "weekdays_abbreviation": {
+            "monday": "মো",
+            "tuesday": "তু",
+            "wednesday": "আমরা",
+            "thursday": "ঠ",
+            "friday": "ফরাসী",
+            "saturday": "সা",
+            "sunday": "সু"
+          },
+          "months": {
+            "january": "জানুয়ারি",
+            "february": "ফেব্রুয়ারি",
+            "march": "মার্চ",
+            "april": "এপ্রিল",
+            "may": "মে",
+            "june": "জুন",
+            "july": "জুলাই",
+            "august": "আগস্ট",
+            "september": "সেপ্টেম্বর",
+            "october": "অক্টোবর",
+            "november": "নভেম্বর",
+            "december": "ডিসেম্বর"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "আগের মাস দেখান, {{month}} {{year}}",
+          "show_next_month": "পরের মাস দেখান, {{month}} {{year}}",
+          "range_start": "ব্যাপ্তির শুরু",
+          "in_range": "সীমার মধ্যে",
+          "range_end": "সীমার শেষ"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "{{number}} মার্কারের ক্লাস্টার",
+            "other": "{{number}} মার্কারের ক্লাস্টার"
+          }
+        },
+        "sheet": {
+          "expand": "প্রসারিত করুন"
+        },
+        "dropzone": {
+          "add_file": "ফাইল যোগ করুন",
+          "invalid_file_type": "এই ফাইলের প্রকারভেদ সমর্থনযোগ্য নয়",
+          "dragged_over": "আপলোড করতে ফাইলটি এখানে টানুন"
+        }
       },
       "local_pickup": {
         "location_information": {
@@ -965,6 +1039,124 @@
         "vault_for_payment_later": {
           "pay_button_label": "অর্ডার দিন",
           "notice": "আপনাকে এখন চার্জ করা হবে না। আপনার পেমেন্ট চালিয়ে যাওয়ার মাধ্যমে, আপনি সম্মত হচ্ছেন যে আপনার অর্ডার প্রক্রিয়া করার সময় আপনার পেমেন্ট পদ্ধতিতে চার্জ করা হবে।"
+        },
+        "billing_address_associated_with_mandate": "পেমেন্ট পদ্ধতির সাথে যুক্ত ঠিকানা ব্যবহার করুন",
+        "billing_address_associated_with_mandate_info": "আপনি যদি আপনার বিলিং ঠিকানা পরিবর্তন করতে চান, তাহলে আপনার ক্রেডিট কার্ডের বিবরণ সরিয়ে ফেলুন এবং আবার প্রবেশ করান।",
+        "free_order_notice_html": "আপনার অর্ডারটি <strong>বিনামূল্যে</strong>। কোনো পেমেন্টের প্রয়োজন নেই।",
+        "express_checkout_free_order": "বিনামূল্যের অর্ডারের জন্য আপনাকে চার্জ করা হবে না",
+        "order_covered_by_gift_cards_notice": {
+          "one": "আপনার অর্ডারটি আপনার গিফট কার্ডের আওতাভুক্ত।",
+          "other": "আপনার অর্ডারটি আপনার গিফট কার্ড দিয়ে কভার করা হয়েছে।"
+        },
+        "offsite_gateway_redirect_hint": "আপনার কেনাকাটা সম্পূর্ণ করতে আপনাকে %{gateway_label}-এ রিডাইরেক্ট করা হবে",
+        "offsite_gateway_review_page_redirect_hint": "আপনার অর্ডার পর্যালোচনা করার পরে, আপনার কেনাকাটা সম্পূর্ণ করার জন্য আপনাকে %{gateway_label}-এ রিডাইরেক্ট করা হবে।",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} মোট %{total_shop_price}",
+        "offsite_gateway_redirect_hint_no_button_label": "আপনার কেনাকাটা সম্পূর্ণ করতে আপনাকে %{gateway_label}-এ রিডাইরেক্ট করা হবে",
+        "receiver_payment_experience_hint": "আপনার অর্ডার দেওয়ার পরে, আপনি পেমেন্টের বিবরণ পাবেন। %{due_days} দিনের মধ্যে মাল্টিব্যাঙ্কো অথবা অনলাইনে পেমেন্ট করুন।",
+        "billing_address_title": "বিলিং ঠিকানা",
+        "billing_address_rollup_accessibility_label": "বিলিং ঠিকানা বিকল্পগুলি",
+        "billing_address_description": "আপনার কার্ড বা পেমেন্ট পদ্ধতির সাথে মেলে এমন ঠিকানাটি নির্বাচন করুন।",
+        "billing_address_description_no_shipping_address": "আপনার কার্ড বা পেমেন্ট পদ্ধতির সাথে মেলে এমন ঠিকানা দিন।",
+        "no_js_credit_card_fields_redirect_hint": "আপনাকে আপনার অর্থপ্রদানের তথ্য যোগ করার জন্য পুনঃনির্দেশিত করা হবে।",
+        "card_fields_container_prefix": "এর জন্য ফিল্ড কনটেইনার:",
+        "card_fields_unavailable_html": {
+          "one": "ক্রেডিট এবং ডেবিট কার্ডের মাধ্যমে পেমেন্ট এখন উপলব্ধ নেই।<br><a href=\"%{current_url}\">এই পৃষ্ঠাটি রিফ্রেশ করুন</a> অথবা পরে আবার চেষ্টা করুন।",
+          "other": "ক্রেডিট এবং ডেবিট কার্ডের মাধ্যমে পেমেন্ট এখন সম্ভব নয়।<br><a href=\"%{current_url}\">এই পৃষ্ঠাটি রিফ্রেশ করুন</a> অথবা অন্য কোনো পেমেন্ট পদ্ধতি ব্যবহার করে দেখুন।"
+        },
+        "card_fields_processing_error": "পেমেন্ট প্রক্রিয়া করতে সমস্যা হয়েছে। এই পেজটি রিফ্রেশ করার চেষ্টা করুন অথবা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।",
+        "technical_error": "একটি প্রযুক্তিগত সমস্যার কারণে এই মুহূর্তে অর্থপ্রদান সম্পন্ন করা যাচ্ছে না। অনুগ্রহ করে কয়েক মিনিট পর আবার চেষ্টা করুন।",
+        "no_method_error": "এই দোকান এখন পেমেন্ট গ্রহণ করতে পারছে না।",
+        "not_configured_error": "এই দোকান এখন পেমেন্ট গ্রহণ করতে পারছে না।",
+        "missing_credit_card_error": "পেমেন্ট সম্পন্ন করতে আপনার কার্ডের বিবরণ লিখুন",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Wero এই অর্ডারের জন্য উপলব্ধ নয়। অন্য একটি পেমেন্ট পদ্ধতি বেছে নিন।",
+        "payment_method_not_available_for_shipping_address_error": "পেমেন্ট পদ্ধতি নির্বাচিত শিপিং ঠিকানার জন্য উপলব্ধ নয়। অন্য পেমেন্ট পদ্ধতি বেছে নিন।",
+        "payment_method_unavailable_error": "এই পেমেন্ট পদ্ধতিটি এখন উপলব্ধ নয়। অন্য একটি পেমেন্ট পদ্ধতি বেছে নিন।",
+        "payment_method_loading_error": "এই পেমেন্ট পদ্ধতিটি এখনও লোড হচ্ছে। কয়েক সেকেন্ড পরে আবার চেষ্টা করুন।",
+        "bank_payment_method_label": "ব্যাংক পেমেন্ট পদ্ধতি",
+        "billing_address_not_supported_for_payment_method_error": "এই অর্থপ্রদানের পদ্ধতি আপনার বিলিং ঠিকানা এবং মুদ্রার জন্য উপলব্ধ নয়। অন্য একটি অর্থপ্রদানের পদ্ধতি ব্যবহার করে দেখুন।",
+        "generic_incorrect_card_info": "আপনার পেমেন্টের বিবরণ যাচাই করা যায়নি। আপনার কার্ডের বিবরণ পরীক্ষা করে আবার চেষ্টা করুন।",
+        "sofort_label": "সফট ব্যাংক ট্রান্সফার",
+        "paypal_label": "পেপ্যাল",
+        "paypal_wallet_label": "পেপাল ওয়ালেট",
+        "shop_pay_installments_label": "শপ পে কিস্তি",
+        "default": "ডিফল্ট",
+        "set_as_default_card": "ডিফল্ট কার্ড হিসেবে সেট করুন",
+        "continue_to_guest_checkout": "অতিথি হিসেবে কেনাকাটা চালিয়ে যান",
+        "paypal_modal": {
+          "order_contains_subscriptions": "সদস্যতা",
+          "order_contains_fixed_selling_plans": "মোট বিলের মধ্যে ট্যাক্স, শিপিং, স্থগিত চার্জ এবং কিছু ডিসকাউন্ট অন্তর্ভুক্ত নাও থাকতে পারে। আজকের বকেয়া টাকার পরিমাণ জানতে চেকআউট করুন।"
+        },
+        "klarna_label": "ক্লারনা",
+        "klarna_pay_later_label": "ক্লার্নার মাধ্যমে পরে পেমেন্ট করুন",
+        "klarna_pay_now_label": "ক্লারনার মাধ্যমে এখনই পেমেন্ট করুন",
+        "bancontact_label": "ব্যানকন্টাক্ট",
+        "giropay_label": "জিরোপে",
+        "multibanco_label": "মাল্টিব্যাঙ্কো",
+        "mb_way_label": "এমবি ওয়ে",
+        "bizum_label": "বিজুম",
+        "eps_label": "ইপিএস-ট্রান্সফার",
+        "klarna_slice_it_label": "ক্লারনার সাথে অর্থায়ন করুন",
+        "ideal_label": "আইডিয়াল | ويرো",
+        "bank_picker_label": "ব্যাংক",
+        "afterpay_label": "আফটারপে",
+        "cashapppay_label": "ক্যাশ অ্যাপ পে",
+        "przelewy24_label": "প্রজেলেয়ি২৪",
+        "blik_label": "ব্লিক",
+        "twint_label": "টুইন্ট",
+        "mobilepay_label": "মোবাইলপে",
+        "swish_label": "সুইশ",
+        "vipps_label": "ভিপস",
+        "grabpay_label": "গ্র্যাবপে",
+        "kcp_creditcard_label": "কেসিপি ক্রেডিট কার্ড",
+        "alipay_label": "আলিপে",
+        "wechat_pay_label": "উইচ্যাট পে",
+        "wechat_app_label": "উইচ্যাট",
+        "oxxo_label": "অক্সো",
+        "satispay_label": "স্যাটিসপে",
+        "usdc_label": "ইউএসডিসি",
+        "usdc_cashback_title": "%{incentive_percentage}% ক্যাশব্যাক",
+        "usdc_cashback_additional_info": "বেসে USDC দিয়ে পেমেন্ট করুন এবং 30 দিনের মধ্যে আপনার ওয়ালেটে %{incentive_percentage}% ফেরত পান।",
+        "usdc_cashback_terms": "শর্তাবলী এবং সীমা প্রযোজ্য",
+        "purchase_options_card_update_agreement_label_html": "আপনার অর্থপ্রদানের পদ্ধতি আপডেট করার মাধ্যমে, আপনি এই স্টোরের <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">বাতিলকরণ নীতি</a> অনুযায়ী যেকোনো পুনরাবৃত্ত বা স্থগিত ক্রয়ের জন্য অর্থপ্রদানের অনুমোদন দিচ্ছেন।",
+        "subscription_card_update_agreement_label": "পেমেন্ট পদ্ধতি পরিবর্তন করলে আপনার সাবস্ক্রিপশন এবং ভবিষ্যতের পুনরাবৃত্ত পেমেন্ট আপডেট হবে।",
+        "subscription_agreement_label": "আপনার কার্টের এক বা একাধিক আইটেম একটি স্থগিত বা সাবস্ক্রিপশন কেনাকাটা। আপনার পেমেন্ট চালিয়ে যাওয়ার মাধ্যমে, আপনি সম্মত হচ্ছেন যে আপনার পেমেন্ট পদ্ধতি স্বয়ংক্রিয়ভাবে এই পৃষ্ঠায় তালিকাভুক্ত মূল্য এবং ফ্রিকোয়েন্সিতে চার্জ করা হবে যতক্ষণ না এটি শেষ হয় বা আপনি বাতিল করেন। সমস্ত বাতিলকরণ %{cancelled}-এর সাপেক্ষে।",
+        "subscription_agreement_cancelled": "বাতিলকরণ নীতি",
+        "subscription_heading": "সাবস্ক্রিপশন চুক্তি",
+        "subscription_agreement_label_html": "আমি বুঝতে পারছি যে আমি একটি সাবস্ক্রিপশনের জন্য সম্মত হচ্ছি। এটি তালিকাভুক্ত মূল্য এবং ফ্রিকোয়েন্সিতে নবায়ন হবে যতক্ষণ না এটি শেষ হয় বা <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">বাতিল</a> করা হয়।\n",
+        "purchase_options_agreement_label": "আপনার কার্টে থাকা এক বা একাধিক আইটেম একটি ডেফার্ড বা পুনরাবৃত্তিমূলক কেনাকাটা। আপনার পেমেন্টের সাথে এগিয়ে যাওয়ার মাধ্যমে, আপনি সম্মত হচ্ছেন যে আপনার পেমেন্ট পদ্ধতিটি স্বয়ংক্রিয়ভাবে এই পৃষ্ঠায় তালিকাভুক্ত মূল্য এবং ফ্রিকোয়েন্সিতে চার্জ করা হবে যতক্ষণ না এটি শেষ হয় বা আপনি বাতিল করেন। সমস্ত বাতিলকরণ %{cancellation_policy_label}-এর অধীন।",
+        "purchase_options_agreement_label_html": "আমি বুঝতে পারছি যে আমার কার্টের এক বা একাধিক আইটেম স্থগিত বা পুনরাবৃত্ত কেনাকাটা। চালিয়ে যাওয়ার মাধ্যমে, আমি <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">বাতিলকরণ নীতিতে</a> সম্মত হচ্ছি এবং আমার অর্ডার পূরণ না হওয়া পর্যন্ত বা আমি বাতিল না করা পর্যন্ত, যদি অনুমতি দেওয়া হয়, তাহলে এই পৃষ্ঠায় তালিকাভুক্ত মূল্য, ফ্রিকোয়েন্সি এবং তারিখে আমার পেমেন্ট পদ্ধতি চার্জ করার জন্য আপনাকে অনুমোদন দিচ্ছি।",
+        "purchase_options_agreement_label_wallets": "আপনার অর্থপ্রদান চালিয়ে যাওয়ার মাধ্যমে, আপনি এই পৃষ্ঠায় তালিকাভুক্ত ভবিষ্যতের চার্জ এবং %{cancellation_policy_label}-এ সম্মত হচ্ছেন।",
+        "purchase_options_subscription_agreement_label": "আপনার কার্টে একটি স্বয়ংক্রিয়ভাবে নবায়নের সদস্যতা রয়েছে। \"%{button_label}\" ক্লিক করার মাধ্যমে, %{consent_text} %{cancellation_instructions}",
+        "purchase_options_subscription_consent_text": "আপনি স্পষ্টভাবে এবং ইতিবাচকভাবে সম্মত হচ্ছেন যে আপনার কার্টে প্রদর্শিত পুনরাবৃত্ত পরিমাণ(গুলি) (শিপিং এবং ট্যাক্স সহ) সাবস্ক্রিপশন(গুলি) শেষ না হওয়া পর্যন্ত বা আপনি বাতিল না করা পর্যন্ত স্বয়ংক্রিয়ভাবে আপনার কাছ থেকে চার্জ করা হবে।",
+        "purchase_options_subscription_cancellation_instructions": "%{cancel_text} অনুগ্রহ করে %{cancellation_policy_label} দেখুন।",
+        "purchase_options_subscription_cancel_text": "আপনি আপনার অ্যাকাউন্ট থেকে অথবা স্টোরের সাথে যোগাযোগ করে যেকোনো সময় বাতিল করতে পারেন।",
+        "change_currency_section_description": "একটি মুদ্রা বিকল্প নির্বাচন করুন",
+        "no_real_orders_dev_store": "এই দোকান আসল অর্ডার বা আসল পেমেন্ট গ্রহণ করতে পারে না।",
+        "loading": "পেমেন্ট লোড হচ্ছে...",
+        "waiting_on_payment_methods": "উপলভ্য অর্থপ্রদানের পদ্ধতিগুলি আনা হচ্ছে...",
+        "apple_pay_payment_error": "আপনার পেমেন্ট সম্পন্ন করা যায়নি। আবার চেষ্টা করুন অথবা অন্য একটি পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+        "taxes_not_included": "ট্যাক্স অন্তর্ভুক্ত নয়",
+        "no_taxes_banner_content": "এই অর্ডারে কোনো কর ধার্য করা হবে না। একবার অর্থ সংগ্রহ করা হয়ে গেলে, আর কোনো কর যোগ করা যাবে না।",
+        "paypal": {
+          "connect": "আপনার পেপ্যাল অ্যাকাউন্ট কানেক্ট করতে ক্লিক করুন"
+        },
+        "apple": {
+          "connect": "আপনার Apple Pay অ্যাকাউন্ট সংযুক্ত করতে ক্লিক করুন",
+          "not_available": "এই ব্রাউজারে Apple Pay উপলব্ধ নয়। আপনার Apple Pay অ্যাকাউন্ট কানেক্ট করতে হলে আপনাকে Apple ডিভাইসে Safari ব্যবহার করতে হবে।"
+        },
+        "google": {
+          "connect": "আপনার Google Pay অ্যাকাউন্টের সাথে সংযোগ করতে ক্লিক করুন",
+          "error_authorizing": "পেমেন্ট অনুমোদনে ত্রুটি"
+        },
+        "account_connected": "অ্যাকাউন্ট সংযুক্ত হয়েছে।",
+        "mor_disclaimer_html": "<p>নীচে ক্লিক করে এবং আপনার অর্ডার সম্পূর্ণ করার মাধ্যমে, আপনি গ্লোবাল-ই-এর <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">শর্তাবলী</a>\nএবং <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">গোপনীয়তা নীতি</a> অনুসারে এই লেনদেনের জন্য মার্চেন্ট অফ রেকর্ড হিসাবে গ্লোবাল-ই থেকে আপনার আইটেমগুলি কিনতে সম্মত হচ্ছেন। গ্লোবাল-ই হল %{shop_name} এর জন্য একটি আন্তর্জাতিক পূর্ণতা পরিষেবা প্রদানকারী।</p>\n",
+        "lpm": {
+          "multibanco": {
+            "voucher": {
+              "label": "মাল্টিব্যাঙ্কো",
+              "entity": "সত্তা"
+            }
+          }
         }
       },
       "billing": {
@@ -1466,7 +1658,48 @@
         "different_shipping_address_text": "এই অর্ডারের জন্য একটি ওয়ান-টাইম ঠিকানা ব্যবহার করুন",
         "change_company_location_link_label": "কোম্পানির অবস্থান পরিবর্তন করুন",
         "change_location_link_label": "স্থান পরিবর্তন করুন",
-        "ship_to_company": "পাঠান {{companyName}}-এ"
+        "ship_to_company": "পাঠান {{companyName}}-এ",
+        "title": "তথ্য",
+        "address_title": "ঠিকানা",
+        "shipping_used_as_billing_notice": "এটি আপনার এই অর্ডারের বিলিং ঠিকানা হিসেবেও ব্যবহৃত হবে।",
+        "delivery_option_title": "ডেলিভারি পদ্ধতি",
+        "contact_method_title": "যোগাযোগ",
+        "email_label": "ইমেল",
+        "email_rollup_accessibility_label": "ইমেল বিকল্পগুলি",
+        "email_placeholder": "ইমেল",
+        "email_or_phone_label": "ইমেল অথবা মোবাইল ফোন নম্বর",
+        "email_or_phone_placeholder": "ইমেল অথবা মোবাইল ফোন নম্বর",
+        "field_saved_label": "সংরক্ষিত",
+        "field_tooltip_helper_text": "আপনার অর্ডার নিশ্চিতকরণ এবং কার্ট রিমাইন্ডারের জন্য ব্যবহৃত।",
+        "field_tooltip_accessibility_label": "আপনার যোগাযোগের তথ্য কীভাবে ব্যবহৃত হয় সে সম্পর্কে আরও তথ্য",
+        "stored_addresses_label": "সংরক্ষিত ঠিকানা",
+        "available_addresses_label": "উপলব্ধ ঠিকানাগুলি",
+        "new_address_label": "একটি নতুন ঠিকানা ব্যবহার করুন",
+        "first_name_label": "নামের প্রথম অংশ",
+        "optional_first_name_label": "নামের প্রথম অংশ (ঐচ্ছিক)",
+        "last_name_label": "পদবি",
+        "company_label": "সংস্থা",
+        "storefront_link": "ব্যবসায়ীর ওয়েবসাইট",
+        "company_attention_label": "কোম্পানি/দৃষ্টি আকর্ষণ",
+        "optional_company_attention_label": "কোম্পানি/দৃষ্টি আকর্ষণ (ঐচ্ছিক)",
+        "optional_company_label": "প্রতিষ্ঠান (ঐচ্ছিক)",
+        "address1_label": "ঠিকানা",
+        "street_name_label": "রাস্তা",
+        "optional_street_name_label": "রাস্তা (ঐচ্ছিক)",
+        "street_number_label": "বিল্ডিং নম্বর",
+        "optional_street_number_label": "বিল্ডিং নম্বর (ঐচ্ছিক)",
+        "address2_label": "অ্যাপার্টমেন্ট, স্যুট, ইত্যাদি",
+        "optional_address2_label": "অ্যাপার্টমেন্ট, স্যুট, ইত্যাদি (ঐচ্ছিক)",
+        "neighborhood_label": "এলাকা",
+        "optional_neighborhood_label": "এলাকা (ঐচ্ছিক)",
+        "barangay_label": "বারংগে",
+        "optional_barangay_label": "বারাঙ্গাই (ঐচ্ছিক)",
+        "colony_label": "উপনিবেশ",
+        "optional_colony_label": "পল্লী (ঐচ্ছিক)",
+        "commune_label": "কম্যুন",
+        "optional_commune_label": "কমিউন (ঐচ্ছিক)",
+        "district_label": "জেলা",
+        "optional_district_label": "জেলা (ঐচ্ছিক)"
       },
       "delivery_options": {
         "free_total_label": "বিনামূল্যে",
@@ -1523,6 +1756,21 @@
           "one": "{{count}}টি আইটেম",
           "other": "{{count}}টি আইটেম"
         }
+      },
+      "embed": {
+        "header": {
+          "review_order": "আপনার অর্ডারটি পর্যালোচনা করুন"
+        },
+        "shipping": {
+          "shipping_options": "সব শিপিং বিকল্প দেখুন"
+        },
+        "payment": {
+          "payment_options": "সব পেমেন্ট অপশন দেখুন"
+        }
+      },
+      "payment_collection": {
+        "cancelled": "এই পেমেন্টটির আর প্রয়োজন নেই। বিস্তারিত জানতে অর্ডার পেজ দেখুন।",
+        "paid": "এই পেমেন্ট ইতিমধ্যেই জমা দেওয়া হয়েছে। বিস্তারিত জানার জন্য অর্ডার পেজ দেখুন।"
       }
     },
     "errors": {
