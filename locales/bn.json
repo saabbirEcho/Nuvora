@@ -1717,7 +1717,135 @@
       "back_button_accessibility_label": "{{paymentMethodStepTitle}}-এ ফিরে যান",
       "default": "ডিফল্ট",
       "generic_card": "কার্ড",
-      "expiration_warning_button_accessibility_label": "{{paymentMethodName}}-এর জন্য মেয়াদ শেষ হওয়ার সতর্কতা দেখান, যার শেষ নম্বরগুলি হল {{lastDigits}}"
+      "expiration_warning_button_accessibility_label": "{{paymentMethodName}}-এর জন্য মেয়াদ শেষ হওয়ার সতর্কতা দেখান, যার শেষ নম্বরগুলি হল {{lastDigits}}",
+      "expires_soon": "এই কার্ডের মেয়াদ শীঘ্রই শেষ হচ্ছে",
+      "expired": "এই কার্ডের মেয়াদ শেষ হয়ে গেছে",
+      "expired_badge_label": "মেয়াদ উত্তীর্ণ",
+      "expiring_badge_label": "মেয়াদ উত্তীর্ণ হচ্ছে",
+      "card_update_consent": "এই অর্থপ্রদানের পদ্ধতিটি ভবিষ্যতের কেনাকাটার জন্য সংরক্ষিত থাকবে।",
+      "card_update_consent_subscriptions": "এই পেমেন্ট পদ্ধতিটি ভবিষ্যতের কেনাকাটার জন্য সেভ করা থাকবে এবং এটি যেকোনো নিয়মিত বা স্থগিত কেনাকাটার জন্য ব্যবহার করা যেতে পারে।",
+      "digital_wallet_title": "ডিজিটাল ওয়ালেট",
+      "credit_or_debit_card_title": "ক্রেডিট বা ডেবিট কার্ড",
+      "credit_card_title": "ক্রেডিট কার্ড",
+      "additional_payment_methods": "অতিরিক্ত পরিশোধের পদ্ধতি",
+      "or": "অথবা",
+      "google_pay": {
+        "iframe_title_accessibility_label": "গুগল পে পেমেন্ট পদ্ধতি যোগ করুন",
+        "loading_accessibility_message": "Google Pay লোড হচ্ছে",
+        "loading": "Google Pay লোড হচ্ছে",
+        "errors": {
+          "generic": "গুগল পে-তে সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা অন্য পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+          "missing_billing_address": "Google Pay-এর জন্য একটি বিলিং ঠিকানা প্রয়োজন। আপনার অ্যাকাউন্টে একটি যোগ করুন।"
+        }
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "পেপাল পেমেন্ট পদ্ধতি যোগ করুন",
+        "loading_accessibility_message": "পেপ্যাল লোড হচ্ছে",
+        "errors": {
+          "generic": "পেপ্যালে একটি সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা অন্য কোনো পেমেন্ট পদ্ধতি ব্যবহার করুন।"
+        }
+      },
+      "apple_pay": {
+        "loading": "অ্যাপল পে লোড হচ্ছে",
+        "errors": {
+          "generic": "অ্যাপল পে-তে একটি সমস্যা হয়েছিল। আবার চেষ্টা করুন অথবা অন্য কোনো পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+          "not_available": "এই ডিভাইসে Apple Pay উপলব্ধ নয়।",
+          "missing_billing_address": "Apple Pay-এর জন্য একটি বিলিং ঠিকানা প্রয়োজন। অনুগ্রহ করে আপনার অ্যাকাউন্টে একটি যোগ করুন।"
+        }
+      },
+      "store_credit": {
+        "label": "স্টোর ক্রেডিট",
+        "accessibility_label": "স্টোর ক্রেডিট - {{formattedBalance}}",
+        "expirable_amounts_button": "মেয়াদোত্তীর্ণের পরিমাণগুলি দেখুন",
+        "expirable_amounts_label": "মেয়াদোত্তীর্ণ পরিমাণ",
+        "details_modal": {
+          "load_error": "স্টোর ক্রেডিট লোড করা যায়নি।",
+          "title": "মেয়াদোত্তীর্ণ স্টোর ক্রেডিট",
+          "balance_label": "ভারসাম্য",
+          "expiration_date_label": "মেয়াদ শেষ হওয়ার তারিখ",
+          "amount_label": "পরিমাণ",
+          "date_label": "তারিখ",
+          "event_label": "অনুষ্ঠান",
+          "events": {
+            "adjustment": "সমন্বয়",
+            "order_payment": "অর্ডার পেমেন্ট",
+            "order_refund": "অর্ডার ফেরত",
+            "payment_failure": "পেমেন্ট ব্যর্থতা",
+            "payment_returned": "পেমেন্ট ফেরত হয়েছে",
+            "order_cancellation": "অর্ডার বাতিলকরণ",
+            "tax_finalization": "কর চূড়ান্তকরণ"
+          },
+          "expirable_balance_info": "আপনার কিছু ব্যালেন্স ভবিষ্যতের একটি নির্দিষ্ট তারিখে শেষ হয়ে যাবে",
+          "expirable_amount_label": "মোট মেয়াদোত্তীর্ণের পরিমাণ",
+          "expirable_amounts_info": "যে অফারগুলোর মেয়াদ আগে শেষ হবে সেগুলো চেকআউটের সময় প্রথমে প্রযোজ্য হবে",
+          "expirable_amounts_button": "দেখুন",
+          "expired_amounts_button": "মেয়াদ উত্তীর্ণ পরিমাণগুলো দেখুন",
+          "pagination": {
+            "expirable_transactions_loading": "মেয়াদ উত্তীর্ণ হওয়ার পথে এমন আরও জিনিস লোড হচ্ছে",
+            "transactions_loading": "আরও লেনদেন লোড করা হচ্ছে",
+            "load_more_label": "আরো দেখান",
+            "load_more_accessibility_label": "মেয়াদ উত্তীর্ণ হতে চলা পরিমাণগুলো দেখান",
+            "load_more_transactions_accessibility_label": "আরও লেনদেন দেখান",
+            "expirable_transactions_loaded": "অধিক পরিমাণে মেয়াদোত্তীর্ণ পণ্য লোড করা হয়েছে",
+            "transactions_loaded": "আরও লেনদেন লোড করা হয়েছে"
+          },
+          "expirable_indicator": "{{formattedAmount}} মেয়াদ শেষ হয়ে যাবে",
+          "expirable_indicator_accessibility_label": "{{formattedAmount}} মেয়াদ উত্তীর্ণ হবে। মেয়াদোত্তীর্ণের যোগ্য পরিমাণ দেখুন।",
+          "expirable_indicator_with_date_accessibility_label": "{{formattedAmount}} এর মেয়াদ {{date}} তারিখে শেষ হবে। মেয়াদ উত্তীর্ণের কাছাকাছি থাকা অর্থ দেখুন।",
+          "expires_at": "মেয়াদ শেষ হবে {{date}}",
+          "expirable_transactions_list_accessibility_label": "মেয়াদোত্তীর্ণ স্টোর ক্রেডিট লেনদেন",
+          "loading_accessibility_message": "স্টোর ক্রেডিট বিবরণ লোড করা হচ্ছে",
+          "transactions_list_accessibility_label": "স্টোর ক্রেডিটের লেনদেন",
+          "transaction_types": {
+            "credit": "যোগ করা হয়েছে",
+            "debit": "ব্যয়",
+            "debit_revert": "ফেরত দেওয়া হয়েছে",
+            "expiration": "মেয়াদ উত্তীর্ণ"
+          }
+        }
+      },
+      "payment_details": {
+        "title": "পেমেন্ট পদ্ধতির বিবরণ",
+        "credit_card_details_accessibility_label": "যার শেষাংশ হল {{lastDigits}}",
+        "billing_title": "বিলিং ঠিকানা",
+        "card_info_title": "কার্ডের তথ্য",
+        "payment_method_expiring_on": "মেয়াদ উত্তীর্ণ হবে {{expiryDate}} তারিখে",
+        "payment_method_expired_on": "মেয়াদ শেষ হয়েছে {{expiryDate}}",
+        "preauthorized_payments": "পূর্বঅনুমোদিত পেমেন্ট",
+        "close_payment_modal": "বন্ধ করুন",
+        "close_payment_modal_accessibility_label": "পেমেন্ট পদ্ধতির বিবরণী সংক্রান্ত মডেল বন্ধ করুন",
+        "payment_method_not_found_error": "পেমেন্টের পদ্ধতি খুঁজে পাচ্ছি না",
+        "payment_details_loading": "পেমেন্ট পদ্ধতির বিবরণ লোড করা হচ্ছে",
+        "pre_authorized_payments": "পূর্ব-অনুমোদিত পেমেন্ট",
+        "total_amount_of_subscription_line_items_left": "এবং আরও {{total}}টি",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "{{totalItems}}টি মোট আইটেম, {{totalItemsToDisplay}}টি আইটেম প্রদর্শন করা হচ্ছে।",
+        "next_payment_due": "পরবর্তী পেমেন্টের তারিখ {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "সম্পাদনা করুন",
+        "edit_payment_method_button_accessibility_label": "পেমেন্ট পদ্ধতি পরিবর্তন করুন, যার শেষাংশ {{lastDigits}}",
+        "loading_shop_pay": "শপ পে লোড হচ্ছে",
+        "invalid_payment_method": "অর্থপ্রদানের পদ্ধতিটি অবৈধ",
+        "invalid_payment_method_message": "আসন্ন অর্ডারগুলি পেতে একটি নতুন ক্রেডিট কার্ড ব্যবহার করুন।",
+        "replace_payment_method": "পেমেন্টের পদ্ধতি পরিবর্তন করুন",
+        "checkout_card_banner": "এই পেমেন্ট পদ্ধতিটি শুধুমাত্র পূর্ব-অনুমোদিত পেমেন্টের জন্য ব্যবহার করা যাবে। আপনি যদি এই স্টোরে সাইন ইন থাকেন, তাহলে চেকআউটে এটি দেখা যাবে না।",
+        "default_checkbox": "ডিফল্ট হিসেবে সেট করুন",
+        "default_checkbox_accessibility_label": "এই অর্থপ্রদানের পদ্ধতিটিকে ডিফল্ট হিসেবে সেট করুন",
+        "replace_payment_method_button": "প্রতিস্থাপন করুন"
+      },
+      "edit_payment_method": {
+        "title": "পেমেন্ট পদ্ধতি এডিট করুন",
+        "save_payment_method_button": "সংরক্ষণ করুন",
+        "cancel_edit_payment_method_button": "বাতিল করুন",
+        "payment_method_updated_toast": "পেমেন্ট পদ্ধতি আপডেট করা হয়েছে",
+        "billing_address": "বিলিং ঠিকানা",
+        "billing_address_add_new": "নতুন যোগ করুন",
+        "billing_address_choose_from_list": "তালিকা থেকে বেছে নিন",
+        "future_purchases_notice": "এই অর্থপ্রদানের পদ্ধতিটি ভবিষ্যতের কেনাকাটার জন্য সংরক্ষিত থাকবে।",
+        "generic_error": "আপডেট করার সময় একটি সমস্যা হয়েছিল। অনুগ্রহ করে আবার চেষ্টা করুন।"
+      },
+      "update_payment_method": {
+        "title": "পেমেন্টের পদ্ধতি হালনাগাদ করুন",
+        "button_title": "হালনাগাদ"
+      }
     }
   }
 }
