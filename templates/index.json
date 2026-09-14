@@ -16,7 +16,7 @@
     "featured_collection": {
       "type": "section-featured-collection",
       "settings": {
-        "title": "Featured Collection",
+        "title": "Shop Adidas",
         "featured_collection": "adidas",
         "products_to_show": 4
       }
