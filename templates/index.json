@@ -29,11 +29,21 @@
         "featured_collection": "converse",
         "products_to_show": 4
       }
+    },
+    "section_contact_form_GQfRtn": {
+      "type": "section-contact-form",
+      "name": "Contact Form",
+      "settings": {
+        "title": "Get in touch",
+        "btn_text": "Submit",
+        "form_width": "600"
+      }
     }
   },
   "order": [
     "hero_slider",
     "featured_collection",
-    "section_featured_collection_W8PiA8"
+    "section_featured_collection_W8PiA8",
+    "section_contact_form_GQfRtn"
   ]
 }
