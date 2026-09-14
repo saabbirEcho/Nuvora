@@ -569,7 +569,8 @@
         "choose_again": "আবার পছন্দ করুন",
         "payment_method": {
           "heading": "পেমেন্ট পদ্ধতি",
-          "expiry": "মেয়াদ শেষ হবে {{expiry}}"
+          "expiry": "মেয়াদ শেষ হবে {{expiry}}",
+          "accessibility_label": "{{brand}} যার শেষ অঙ্ক {{lastDigits}}"
         },
         "shipping_address": {
           "heading": "শিপিং ঠিকানা"
@@ -1632,7 +1633,8 @@
           "continue_purchase_in_window": "আপনার কেনাকাটা {{walletName}} উইন্ডোতে চালিয়ে যান",
           "and_return_to_checkout": "এবং চেকআউটে ফিরে যান",
           "cancel": "বাতিল করুন"
-        }
+        },
+        "connect_shipping_methods": "{{method1}} এবং {{method2}}"
       },
       "note": {
         "length_exceeds_maximum": "নোটের আকার ৫০০০ বা তার কম অক্ষরে কমান।"
@@ -1681,7 +1683,8 @@
         "foot": "ফুট",
         "yard": "ইয়ড",
         "square_foot": "বর্গফুট",
-        "item": "আইটেম"
+        "item": "আইটেম",
+        "liter": "L"
       },
       "order_summary": {
         "shopping_cart_label": "শপিং কার্ট",
@@ -2850,6 +2853,17 @@
             "other": "আপনার ঠিকানা অনুযায়ী কোনো ডেলিভারি পদ্ধতি উপলব্ধ না থাকায় এই জিনিসগুলি আপনার কার্ট থেকে সরিয়ে দেওয়া হবে।"
           },
           "label": "ডেলিভারি নেই"
+        }
+      },
+      "store_credit_errors": {
+        "generic_error": "আপনার স্টোর ক্রেডিটে একটি সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা পৃষ্ঠাটি পুনরায় লোড করুন।"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "not_available": "এই উপহার কার্ডটি আর পাওয়া যাচ্ছে না",
+          "invalid": "একটি বৈধ গিফট কার্ড লিখুন",
+          "throttle_limit_exceeded": "আপনি সর্বোচ্চ সংখ্যক প্রচেষ্টা অতিক্রম করেছেন। পরে আবার চেষ্টা করুন।",
+          "no_longer_available": "এই গিফট কার্ডটি দিয়ে আর এই চেকআউট সম্পন্ন করা যাবে না"
         }
       }
     },
