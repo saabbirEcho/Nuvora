@@ -1,0 +1,70 @@
+{% liquid
+  assign text = block.settings.text | default: blank
+  assign text_color = block.settings.text_color | default: '#000000'
+%}
+
+<div class="text-block" {{ block.shopify_attributes }}>
+  <div class="text-block__content">
+    <div class="text-block__content-text">
+      {{ text | escape }}
+    </div>
+  </div>
+</div>
+
+{% style %}
+  .text-block {
+    color: {{ text_color }};
+  }
+{% endstyle %}
+
+{% stylesheet %}
+  .text-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-block__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-block__content-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text",
+      "settings": {
+        "text": "Hello, world!",
+        "text_color": "#000000"
+      }
+    }
+  ]
+}
+{% endschema %}

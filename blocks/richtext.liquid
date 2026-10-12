@@ -1,0 +1,36 @@
+{% liquid
+  assign richtext = block.settings.richtext | default: blank
+%}
+
+{% if richtext != blank %}
+  <div class="richtext-block" {{ block.shopify_attributes }}>
+    {{ richtext }}
+  </div>
+{% else %}
+  <p>Rich text is required</p>
+{% endif %}
+
+{% stylesheet %}
+  .richtext-block {
+    width: 100%;
+    height: 100%;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Rich Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Rich Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rich Text"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,79 @@
+{% liquid
+  assign gap = block.settings.gap | default: 20
+  assign alignment = block.settings.alignment | default: "top"
+%}
+
+<div class="image-with-text-block" {{ block.shopify_attributes }}>
+  {% content_for 'blocks' %}
+</div>
+
+{% style %}
+  .image-with-text-block {
+    gap: {{ gap }}px;
+    align-items: {{ alignment }};
+  }
+{% endstyle %}
+
+{% stylesheet %}
+  .image-with-text-block {
+    display: flex;
+
+    & > div {
+      flex: 1;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Image with Text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Gap"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "select",
+      "label": "Alignment",
+      "id": "alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "start"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+    },
+    {
+      "type": "richtext"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with Text"
+    }
+  ]
+}
+{% endschema %}
