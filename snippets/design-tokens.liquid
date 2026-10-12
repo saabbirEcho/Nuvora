@@ -1,0 +1,18 @@
+{%- liquid
+  assign primary_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+  assign primary_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+  assign primary_font_bold_italic = primary_font_bold | font_modify: 'style', 'italic'
+%}
+
+<script>
+  const designTokens = {
+    fonts: {
+      primary: {
+        regular: '{{ settings.type_body_font.family }}',
+        bold: '{{ primary_font_bold.family }}',
+        italic: '{{ primary_font_italic.family }}',
+        boldItalic: '{{ primary_font_bold_italic.family }}',
+      },
+    },
+  };
+</script>

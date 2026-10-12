@@ -1,18 +1,28 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "thesaabbir.myshopify.com",
+    "theme_name": "Nuvora",
     "theme_author": "Saabbir Hossain",
     "theme_version": "1.0.0",
     "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
     "theme_support_url": "https://help.shopify.com/en"
   },
   {
-    "name": "Settings",
+    "name": "t:global_setting_names.font_settings",
     "settings": [
       {
-        "type": "header",
-        "content": "Theme Settings"
+        "type": "font_picker",
+        "id": "type_body_font",
+        "label": "Body Font",
+        "info": "Select a font for your body text",
+        "default": "serif"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_heading_font",
+        "label": "Heading Font",
+        "info": "Select a font for your headings",
+        "default": "serif"
       }
     ]
   }
