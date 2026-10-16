@@ -1,11 +1,9 @@
 {% liquid
   assign padding_top = section.settings.padding_top
   assign padding_bottom = section.settings.padding_bottom
-  assign background_color = section.settings.background_color
-  assign text_color = section.settings.text_color
 %}
 
-<section class="section">
+<section class="section color-{{ section.settings.color_scheme }}">
   <div class="section__content container">
     {% content_for 'blocks' %}
   </div>
@@ -15,15 +13,15 @@
   .section {
     padding-top: {{ padding_top }}px;
     padding-bottom: {{ padding_bottom }}px;
-    background-color: {{ background_color }};
+    background-color: var(--color-background);
   }
-  .section__content {
-    color: {{ text_color }};
+  /* .section__content {
+    color: var(--color-text);
 
     * {
       color: inherit;
     }
-  }
+  } */
 {% endstyle %}
 
 {% stylesheet %}
@@ -43,22 +41,10 @@
       "content": "Colors"
     },
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background Color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text Color",
-      "default": "#000000"
-    },
-    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color Scheme",
-      "default": "scheme_1"
+      "default": "scheme-1"
     },
     {
       "type": "header",

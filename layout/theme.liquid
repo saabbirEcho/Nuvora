@@ -9,15 +9,6 @@
 
     {% render 'design-tokens' %}
 
-    {% style %}
-      {% for color_scheme in settings.color_schemes %}
-        .color-scheme-{{ color_scheme.id }} {
-          background-color: {{ color_scheme.settings.background }};
-          color: {{ color_scheme.settings.text }};
-        }
-      {% endfor %}
-    {% endstyle %}
-
     {{ content_for_header }}
 
     <!-- Swiper CSS and JS -->

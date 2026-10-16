@@ -10,7 +10,7 @@
 {
   "current": {
     "color_schemes": {
-      "scheme_1": {
+      "scheme-1": {
         "settings": {
           "background": "#000000",
           "text": "#FFFFFF",
@@ -24,7 +24,7 @@
           "icons": "#000000"
         }
       },
-      "scheme_2": {
+      "scheme-2": {
         "settings": {
           "background": "#ffffff",
           "text": "#000000",
