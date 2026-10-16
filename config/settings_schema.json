@@ -25,5 +25,96 @@
         "default": "serif"
       }
     ]
+  },
+  {
+    "name": "Color Schemes",
+    "settings": [
+      {
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Background",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "text",
+            "label": "Text",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "header",
+            "content": "Primary Button"
+          },
+          {
+            "type": "color",
+            "id": "primary_button",
+            "label": "Primary Button",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "primary_button_text",
+            "label": "Primary Button Text",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "primary_button_border",
+            "label": "Primary Button Border",
+            "default": "#000000"
+          },
+          {
+            "type": "header",
+            "content": "Secondary Button"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button",
+            "label": "Secondary Button",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_text",
+            "label": "Secondary Button Text",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_border",
+            "label": "Secondary Button Border",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "links",
+            "label": "Links",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "icons",
+            "label": "Icons",
+            "default": "#000000"
+          }
+        ],
+        "role": {
+          "background": "background",
+          "text": "text",
+          "primary_button": "primary_button",
+          "on_primary_button": "primary_button_text",
+          "primary_button_border": "primary_button_border",
+          "secondary_button": "secondary_button",
+          "on_secondary_button": "secondary_button_text",
+          "secondary_button_border": "secondary_button_border",
+          "links": "links",
+          "icons": "icons",
+        }
+      }
+    ]
   }
 ]

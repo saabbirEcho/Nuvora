@@ -38,12 +38,59 @@
         "btn_text": "Submit",
         "form_width": "600"
       }
+    },
+    "section_3dAhQK": {
+      "type": "section",
+      "blocks": {
+        "image_with_text_NLB4zm": {
+          "type": "image-with-text",
+          "name": "Image with Text",
+          "settings": {
+            "gap": 40,
+            "alignment": "center"
+          },
+          "blocks": {
+            "image_UqF8fF": {
+              "type": "image",
+              "settings": {
+                "image_width": "100%",
+                "image_height": "100%",
+                "border_radius": 10
+              },
+              "blocks": {}
+            },
+            "richtext_7VwKVD": {
+              "type": "richtext",
+              "settings": {
+                "richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_UqF8fF",
+            "richtext_7VwKVD"
+          ]
+        }
+      },
+      "block_order": [
+        "image_with_text_NLB4zm"
+      ],
+      "name": "Section",
+      "settings": {
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "color_scheme": "scheme_1",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
     "hero_slider",
     "featured_collection",
     "section_featured_collection_W8PiA8",
-    "section_contact_form_GQfRtn"
+    "section_contact_form_GQfRtn",
+    "section_3dAhQK"
   ]
 }

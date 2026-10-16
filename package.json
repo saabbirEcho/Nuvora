@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "shopify theme dev",
+    "start": "shopify theme dev --store=saabbir-echo",
     "sass:dev": "sass --embed-source-map ./src/scss/index.scss:./assets/bundle.css --watch",
     "sass:build": "sass --style=compressed --no-source-map ./src/scss/index.scss:./assets/bundle.css"
   },

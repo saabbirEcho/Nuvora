@@ -9,5 +9,35 @@
 */
 {
   "current": {
+    "color_schemes": {
+      "scheme_1": {
+        "settings": {
+          "background": "#000000",
+          "text": "#FFFFFF",
+          "primary_button": "#ffffff",
+          "primary_button_text": "#000000",
+          "primary_button_border": "#ffffff",
+          "secondary_button": "#ff0000",
+          "secondary_button_text": "#ffffff",
+          "secondary_button_border": "#ff0000",
+          "links": "#000000",
+          "icons": "#000000"
+        }
+      },
+      "scheme_2": {
+        "settings": {
+          "background": "#ffffff",
+          "text": "#000000",
+          "primary_button": "#000000",
+          "primary_button_text": "#ffffff",
+          "primary_button_border": "#000000",
+          "secondary_button": "#ffffff",
+          "secondary_button_text": "#000000",
+          "secondary_button_border": "#ffffff",
+          "links": "#000000",
+          "icons": "#000000"
+        }
+      }
+    }
   }
 }
